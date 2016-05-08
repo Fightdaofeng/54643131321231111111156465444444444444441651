@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_layout" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/top_lay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部通知" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_all"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="策略提醒" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_celue"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跟单提醒" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_gendan"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="私信提醒" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_sixin"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户风险提醒" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_zhfx"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资讯推送" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_zxts"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论提醒" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_pinglun"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/tongzhitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜间免打扰" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/switch_yejian"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/onoff_selected" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

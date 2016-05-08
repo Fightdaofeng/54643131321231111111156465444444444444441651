@@ -1,0 +1,643 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From MPChartLib:
+* .gitignore
+* MPChartLib.iml
+* build.gradle
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\androidTest\
+* build\generated\source\buildConfig\androidTest\debug\
+* build\generated\source\buildConfig\androidTest\debug\com\
+* build\generated\source\buildConfig\androidTest\debug\com\github\
+* build\generated\source\buildConfig\androidTest\debug\com\github\mikephil\
+* build\generated\source\buildConfig\androidTest\debug\com\github\mikephil\charting\
+* build\generated\source\buildConfig\androidTest\debug\com\github\mikephil\charting\test\
+* build\generated\source\buildConfig\androidTest\debug\com\github\mikephil\charting\test\BuildConfig.java
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\github\
+* build\generated\source\buildConfig\debug\com\github\mikephil\
+* build\generated\source\buildConfig\debug\com\github\mikephil\charting\
+* build\generated\source\buildConfig\debug\com\github\mikephil\charting\BuildConfig.java
+* build\intermediates\
+* build\intermediates\bundles\
+* build\intermediates\bundles\debug\
+* build\intermediates\bundles\debug\.classpath
+* build\intermediates\bundles\debug\.project
+* build\intermediates\bundles\debug\AndroidManifest.xml
+* build\intermediates\bundles\debug\aapt\
+* build\intermediates\bundles\debug\aapt\.classpath
+* build\intermediates\bundles\debug\aapt\.project
+* build\intermediates\bundles\debug\aapt\AndroidManifest.xml
+* build\intermediates\bundles\debug\aapt\bin\
+* build\intermediates\bundles\debug\aapt\bin\AndroidManifest.xml
+* build\intermediates\bundles\debug\aapt\bin\classes\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\github\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\github\mikephil\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\github\mikephil\charting\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\github\mikephil\charting\BuildConfig.class
+* build\intermediates\bundles\debug\aapt\gen\
+* build\intermediates\bundles\debug\aapt\gen\com\
+* build\intermediates\bundles\debug\aapt\gen\com\github\
+* build\intermediates\bundles\debug\aapt\gen\com\github\mikephil\
+* build\intermediates\bundles\debug\aapt\gen\com\github\mikephil\charting\
+* build\intermediates\bundles\debug\aapt\gen\com\github\mikephil\charting\BuildConfig.java
+* build\intermediates\bundles\debug\aapt\project.properties
+* build\intermediates\bundles\debug\bin\
+* build\intermediates\bundles\debug\bin\AndroidManifest.xml
+* build\intermediates\bundles\debug\bin\classes\
+* build\intermediates\bundles\debug\bin\classes\com\
+* build\intermediates\bundles\debug\bin\classes\com\github\
+* build\intermediates\bundles\debug\bin\classes\com\github\mikephil\
+* build\intermediates\bundles\debug\bin\classes\com\github\mikephil\charting\
+* build\intermediates\bundles\debug\bin\classes\com\github\mikephil\charting\BuildConfig.class
+* build\intermediates\bundles\debug\classes.jar
+* build\intermediates\bundles\debug\gen\
+* build\intermediates\bundles\debug\gen\com\
+* build\intermediates\bundles\debug\gen\com\github\
+* build\intermediates\bundles\debug\gen\com\github\mikephil\
+* build\intermediates\bundles\debug\gen\com\github\mikephil\charting\
+* build\intermediates\bundles\debug\gen\com\github\mikephil\charting\BuildConfig.java
+* build\intermediates\bundles\debug\project.properties
+* build\intermediates\classes\
+* build\intermediates\classes\debug\
+* build\intermediates\classes\debug\com\
+* build\intermediates\classes\debug\com\github\
+* build\intermediates\classes\debug\com\github\mikephil\
+* build\intermediates\classes\debug\com\github\mikephil\charting\
+* build\intermediates\classes\debug\com\github\mikephil\charting\BuildConfig.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\ChartAnimator.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$10.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$11.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$12.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$13.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$14.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$15.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$16.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$17.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$18.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$19.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$2.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$20.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$21.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$22.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$23.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$24.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$25.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$26.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$27.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$28.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$3.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$4.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$5.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$6.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$7.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$8.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions$9.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingFunctions.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing$EasingOption.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\Easing.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\animation\EasingFunction.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\AbstractBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\BarBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\CandleBodyBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\CandleShadowBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\CircleBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\HorizontalBarBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\LineBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\buffer\ScatterBuffer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\BarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\BarLineChartBase$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\BarLineChartBase.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\BubbleChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\CandleStickChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\Chart$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\Chart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\CombinedChart$DrawOrder.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\CombinedChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\HorizontalBarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\LineChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\PieChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\PieRadarChartBase$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\PieRadarChartBase.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\RadarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\ScatterChart$ScatterShape.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\charts\ScatterChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\AxisBase.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\ComponentBase.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\Legend$LegendDirection.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\Legend$LegendForm.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\Legend$LegendPosition.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\Legend.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\LimitLine$LimitLabelPosition.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\LimitLine.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\MarkerView.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\XAxis$XAxisPosition.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\XAxis.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\YAxis$AxisDependency.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\YAxis$YAxisLabelPosition.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\components\YAxis.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BarData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BarDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BarEntry.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BarLineScatterCandleBubbleData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BarLineScatterCandleBubbleDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BubbleData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BubbleDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\BubbleEntry.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\CandleData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\CandleDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\CandleEntry.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\ChartData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\CombinedData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\DataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\Entry$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\Entry.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\LineData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\LineDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\LineRadarDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\LineScatterCandleRadarDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\PieData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\PieDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\RadarData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\RadarDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\ScatterData.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\ScatterDataSet.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\filter\
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\filter\Approximator$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\filter\Approximator$ApproximatorType.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\data\filter\Approximator.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\ColorFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\DefaultFillFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\DefaultValueFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\DefaultXAxisValueFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\DefaultYAxisValueFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\FillFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\LargeValueFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\PercentFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\ValueFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\XAxisValueFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\formatter\YAxisValueFormatter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\highlight\
+* build\intermediates\classes\debug\com\github\mikephil\charting\highlight\BarHighlighter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\highlight\ChartHighlighter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\highlight\CombinedHighlighter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\highlight\Highlight.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\highlight\HorizontalBarHighlighter.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\highlight\Range.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\BarDataProvider.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\BarLineScatterCandleBubbleDataProvider.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\BubbleDataProvider.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\CandleDataProvider.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\ChartInterface.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\LineDataProvider.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\interfaces\ScatterDataProvider.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\jobs\
+* build\intermediates\classes\debug\com\github\mikephil\charting\jobs\MoveViewJob.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\BarLineChartTouchListener.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\ChartTouchListener$ChartGesture.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\ChartTouchListener.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\OnChartGestureListener.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\OnChartValueSelectedListener.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\OnDrawLineChartTouchListener.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\OnDrawListener.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\PieRadarChartTouchListener$AngularVelocitySample.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\listener\PieRadarChartTouchListener.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\matrix\
+* build\intermediates\classes\debug\com\github\mikephil\charting\matrix\Vector3.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\AxisRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\BarChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\BubbleChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\CandleStickChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\CombinedChartRenderer$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\CombinedChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\DataRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\HorizontalBarChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\LegendRenderer$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\LegendRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\LineChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\LineScatterCandleRadarRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\PieChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\RadarChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\Renderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\ScatterChartRenderer$1.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\ScatterChartRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\XAxisRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\XAxisRendererBarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\XAxisRendererHorizontalBarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\XAxisRendererRadarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\YAxisRenderer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\YAxisRendererHorizontalBarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\renderer\YAxisRendererRadarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\ColorTemplate.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\EntryXIndexComparator.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\FSize.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\FileUtils.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\PointD.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\SelectionDetail.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\Transformer.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\TransformerHorizontalBarChart.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\Utils.class
+* build\intermediates\classes\debug\com\github\mikephil\charting\utils\ViewPortHandler.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\compileDebugAidl\
+* build\intermediates\incremental\compileDebugAidl\dependency.store
+* build\intermediates\incremental\compileDebugAndroidTestAidl\
+* build\intermediates\incremental\compileDebugAndroidTestAidl\dependency.store
+* build\intermediates\incremental\mergeDebugAndroidTestAssets\
+* build\intermediates\incremental\mergeDebugAndroidTestAssets\merger.xml
+* build\intermediates\incremental\mergeDebugAndroidTestResources\
+* build\intermediates\incremental\mergeDebugAndroidTestResources\merger.xml
+* build\intermediates\incremental\mergeDebugAssets\
+* build\intermediates\incremental\mergeDebugAssets\merger.xml
+* build\intermediates\incremental\mergeDebugJniLibFolders\
+* build\intermediates\incremental\mergeDebugJniLibFolders\merger.xml
+* build\intermediates\incremental\packageDebugResources\
+* build\intermediates\incremental\packageDebugResources\merger.xml
+* build\intermediates\manifest\
+* build\intermediates\manifest\androidTest\
+* build\intermediates\manifest\androidTest\debug\
+* build\intermediates\manifest\androidTest\debug\AndroidManifest.xml
+* build\intermediates\res\
+* build\intermediates\res\resources-debug-androidTest.ap_
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\MPChartLib-debug.aar
+* ic_launcher-web.png
+* pom.xml
+* proguard-project.txt
+From jyb:
+* ic_launcher-web.png
+* proguard-project.txt
+From library:
+* .gitignore
+* LICENSE
+* build.gradle
+* build.xml
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\androidTest\
+* build\generated\source\buildConfig\androidTest\debug\
+* build\generated\source\buildConfig\androidTest\debug\com\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\test\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\test\BuildConfig.java
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\handmark\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\library\BuildConfig.java
+* build\generated\source\r\
+* build\generated\source\r\androidTest\
+* build\generated\source\r\androidTest\debug\
+* build\generated\source\r\androidTest\debug\com\
+* build\generated\source\r\androidTest\debug\com\handmark\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\R.java
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\test\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\test\R.java
+* build\generated\source\r\debug\
+* build\generated\source\r\debug\com\
+* build\generated\source\r\debug\com\handmark\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\library\R.java
+* build\intermediates\
+* build\intermediates\blame\
+* build\intermediates\blame\res\
+* build\intermediates\blame\res\androidTest\
+* build\intermediates\blame\res\androidTest\debug\
+* build\intermediates\blame\res\androidTest\debug\multi\
+* build\intermediates\blame\res\androidTest\debug\multi\values-ar.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-cs.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-de.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-es.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-fi.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-fr.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-he.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-it.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-iw.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-ja.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-ko.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-nl.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-pl.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-pt-rBR.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-pt.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-ro.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-ru.json
+* build\intermediates\blame\res\androidTest\debug\multi\values-zh.json
+* build\intermediates\blame\res\androidTest\debug\multi\values.json
+* build\intermediates\blame\res\androidTest\debug\single\
+* build\intermediates\blame\res\androidTest\debug\single\anim.json
+* build\intermediates\blame\res\androidTest\debug\single\drawable-hdpi-v4.json
+* build\intermediates\blame\res\androidTest\debug\single\drawable-mdpi-v4.json
+* build\intermediates\blame\res\androidTest\debug\single\drawable-xhdpi-v4.json
+* build\intermediates\blame\res\androidTest\debug\single\drawable.json
+* build\intermediates\blame\res\androidTest\debug\single\layout.json
+* build\intermediates\classes\
+* build\intermediates\classes\debug\
+* build\intermediates\classes\debug\com\
+* build\intermediates\classes\debug\com\handmark\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\BuildConfig.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\ILoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\IPullToRefresh.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\LoadingLayoutProxy.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\OverscrollHelper$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\OverscrollHelper.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$3.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$4.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$AnimationStyle.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$Mode.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnLastItemVisibleListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnPullEventListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnSmoothScrollFinishedListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$Orientation.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$SmoothScrollRunnable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$State.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshScrollView$InternalScrollViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshScrollView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$InternalWebViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$anim.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$attr.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$dimen.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$drawable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$id.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$layout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$string.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$styleable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2$JsValueCallback.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\SoundPullEventListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\IndicatorLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\IndicatorLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\LoadingLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\LoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\RotateLoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\Utils.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK11.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK16.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat.class
+* build\intermediates\classes\debug\com\readystatesoftware\
+* build\intermediates\classes\debug\com\readystatesoftware\systembartint\
+* build\intermediates\classes\debug\com\readystatesoftware\systembartint\SystemBarTintManager$1.class
+* build\intermediates\classes\debug\com\readystatesoftware\systembartint\SystemBarTintManager$SystemBarConfig.class
+* build\intermediates\classes\debug\com\readystatesoftware\systembartint\SystemBarTintManager.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\compileDebugAidl\
+* build\intermediates\incremental\compileDebugAidl\dependency.store
+* build\intermediates\incremental\compileDebugAndroidTestAidl\
+* build\intermediates\incremental\compileDebugAndroidTestAidl\dependency.store
+* build\intermediates\incremental\mergeDebugAndroidTestAssets\
+* build\intermediates\incremental\mergeDebugAndroidTestAssets\merger.xml
+* build\intermediates\incremental\mergeDebugAndroidTestResources\
+* build\intermediates\incremental\mergeDebugAndroidTestResources\merger.xml
+* build\intermediates\incremental\mergeDebugAssets\
+* build\intermediates\incremental\mergeDebugAssets\merger.xml
+* build\intermediates\incremental\mergeDebugJniLibFolders\
+* build\intermediates\incremental\mergeDebugJniLibFolders\merger.xml
+* build\intermediates\incremental\packageDebugResources\
+* build\intermediates\incremental\packageDebugResources\merger.xml
+* build\intermediates\manifest\
+* build\intermediates\manifest\androidTest\
+* build\intermediates\manifest\androidTest\debug\
+* build\intermediates\manifest\androidTest\debug\AndroidManifest.xml
+* build\intermediates\res\
+* build\intermediates\res\merged\
+* build\intermediates\res\merged\androidTest\
+* build\intermediates\res\merged\androidTest\debug\
+* build\intermediates\res\merged\androidTest\debug\anim\
+* build\intermediates\res\merged\androidTest\debug\anim\slide_in_from_bottom.xml
+* build\intermediates\res\merged\androidTest\debug\anim\slide_in_from_top.xml
+* build\intermediates\res\merged\androidTest\debug\anim\slide_out_to_bottom.xml
+* build\intermediates\res\merged\androidTest\debug\anim\slide_out_to_top.xml
+* build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\
+* build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\default_ptr_flip.png
+* build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\default_ptr_rotate.png
+* build\intermediates\res\merged\androidTest\debug\drawable-hdpi-v4\indicator_arrow.png
+* build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\
+* build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\default_ptr_flip.png
+* build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\default_ptr_rotate.png
+* build\intermediates\res\merged\androidTest\debug\drawable-mdpi-v4\indicator_arrow.png
+* build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\
+* build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\default_ptr_flip.png
+* build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\default_ptr_rotate.png
+* build\intermediates\res\merged\androidTest\debug\drawable-xhdpi-v4\indicator_arrow.png
+* build\intermediates\res\merged\androidTest\debug\drawable\
+* build\intermediates\res\merged\androidTest\debug\drawable\indicator_bg_bottom.xml
+* build\intermediates\res\merged\androidTest\debug\drawable\indicator_bg_top.xml
+* build\intermediates\res\merged\androidTest\debug\layout\
+* build\intermediates\res\merged\androidTest\debug\layout\pull_to_refresh_header_horizontal.xml
+* build\intermediates\res\merged\androidTest\debug\layout\pull_to_refresh_header_vertical.xml
+* build\intermediates\res\merged\androidTest\debug\values-ar\
+* build\intermediates\res\merged\androidTest\debug\values-ar\values-ar.xml
+* build\intermediates\res\merged\androidTest\debug\values-cs\
+* build\intermediates\res\merged\androidTest\debug\values-cs\values-cs.xml
+* build\intermediates\res\merged\androidTest\debug\values-de\
+* build\intermediates\res\merged\androidTest\debug\values-de\values-de.xml
+* build\intermediates\res\merged\androidTest\debug\values-es\
+* build\intermediates\res\merged\androidTest\debug\values-es\values-es.xml
+* build\intermediates\res\merged\androidTest\debug\values-fi\
+* build\intermediates\res\merged\androidTest\debug\values-fi\values-fi.xml
+* build\intermediates\res\merged\androidTest\debug\values-fr\
+* build\intermediates\res\merged\androidTest\debug\values-fr\values-fr.xml
+* build\intermediates\res\merged\androidTest\debug\values-he\
+* build\intermediates\res\merged\androidTest\debug\values-he\values-he.xml
+* build\intermediates\res\merged\androidTest\debug\values-it\
+* build\intermediates\res\merged\androidTest\debug\values-it\values-it.xml
+* build\intermediates\res\merged\androidTest\debug\values-iw\
+* build\intermediates\res\merged\androidTest\debug\values-iw\values-iw.xml
+* build\intermediates\res\merged\androidTest\debug\values-ja\
+* build\intermediates\res\merged\androidTest\debug\values-ja\values-ja.xml
+* build\intermediates\res\merged\androidTest\debug\values-ko\
+* build\intermediates\res\merged\androidTest\debug\values-ko\values-ko.xml
+* build\intermediates\res\merged\androidTest\debug\values-nl\
+* build\intermediates\res\merged\androidTest\debug\values-nl\values-nl.xml
+* build\intermediates\res\merged\androidTest\debug\values-pl\
+* build\intermediates\res\merged\androidTest\debug\values-pl\values-pl.xml
+* build\intermediates\res\merged\androidTest\debug\values-pt-rBR\
+* build\intermediates\res\merged\androidTest\debug\values-pt-rBR\values-pt-rBR.xml
+* build\intermediates\res\merged\androidTest\debug\values-pt\
+* build\intermediates\res\merged\androidTest\debug\values-pt\values-pt.xml
+* build\intermediates\res\merged\androidTest\debug\values-ro\
+* build\intermediates\res\merged\androidTest\debug\values-ro\values-ro.xml
+* build\intermediates\res\merged\androidTest\debug\values-ru\
+* build\intermediates\res\merged\androidTest\debug\values-ru\values-ru.xml
+* build\intermediates\res\merged\androidTest\debug\values-zh\
+* build\intermediates\res\merged\androidTest\debug\values-zh\values-zh.xml
+* build\intermediates\res\merged\androidTest\debug\values\
+* build\intermediates\res\merged\androidTest\debug\values\values.xml
+* build\intermediates\res\resources-debug-androidTest.ap_
+* build\intermediates\symbols\
+* build\intermediates\symbols\androidTest\
+* build\intermediates\symbols\androidTest\debug\
+* build\intermediates\symbols\androidTest\debug\R.txt
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\library-debug.aar
+* gradle.properties
+* library.iml
+* pom.xml
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In MPChartLib:
+* AndroidManifest.xml => mPChartLib\src\main\AndroidManifest.xml
+* assets\ => mPChartLib\src\main\assets
+* lint.xml => mPChartLib\lint.xml
+* res\ => mPChartLib\src\main\res
+* src\ => mPChartLib\src\main\java\
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* assets\ => library\src\main\assets
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In jyb:
+* AndroidManifest.xml => jyb\src\main\AndroidManifest.xml
+* assets\ => jyb\src\main\assets\
+* libs\alibaba.jar => jyb\libs\alibaba.jar
+* libs\andbase.jar => jyb\libs\andbase.jar
+* libs\armeabi-v7a\libjpush181.so => jyb\src\main\jniLibs\armeabi-v7a\libjpush181.so
+* libs\armeabi\libjpush181.so => jyb\src\main\jniLibs\armeabi\libjpush181.so
+* libs\javabase64-1.3.1.jar => jyb\libs\javabase64-1.3.1.jar
+* libs\jpush-sdk-release1.8.1.jar => jyb\libs\jpush-sdk-release1.8.1.jar
+* libs\jxl.jar => jyb\libs\jxl.jar
+* libs\nineoldandroids-library-2.4.0.jar => jyb\libs\nineoldandroids-library-2.4.0.jar
+* libs\SocialSDK_actionbarview.jar => jyb\libs\SocialSDK_actionbarview.jar
+* libs\SocialSDK_AtFriends.jar => jyb\libs\SocialSDK_AtFriends.jar
+* libs\SocialSDK_comment.jar => jyb\libs\SocialSDK_comment.jar
+* libs\SocialSDK_email.jar => jyb\libs\SocialSDK_email.jar
+* libs\SocialSDK_evernote.jar => jyb\libs\SocialSDK_evernote.jar
+* libs\SocialSDK_facebook_1.jar => jyb\libs\SocialSDK_facebook_1.jar
+* libs\SocialSDK_facebook_2.jar => jyb\libs\SocialSDK_facebook_2.jar
+* libs\SocialSDK_instagram.jar => jyb\libs\SocialSDK_instagram.jar
+* libs\SocialSDK_laiwang_1.jar => jyb\libs\SocialSDK_laiwang_1.jar
+* libs\SocialSDK_laiwang_2.jar => jyb\libs\SocialSDK_laiwang_2.jar
+* libs\SocialSDK_like.jar => jyb\libs\SocialSDK_like.jar
+* libs\SocialSDK_linkedin.jar => jyb\libs\SocialSDK_linkedin.jar
+* libs\SocialSDK_pinterest.jar => jyb\libs\SocialSDK_pinterest.jar
+* libs\SocialSDK_pocket.jar => jyb\libs\SocialSDK_pocket.jar
+* libs\SocialSDK_QQZone_1.jar => jyb\libs\SocialSDK_QQZone_1.jar
+* libs\SocialSDK_QQZone_2.jar => jyb\libs\SocialSDK_QQZone_2.jar
+* libs\SocialSDK_QQZone_3.jar => jyb\libs\SocialSDK_QQZone_3.jar
+* libs\SocialSDK_renren_1.jar => jyb\libs\SocialSDK_renren_1.jar
+* libs\SocialSDK_renren_2.jar => jyb\libs\SocialSDK_renren_2.jar
+* libs\SocialSDK_scrshot.jar => jyb\libs\SocialSDK_scrshot.jar
+* libs\SocialSDK_shake.jar => jyb\libs\SocialSDK_shake.jar
+* libs\SocialSDK_Sina.jar => jyb\libs\SocialSDK_Sina.jar
+* libs\SocialSDK_sms.jar => jyb\libs\SocialSDK_sms.jar
+* libs\SocialSDK_tencentWB_1.jar => jyb\libs\SocialSDK_tencentWB_1.jar
+* libs\SocialSDK_tencentWB_2.jar => jyb\libs\SocialSDK_tencentWB_2.jar
+* libs\SocialSDK_tencentWB_3.jar => jyb\libs\SocialSDK_tencentWB_3.jar
+* libs\SocialSDK_UserCenter.jar => jyb\libs\SocialSDK_UserCenter.jar
+* libs\SocialSDK_WeiXin_1.jar => jyb\libs\SocialSDK_WeiXin_1.jar
+* libs\SocialSDK_WeiXin_2.jar => jyb\libs\SocialSDK_WeiXin_2.jar
+* libs\SocialSDK_yixin_1.jar => jyb\libs\SocialSDK_yixin_1.jar
+* libs\SocialSDK_yixin_2.jar => jyb\libs\SocialSDK_yixin_2.jar
+* libs\SocialSDK_ynote.jar => jyb\libs\SocialSDK_ynote.jar
+* libs\umeng-analytics-v5.6.3.jar => jyb\libs\umeng-analytics-v5.6.3.jar
+* libs\umeng_social_sdk.jar => jyb\libs\umeng_social_sdk.jar
+* libs\universal-image-loader-1.9.5.jar => jyb\libs\universal-image-loader-1.9.5.jar
+* libs\Volley.jar => jyb\libs\Volley.jar
+* libs\xUtils-2.6.14.jar => jyb\libs\xUtils-2.6.14.jar
+* lint.xml => jyb\lint.xml
+* res\ => jyb\src\main\res\
+* src\ => jyb\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

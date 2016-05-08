@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/sousuokuan"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/serach" />
+
+            <EditText
+                android:id="@+id/null_edit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="请输入关键字"
+                android:background="@null"
+                android:textColorHint="#42000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/item_fragment_gjs_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fwhite"
+        android:cacheColorHint="@color/white"
+        android:divider="#999999"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/relative_yw_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+    >
+
+        <ProgressBar
+            android:id="@+id/yw_pro_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_bg" />
+
+        <TextView
+            android:id="@+id/show_yw_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yw_pro_bar"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:text="数据加载中..." />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_rl_listview_to_top_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginRight="5dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:paddingTop="10dip"
+            android:src="@drawable/return_top" />
+    </RelativeLayout>
+
+</RelativeLayout>

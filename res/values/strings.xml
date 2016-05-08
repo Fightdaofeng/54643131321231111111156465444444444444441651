@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tip">提示</string>
+    <string name="app_name">jyb</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="zixun">资讯</string>
+    <string name="gaoshou">高手</string>
+    <string name="jiaoyiquan">交易圈</string>
+    <string name="wodezhanghu">我的账户</string>
+    <string name="geren">个人</string>
+    <string name="shouyi">收益</string>
+    <string name="jiaoyipl">交易频率</string>
+    <string name="userpf">账户评分</string>
+    <string name="zuodanqk">做单情况</string>
+    <string name="fengxianpg">风险评估</string>
+    <string name="rexian">400-823-2369</string>
+    <string name="qqqun">410055889</string>
+    <string name="search_cont_desc">输入品种</string>
+
+</resources>

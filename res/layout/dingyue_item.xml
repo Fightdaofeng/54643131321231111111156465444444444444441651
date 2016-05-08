@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/item_tv"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:background="@drawable/dingyue_selected"
+        android:gravity="center"
+        android:text="美元"
+        android:textColor="@drawable/dingyuetext_selected"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

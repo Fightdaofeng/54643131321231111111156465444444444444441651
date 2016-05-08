@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/top_hui"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/rishaixuan"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shaixuan" />
+
+            <ImageView
+                android:id="@+id/shishaixuan"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shaixuan"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/zbshaixuan"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:background="@drawable/shaixuan"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/xingfen"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="2.5"
+            android:background="@drawable/yuanjiaobai"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/lay_rili"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toplay_selected"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_rili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日历"
+                    android:textColor="@drawable/toptext_selected"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_shijian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toplay_selected"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_shijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="事件"
+                    android:textColor="@drawable/toptext_selected"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_zhibo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toplay_selected"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_zhibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直播"
+                    android:textColor="@drawable/toptext_selected"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/xiaoxi"
+              style="@style/top_msg"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/xingfen" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#f0f0f0</color>
+        <color name="fwhite">#fff</color>
+    <color name="bg_title_bar">#C1332C</color>
+    <color name="txt_lan">#298FE7</color>
+    <color name="txt_hui">#A9A8A8</color>
+    <color name="myred">#eb4f38</color>
+    <color name="darkgray">#cccc</color>
+    <color name="color_white">#ffffff</color>
+    <color name="btn_press_color">#5677fc</color>
+    <color name="btn_pressed_color">#3ca0ec</color>
+    <color name="black">#000000</color>
+    <color name="black80">#80000000</color>
+    <color name="tmblack">#70000000</color>
+    <color name="huise">#ccc</color>
+    <color name="jindu_lan">#0099FF</color>
+    <color name="cclist_item_bg">#E6E6E6</color>
+    <color name="line_color">#797979</color>
+    <color name="red">#f00</color>
+    <color name="hr_color">#0075CF</color>
+    <color name="chengse">#FF6600</color>
+    <color name="shijiancolor">#9772D3FD</color>
+    <color name="nolan">#72D3FD</color>
+    <color name="top_hui">#e9e9ea</color>
+    <color name="hq_red">#E34A4E</color>
+    <color name="green">#34C399</color>
+    <color name="xinwen_lan">#00b1fc</color>
+    <color name="base_bg_color">#ffffff</color>
+    <color name="ls_bg_color">#1C9CF5</color>
+    <color name="yjbs_bg_color">#04274c</color>
+    <color name="gray">#666666</color>
+    <color name="jd1">#72D3FD</color>
+    <color name="jd2">#B5B5B5</color>
+    <color name="hui7f">#7f7f7f</color>
+    <color name="lv34">#34c399</color>
+    <color name="e34">#e34a4e</color>
+    <color name="h8b8b">#8b8b8b</color>
+    <color name="xline">#27000000</color>
+    <color name="bad">#babbbd</color>
+    <color name="left_hui">#b9baba</color>
+    <color name="left_hui2">#6f6f6f</color>
+    <color name="red_button">#BB322A</color>
+    <color name="red_button_press">#A3271D</color>
+    <color name="lan01a">#01a4f2</color>
+     <color name="zhbg">#ededed</color>
+ <!-- Light Theme -->
+    <color name="search_light_background">#fffafafa</color>
+    <color name="search_light_icon">#ff616161</color>
+    <color name="search_light_text">#ff212121</color>
+    <color name="search_light_text_hint">#8a000000</color>
+    <color name="search_light_text_highlight">#61000000</color>
+ <color name="province_line_border">#C7C7C7</color>
+    <!-- Dark Theme -->
+    <color name="search_dark_background">#ff303030</color>
+    <color name="search_dark_icon">#ffffffff</color>
+    <color name="search_dark_text">#ffffffff</color>
+    <color name="search_dark_text_hint">#b3ffffff</color>
+    <color name="search_dark_text_highlight">#61ffffff</color>
+
+    <!-- Shadow -->
+    <color name="search_shadow_layout">#80000000</color>
+
+    <!-- Arrow @android:color/black -->
+    <color name="search_arrow_color">#ff000000</color>
+</resources>

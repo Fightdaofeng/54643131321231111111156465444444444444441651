@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/top_lay"
+        android:background="@color/top_hui"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/top_return"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fanhui" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="直播"
+            android:textSize="@dimen/text_size_18" />
+
+        <TextView
+            android:id="@+id/top_txt"
+            android:layout_width="20dp"
+            android:layout_height="23dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shaixuan" />
+
+        <TextView
+            android:id="@+id/top_msg"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:background="@drawable/xingfen" />
+    </LinearLayout>
+
+</LinearLayout>

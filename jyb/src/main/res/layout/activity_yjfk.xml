@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_layout" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/top_lay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/x_line"
+            android:layout_marginTop="10dp"
+            android:background="@color/nolan" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="欢迎提给我们您遇到的系统问题或功能建议~~~谢谢!"
+            android:minLines="8"
+            android:padding="@dimen/pad_10"
+            android:textColor="#50646464"
+            android:textSize="@dimen/text_size_14" />
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/pad_20" >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/chuanzaopian" />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tianjiax" />
+        </LinearLayout>
+
+        <View
+            style="@style/x_line"
+            android:background="@color/nolan" />
+    </LinearLayout>
+
+</LinearLayout>

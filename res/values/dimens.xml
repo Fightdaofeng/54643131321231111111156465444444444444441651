@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_9">9sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_23">23sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="bottom_bar_height">54dp</dimen>
+    <dimen name="top_bar_height">40dp</dimen>
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    <dimen name="x_linghigh">0.1dp</dimen>
+    <dimen name="youimghigh">20dp</dimen>
+    <dimen name="youimgwidht">9dp</dimen>
+    <dimen name="txt_leftimg_high">25dp</dimen>
+    <dimen name="txt_leftimg_width">25dp</dimen>
+    <dimen name="horizontal_margin">10dp</dimen>
+    <dimen name="pad_left">10dp</dimen>
+    <dimen name="pad_right">15dp</dimen>
+    <dimen name="pad_top">5dp</dimen>
+    <dimen name="pad_20">20dp</dimen>
+    <dimen name="pad_15">15dp</dimen>
+    <dimen name="pad_10">10dp</dimen>
+    <dimen name="reveal">24dp</dimen>
+    <dimen name="search_key_line">16dp</dimen>
+    <dimen name="search_text_spacing">6dp</dimen>
+
+    <!-- Searchview -->
+    <dimen name="search_divider">1dp</dimen>
+    <dimen name="search_view_margin_text">24dp</dimen>
+    <dimen name="search_item_margin_text">24dp</dimen>
+    <dimen name="search_item_height">56dp</dimen>
+    <dimen name="search_item_height_divider">57dp</dimen>
+    <dimen name="search_icon">24dp</dimen>
+    <dimen name="search_text_small">14sp</dimen>
+    <dimen name="search_text_medium">16sp</dimen>
+
+    <!-- Arrow -->
+    <dimen name="arrow_thickness">2dp</dimen>
+    <dimen name="arrow_arrowHeadLength">8dp</dimen>
+    <dimen name="arrow_arrowShaftLength">16dp</dimen>
+    <dimen name="arrow_barLength">18dp</dimen>
+    <dimen name="arrow_gapBetweenBars">3dp</dimen>
+    <dimen name="arrow_drawableSize">24dp</dimen>
+
+    <!-- Check -->
+    <dimen name="check_text">37sp</dimen>
+
+</resources>

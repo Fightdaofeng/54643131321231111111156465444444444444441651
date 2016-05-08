@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_layout" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/top_lay" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/yiji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号设置" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录手机号" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="21dp"
+                android:text="123131321" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            android:id="@+id/xgmm_lay"
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改密码" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <View style="@style/youjiantou" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_15"
+                android:text="stou" />
+
+            <View style="@style/youjiantou" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微博" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_15"
+                android:text="微博" />
+
+            <View style="@style/youjiantou" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_15"
+                android:text="未绑定" />
+
+            <View style="@style/youjiantou" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/yiji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统设置" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tstz_lay"
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推送通知" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <View style="@style/youjiantou" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            android:id="@+id/gywm_lay"
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关于我们" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <View style="@style/youjiantou" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            android:id="@+id/hc_lay"
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缓存清理" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/apphuancun_tv"
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/pad_15"
+                 />
+
+            <View
+                style="@style/youjiantou"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View style="@style/x_line" />
+
+        <LinearLayout
+            style="@style/set_lay_pad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/erji_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
