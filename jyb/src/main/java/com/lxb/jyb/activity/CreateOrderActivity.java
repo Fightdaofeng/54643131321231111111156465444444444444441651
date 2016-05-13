@@ -1,20 +1,9 @@
 package com.lxb.jyb.activity;
 
-import java.math.BigDecimal;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
@@ -22,7 +11,6 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
 import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
@@ -36,20 +24,24 @@ import com.android.volley.AuthFailureError;
 import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
-import com.android.volley.Response.ErrorListener;
-import com.android.volley.Response.Listener;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.lxb.jyb.R;
 import com.lxb.jyb.bean.HQData;
 import com.lxb.jyb.bean.OrderDataBean;
-import com.lxb.jyb.fragment.Fragment_ZH;
+import com.lxb.jyb.bean.PriceBean;
 import com.lxb.jyb.tool.TestUtil;
-import com.lxb.jyb.util.HQTitleUtil;
 import com.lxb.jyb.util.HttpConstant;
 import com.lxb.jyb.util.SetStatiColor;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 建仓-新挂单界面
@@ -86,6 +78,7 @@ public class CreateOrderActivity extends FragmentActivity implements
     private String titck;
     private int length;
     private String msginfo;
+    private PriceBean priceBean;
 
     @Override
     protected void onCreate(Bundle arg0) {
@@ -172,7 +165,7 @@ public class CreateOrderActivity extends FragmentActivity implements
 
                             });
 
-
+                    builder.show();
                     break;
                 case 102:
                     zuoduo_layout.setClickable(false);
@@ -203,7 +196,7 @@ public class CreateOrderActivity extends FragmentActivity implements
                                         }
 
                                     });
-
+                            builder.show();
                             break;
                         case "Market is closed":
                             builder = new Builder(
@@ -222,13 +215,35 @@ public class CreateOrderActivity extends FragmentActivity implements
                                         }
 
                                     });
+                            builder.show();
+                            break;
+                        default:
+                            builder = new Builder(
+                                    CreateOrderActivity.this);
 
+                            builder.setMessage("下单失败!" + msginfo);
+
+                            builder.setTitle("警告");
+                            builder.setPositiveButton("确认",
+                                    new DialogInterface.OnClickListener() {
+
+                                        public void onClick(DialogInterface dialog,
+                                                            int which) {
+                                            dialog.dismiss();
+
+                                        }
+
+                                    });
+                            builder.show();
                             break;
                     }
 
                     break;
+                case 40:
+
+                    break;
             }
-            builder.show();
+
         }
 
         ;
@@ -335,7 +350,7 @@ public class CreateOrderActivity extends FragmentActivity implements
                 parseDouble = Double.parseDouble(string);
                 put = parseDouble + mode;
                 if (isDouble) {
-                    edit_zy.setText((put + "0").substring(0, length));
+                    edit_zy.setText(String.valueOf(put));
                 } else {
                     edit_zy.setText(put + "");
                 }
@@ -345,7 +360,7 @@ public class CreateOrderActivity extends FragmentActivity implements
                 parseDouble = Double.parseDouble(string);
                 put = parseDouble - mode;
                 if (isDouble) {
-                    edit_zy.setText((put + "0").substring(0, length));
+                    edit_zy.setText(String.valueOf(put));
                 } else {
                     edit_zy.setText((put + ""));
                 }
@@ -356,7 +371,7 @@ public class CreateOrderActivity extends FragmentActivity implements
                 parseDouble = Double.parseDouble(string);
                 put = parseDouble + mode;
                 if (isDouble) {
-                    edit_zs.setText((put + "0").substring(0, length));
+                    edit_zs.setText(String.valueOf(put));
                 } else {
                     edit_zs.setText((put + ""));
                 }
@@ -366,7 +381,7 @@ public class CreateOrderActivity extends FragmentActivity implements
                 parseDouble = Double.parseDouble(string);
                 put = parseDouble - mode;
                 if (isDouble) {
-                    edit_zs.setText((put + "0").substring(0, length));
+                    edit_zs.setText(String.valueOf(put));
                 } else {
                     edit_zs.setText((put + ""));
                 }
@@ -531,14 +546,14 @@ public class CreateOrderActivity extends FragmentActivity implements
         symbol = sel_jypz.getText().toString();
         lots = edit_lots.getText().toString();
         if (switch1.isSelected()) {
-            sl = edit_zy.getText().toString();
-        } else {
-            sl = "0";
-        }
-        if (switch2.isSelected()) {
-            tp = edit_zs.getText().toString();
+            tp = edit_zy.getText().toString();
         } else {
             tp = "0";
+        }
+        if (switch2.isSelected()) {
+            sl = edit_zs.getText().toString();
+        } else {
+            sl = "0";
         }
     }
 
@@ -549,7 +564,9 @@ public class CreateOrderActivity extends FragmentActivity implements
         if (requestCode == 101) {
             if (resultCode == 202) {
                 stringExtra = data.getStringExtra("symbol");
-                sel_jypz.setText(stringExtra);
+                String name=data.getStringExtra("name");
+                sel_jypz.setText(name);
+                getPrice();
             }
         }
     }
@@ -558,13 +575,13 @@ public class CreateOrderActivity extends FragmentActivity implements
 
         try {
             request = new JsonObjectRequest(Method.POST,
-                    HttpConstant.CREATE_ORDER, new JSONObject(bean.toJSON()
+                    HttpConstant.CREATE_ORDER+stringExtra, new JSONObject(bean.toJSON()
                     .toString()), new Response.Listener<JSONObject>() {
                 public void onResponse(JSONObject jsonObject) {
                     JSONObject optJSONObject = jsonObject
                             .optJSONObject("data");
-                    Log.i("请求:",bean.toJSON().toString());
-                    Log.i("借口:",HttpConstant.CALENDAR_HOST);
+                    Log.i("请求:", bean.toJSON().toString());
+                    Log.i("借口:", HttpConstant.CALENDAR_HOST);
 
                     titck = optJSONObject.optString("ticket");
                     String optString = jsonObject.optString("msg");
@@ -602,4 +619,22 @@ public class CreateOrderActivity extends FragmentActivity implements
         queue.add(request);
     }
 
+    private void getPrice() {
+        JsonObjectRequest request = new JsonObjectRequest(Method.GET, HttpConstant.GETPRICE+stringExtra, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject jsonObject) {
+                JSONObject object = jsonObject.optJSONObject("data");
+                priceBean = new PriceBean(object);
+
+                Log.i("现价信息：", priceBean.toString());
+                handler.sendEmptyMessage(101);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+                Log.e("请求错误：", volleyError.toString());
+            }
+        });
+        queue.add(request);
+    }
 }

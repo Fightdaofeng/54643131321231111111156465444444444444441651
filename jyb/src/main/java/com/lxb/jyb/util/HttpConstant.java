@@ -108,7 +108,7 @@ public class HttpConstant {
      * 查询历史订单
      */
     public static final String HISTORY_ORDER = HEAD
-            + "order/history?account=900171576&broker=GMI&starttime=2016-04-01&endtime=2016-05-03";
+            + "order/history?account=900171576&broker=GMI&starttime=2016-04-01&endtime=2016-05-10";
     /**
      * 查询交易品种
      */
@@ -121,4 +121,8 @@ public class HttpConstant {
             + "account?account=900171576&broker=GMI";
     /*绑定交易账号*/
     public static final String BDMT4_HOST = HEAD + "account";
+    /****
+     * 获取交易价格
+     ****/
+    public static final String GETPRICE = HEAD + "broker/price?broker=GMI&account=900171576&symbol=";
 }

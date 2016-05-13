@@ -1,11 +1,11 @@
 package com.lxb.jyb.bean;
 
-import org.json.JSONObject;
-
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class OrderSelect implements Parcelable,Comparable<OrderSelect> {
+import org.json.JSONObject;
+
+public class OrderSelect implements Comparable<OrderSelect>,Parcelable {
 	/** 备注 */
 	private String comment;
 	/** 回扣 */
@@ -183,63 +183,58 @@ public class OrderSelect implements Parcelable,Comparable<OrderSelect> {
 		this.tp = tp;
 	}
 
-	@Override
-	public int describeContents() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public void writeToParcel(Parcel dest, int flags) {
-		// TODO Auto-generated method stub
-		dest.writeString(comment);
-		dest.writeString(commssion);
-		dest.writeString(lots);
-		dest.writeString(magic);
-		dest.writeString(openprice);
-		dest.writeString(opentime);
-		dest.writeString(ordertype);
-		dest.writeString(profit);
-		dest.writeString(sl);
-		dest.writeString(swap);
-		dest.writeString(symbol);
-		dest.writeString(ticket);
-		dest.writeString(tp);
-
-	}
-
-	public static final Parcelable.Creator<OrderSelect> CREATOR = new Creator<OrderSelect>() {
-
-		@Override
-		public OrderSelect[] newArray(int size) {
-			// TODO Auto-generated method stub
-			return new OrderSelect[size];
-		}
-
-		@Override
-		public OrderSelect createFromParcel(Parcel source) {
-			// TODO Auto-generated method stub
-			OrderSelect select = new OrderSelect();
-			select.setComment(source.readString());
-			select.setCommssion(source.readString());
-			select.setLots(source.readString());
-			select.setMagic(source.readString());
-			select.setOpenprice(source.readString());
-			select.setOpentime(source.readString());
-			select.setOrdertype(source.readString());
-			select.setProfit(source.readString());
-			select.setSl(source.readString());
-			select.setSwap(source.readString());
-			select.setSymbol(source.readString());
-			select.setTicket(source.readString());
-			select.setTp(source.readString());
-			return select;
-		}
-	};
 
 	@Override
 	public int compareTo(OrderSelect another) {
 		// TODO Auto-generated method stub
 		return another.getOpentime().compareTo(this.getOpentime());
 	}
+
+	@Override
+	public int describeContents() {
+		return 0;
+	}
+
+	@Override
+	public void writeToParcel(Parcel dest, int flags) {
+		dest.writeString(this.comment);
+		dest.writeString(this.commssion);
+		dest.writeString(this.lots);
+		dest.writeString(this.magic);
+		dest.writeString(this.openprice);
+		dest.writeString(this.opentime);
+		dest.writeString(this.ordertype);
+		dest.writeString(this.profit);
+		dest.writeString(this.sl);
+		dest.writeString(this.swap);
+		dest.writeString(this.symbol);
+		dest.writeString(this.ticket);
+		dest.writeString(this.tp);
+	}
+
+	protected OrderSelect(Parcel in) {
+		this.comment = in.readString();
+		this.commssion = in.readString();
+		this.lots = in.readString();
+		this.magic = in.readString();
+		this.openprice = in.readString();
+		this.opentime = in.readString();
+		this.ordertype = in.readString();
+		this.profit = in.readString();
+		this.sl = in.readString();
+		this.swap = in.readString();
+		this.symbol = in.readString();
+		this.ticket = in.readString();
+		this.tp = in.readString();
+	}
+
+	public static final Parcelable.Creator<OrderSelect> CREATOR = new Parcelable.Creator<OrderSelect>() {
+		public OrderSelect createFromParcel(Parcel source) {
+			return new OrderSelect(source);
+		}
+
+		public OrderSelect[] newArray(int size) {
+			return new OrderSelect[size];
+		}
+	};
 }

@@ -12,6 +12,10 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_facebook.png"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\jypl_selected.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\jypl_selected.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_share_transparent_corner.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_share_transparent_corner.xml"
     },
@@ -66,6 +70,10 @@
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_follow_check.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_follow_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\shouyi_selected.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\shouyi_selected.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_normal.xml",
@@ -240,6 +248,10 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\exploded-aar\\jyb\\library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\fxpg_selected.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\fxpg_selected.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_shareboard_item_background.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_shareboard_item_background.xml"
     },
@@ -360,12 +372,16 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\dingyuetext_selected.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_title_tab_left_pressed.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_title_tab_left_pressed.png"
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\fenxi_selected.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\fenxi_selected.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\toplay_selected.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\toplay_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_title_tab_left_pressed.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_title_tab_left_pressed.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\hongqueren_select.xml",
@@ -396,16 +412,20 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\lv_search_tips_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_refersh.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_refersh.png"
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\zdqk_selected.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\zdqk_selected.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_sidebar_selector.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_sidebar_selector.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_val.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\wheel_val.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_sidebar_selector.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_sidebar_selector.xml"
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\umeng_socialize_refersh.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable\\umeng_socialize_refersh.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable\\zixun_selected.xml",

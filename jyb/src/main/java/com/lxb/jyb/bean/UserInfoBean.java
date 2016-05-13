@@ -10,7 +10,7 @@ public class UserInfoBean {
 	private String currency;
 	/**用户余额*/
 	private String balance;
-	/**账户保证金*/
+	/**净值*/
 	private String equiety;
 	/**账户可用保证金*/
 	private String freemargin;

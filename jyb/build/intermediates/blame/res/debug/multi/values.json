@@ -15,9 +15,9 @@
                     "position": {
                         "startLine": 138,
                         "startColumn": 4,
-                        "startOffset": 2521,
+                        "startOffset": 2600,
                         "endColumn": 48,
-                        "endOffset": 2565
+                        "endOffset": 2644
                     }
                 }
             },
@@ -34,9 +34,9 @@
                     "position": {
                         "startLine": 139,
                         "startColumn": 4,
-                        "startOffset": 2571,
+                        "startOffset": 2650,
                         "endColumn": 48,
-                        "endOffset": 2615
+                        "endOffset": 2694
                     }
                 }
             },
@@ -4968,8 +4968,27 @@
                     "startLine": 270,
                     "startColumn": 4,
                     "startOffset": 21015,
+                    "endColumn": 44,
+                    "endOffset": 21055
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 787,
+                        "endColumn": 44,
+                        "endOffset": 827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 271,
+                    "startColumn": 4,
+                    "startOffset": 21060,
                     "endColumn": 39,
-                    "endOffset": 21050
+                    "endOffset": 21095
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\strings.xml",
@@ -4984,11 +5003,11 @@
             },
             {
                 "to": {
-                    "startLine": 271,
+                    "startLine": 272,
                     "startColumn": 4,
-                    "startOffset": 21055,
+                    "startOffset": 21100,
                     "endColumn": 44,
-                    "endOffset": 21095
+                    "endOffset": 21140
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\strings.xml",
@@ -5003,11 +5022,11 @@
             },
             {
                 "to": {
-                    "startLine": 272,
+                    "startLine": 273,
                     "startColumn": 4,
-                    "startOffset": 21100,
+                    "startOffset": 21145,
                     "endColumn": 36,
-                    "endOffset": 21132
+                    "endOffset": 21177
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\strings.xml",
@@ -5022,11 +5041,11 @@
             },
             {
                 "to": {
-                    "startLine": 273,
+                    "startLine": 274,
                     "startColumn": 4,
-                    "startOffset": 21137,
+                    "startOffset": 21182,
                     "endColumn": 41,
-                    "endOffset": 21174
+                    "endOffset": 21219
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\strings.xml",
@@ -5041,95 +5060,95 @@
             },
             {
                 "to": {
-                    "startLine": 274,
+                    "startLine": 275,
                     "startColumn": 4,
-                    "startOffset": 21179,
-                    "endLine": 318,
+                    "startOffset": 21224,
+                    "endLine": 319,
                     "endColumn": 12,
-                    "endOffset": 21503
+                    "endOffset": 21548
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
-                        "startOffset": 292,
+                        "startOffset": 333,
                         "endLine": 91,
                         "endColumn": 12,
-                        "endOffset": 583
+                        "endOffset": 701
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 319,
+                    "startLine": 320,
                     "startColumn": 4,
-                    "startOffset": 21508,
-                    "endLine": 321,
+                    "startOffset": 21553,
+                    "endLine": 322,
                     "endColumn": 12,
-                    "endOffset": 21663
+                    "endOffset": 21708
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 94,
                         "startColumn": 4,
-                        "startOffset": 663,
+                        "startOffset": 742,
                         "endLine": 96,
                         "endColumn": 12,
-                        "endOffset": 820
+                        "endOffset": 899
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 322,
+                    "startLine": 323,
                     "startColumn": 4,
-                    "startOffset": 21668,
-                    "endLine": 325,
+                    "startOffset": 21713,
+                    "endLine": 326,
                     "endColumn": 12,
-                    "endOffset": 21883
+                    "endOffset": 21928
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 432,
+                        "startLine": 435,
                         "startColumn": 4,
-                        "startOffset": 12567,
-                        "endLine": 435,
+                        "startOffset": 12789,
+                        "endLine": 438,
                         "endColumn": 12,
-                        "endOffset": 12785
+                        "endOffset": 13007
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 326,
+                    "startLine": 327,
                     "startColumn": 4,
-                    "startOffset": 21888,
-                    "endLine": 328,
+                    "startOffset": 21933,
+                    "endLine": 329,
                     "endColumn": 12,
-                    "endOffset": 21989
+                    "endOffset": 22034
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 420,
+                        "startLine": 423,
                         "startColumn": 4,
-                        "startOffset": 12129,
-                        "endLine": 422,
+                        "startOffset": 12351,
+                        "endLine": 425,
                         "endColumn": 12,
-                        "endOffset": 12232
+                        "endOffset": 12454
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 329,
+                    "startLine": 330,
                     "startColumn": 4,
-                    "startOffset": 21994,
+                    "startOffset": 22039,
                     "endColumn": 75,
-                    "endOffset": 22065
+                    "endOffset": 22110
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -5144,12 +5163,12 @@
             },
             {
                 "to": {
-                    "startLine": 330,
+                    "startLine": 331,
                     "startColumn": 4,
-                    "startOffset": 22070,
-                    "endLine": 333,
+                    "startOffset": 22115,
+                    "endLine": 334,
                     "endColumn": 12,
-                    "endOffset": 22283
+                    "endOffset": 22328
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -5165,253 +5184,253 @@
             },
             {
                 "to": {
-                    "startLine": 334,
+                    "startLine": 335,
                     "startColumn": 4,
-                    "startOffset": 22288,
-                    "endLine": 337,
+                    "startOffset": 22333,
+                    "endLine": 338,
                     "endColumn": 12,
-                    "endOffset": 22430
+                    "endOffset": 22475
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 218,
+                        "startLine": 221,
                         "startColumn": 4,
-                        "startOffset": 5358,
-                        "endLine": 221,
+                        "startOffset": 5580,
+                        "endLine": 224,
                         "endColumn": 12,
-                        "endOffset": 5503
+                        "endOffset": 5725
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 338,
+                    "startLine": 339,
                     "startColumn": 4,
-                    "startOffset": 22435,
-                    "endLine": 341,
+                    "startOffset": 22480,
+                    "endLine": 342,
                     "endColumn": 12,
-                    "endOffset": 22597
+                    "endOffset": 22642
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 386,
+                        "startLine": 389,
                         "startColumn": 4,
-                        "startOffset": 10872,
-                        "endLine": 389,
+                        "startOffset": 11094,
+                        "endLine": 392,
                         "endColumn": 12,
-                        "endOffset": 11037
+                        "endOffset": 11259
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 342,
+                    "startLine": 343,
                     "startColumn": 4,
-                    "startOffset": 22602,
-                    "endLine": 345,
+                    "startOffset": 22647,
+                    "endLine": 346,
                     "endColumn": 12,
-                    "endOffset": 22744
+                    "endOffset": 22789
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 262,
+                        "startLine": 265,
                         "startColumn": 4,
-                        "startOffset": 6678,
-                        "endLine": 265,
+                        "startOffset": 6900,
+                        "endLine": 268,
                         "endColumn": 12,
-                        "endOffset": 6823
+                        "endOffset": 7045
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 346,
+                    "startLine": 347,
                     "startColumn": 4,
-                    "startOffset": 22749,
-                    "endLine": 349,
+                    "startOffset": 22794,
+                    "endLine": 350,
                     "endColumn": 12,
-                    "endOffset": 22892
+                    "endOffset": 22937
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 329,
+                        "startLine": 332,
                         "startColumn": 4,
-                        "startOffset": 8869,
-                        "endLine": 332,
+                        "startOffset": 9091,
+                        "endLine": 335,
                         "endColumn": 12,
-                        "endOffset": 9015
+                        "endOffset": 9237
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 350,
+                    "startLine": 351,
                     "startColumn": 4,
-                    "startOffset": 22897,
-                    "endLine": 356,
+                    "startOffset": 22942,
+                    "endLine": 357,
                     "endColumn": 12,
-                    "endOffset": 23210
+                    "endOffset": 23255
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 200,
+                        "startLine": 203,
                         "startColumn": 4,
-                        "startOffset": 4720,
-                        "endLine": 206,
+                        "startOffset": 4942,
+                        "endLine": 209,
                         "endColumn": 12,
-                        "endOffset": 5039
+                        "endOffset": 5261
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 357,
+                    "startLine": 358,
                     "startColumn": 4,
-                    "startOffset": 23215,
-                    "endLine": 361,
+                    "startOffset": 23260,
+                    "endLine": 362,
                     "endColumn": 12,
-                    "endOffset": 23406
+                    "endOffset": 23451
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 272,
+                        "startLine": 275,
                         "startColumn": 4,
-                        "startOffset": 6983,
-                        "endLine": 276,
+                        "startOffset": 7205,
+                        "endLine": 279,
                         "endColumn": 12,
-                        "endOffset": 7178
+                        "endOffset": 7400
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 362,
+                    "startLine": 363,
                     "startColumn": 4,
-                    "startOffset": 23411,
-                    "endLine": 365,
+                    "startOffset": 23456,
+                    "endLine": 366,
                     "endColumn": 12,
-                    "endOffset": 23549
+                    "endOffset": 23594
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 278,
+                        "startLine": 281,
                         "startColumn": 4,
-                        "startOffset": 7201,
-                        "endLine": 281,
+                        "startOffset": 7423,
+                        "endLine": 284,
                         "endColumn": 12,
-                        "endOffset": 7342
+                        "endOffset": 7564
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 366,
+                    "startLine": 367,
                     "startColumn": 4,
-                    "startOffset": 23554,
-                    "endLine": 369,
+                    "startOffset": 23599,
+                    "endLine": 370,
                     "endColumn": 12,
-                    "endOffset": 23695
+                    "endOffset": 23740
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 344,
+                        "startLine": 347,
                         "startColumn": 4,
-                        "startOffset": 9376,
-                        "endLine": 347,
+                        "startOffset": 9598,
+                        "endLine": 350,
                         "endColumn": 12,
-                        "endOffset": 9520
+                        "endOffset": 9742
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 370,
+                    "startLine": 371,
                     "startColumn": 4,
-                    "startOffset": 23700,
-                    "endLine": 376,
+                    "startOffset": 23745,
+                    "endLine": 377,
                     "endColumn": 12,
-                    "endOffset": 24037
+                    "endOffset": 24082
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 396,
+                        "startLine": 399,
                         "startColumn": 4,
-                        "startOffset": 11211,
-                        "endLine": 402,
+                        "startOffset": 11433,
+                        "endLine": 405,
                         "endColumn": 12,
-                        "endOffset": 11554
+                        "endOffset": 11776
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 377,
+                    "startLine": 378,
                     "startColumn": 4,
-                    "startOffset": 24042,
-                    "endLine": 380,
+                    "startOffset": 24087,
+                    "endLine": 381,
                     "endColumn": 12,
-                    "endOffset": 24198
+                    "endOffset": 24243
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 190,
+                        "startLine": 193,
                         "startColumn": 4,
-                        "startOffset": 4384,
-                        "endLine": 193,
+                        "startOffset": 4606,
+                        "endLine": 196,
                         "endColumn": 12,
-                        "endOffset": 4543
+                        "endOffset": 4765
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 381,
+                    "startLine": 382,
                     "startColumn": 4,
-                    "startOffset": 24203,
-                    "endLine": 384,
-                    "endColumn": 12,
-                    "endOffset": 24357
+                    "startOffset": 24248,
+                    "endLine": 385,
+                    "endColumn": 8,
+                    "endOffset": 24388
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 364,
-                        "startColumn": 4,
-                        "startOffset": 10044,
-                        "endLine": 367,
-                        "endColumn": 12,
-                        "endOffset": 10201
+                        "startLine": 184,
+                        "startColumn": 0,
+                        "startOffset": 4285,
+                        "endLine": 187,
+                        "endColumn": 8,
+                        "endOffset": 4428
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 385,
+                    "startLine": 386,
                     "startColumn": 4,
-                    "startOffset": 24362,
+                    "startOffset": 24393,
                     "endLine": 389,
                     "endColumn": 12,
-                    "endOffset": 24632
+                    "endOffset": 24547
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 369,
+                        "startLine": 367,
                         "startColumn": 4,
-                        "startOffset": 10209,
-                        "endLine": 373,
+                        "startOffset": 10266,
+                        "endLine": 370,
                         "endColumn": 12,
-                        "endOffset": 10483
+                        "endOffset": 10423
                     }
                 }
             },
@@ -5419,41 +5438,41 @@
                 "to": {
                     "startLine": 390,
                     "startColumn": 4,
-                    "startOffset": 24637,
-                    "endLine": 393,
+                    "startOffset": 24552,
+                    "endLine": 394,
                     "endColumn": 12,
-                    "endOffset": 24777
+                    "endOffset": 24822
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 324,
+                        "startLine": 372,
                         "startColumn": 4,
-                        "startOffset": 8701,
-                        "endLine": 327,
+                        "startOffset": 10431,
+                        "endLine": 376,
                         "endColumn": 12,
-                        "endOffset": 8844
+                        "endOffset": 10705
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 394,
+                    "startLine": 395,
                     "startColumn": 4,
-                    "startOffset": 24782,
+                    "startOffset": 24827,
                     "endLine": 398,
                     "endColumn": 12,
-                    "endOffset": 24995
+                    "endOffset": 24967
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 414,
+                        "startLine": 327,
                         "startColumn": 4,
-                        "startOffset": 11904,
-                        "endLine": 418,
+                        "startOffset": 8923,
+                        "endLine": 330,
                         "endColumn": 12,
-                        "endOffset": 12121
+                        "endOffset": 9066
                     }
                 }
             },
@@ -5461,41 +5480,41 @@
                 "to": {
                     "startLine": 399,
                     "startColumn": 4,
-                    "startOffset": 25000,
-                    "endLine": 402,
+                    "startOffset": 24972,
+                    "endLine": 403,
                     "endColumn": 12,
-                    "endOffset": 25151
+                    "endOffset": 25185
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 417,
+                        "startColumn": 4,
+                        "startOffset": 12126,
+                        "endLine": 421,
+                        "endColumn": 12,
+                        "endOffset": 12343
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 404,
+                    "startColumn": 4,
+                    "startOffset": 25190,
+                    "endLine": 407,
+                    "endColumn": 12,
+                    "endOffset": 25341
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 98,
                         "startColumn": 4,
-                        "startOffset": 828,
+                        "startOffset": 907,
                         "endLine": 101,
                         "endColumn": 12,
-                        "endOffset": 982
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 403,
-                    "startColumn": 4,
-                    "startOffset": 25156,
-                    "endLine": 407,
-                    "endColumn": 12,
-                    "endOffset": 25376
-                },
-                "from": {
-                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 119,
-                        "startColumn": 4,
-                        "startOffset": 1726,
-                        "endLine": 123,
-                        "endColumn": 12,
-                        "endOffset": 1950
+                        "endOffset": 1061
                     }
                 }
             },
@@ -5503,472 +5522,493 @@
                 "to": {
                     "startLine": 408,
                     "startColumn": 4,
-                    "startOffset": 25381,
-                    "endLine": 411,
+                    "startOffset": 25346,
+                    "endLine": 412,
                     "endColumn": 12,
-                    "endOffset": 25523
+                    "endOffset": 25566
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 252,
+                        "startLine": 119,
                         "startColumn": 4,
-                        "startOffset": 6371,
-                        "endLine": 255,
+                        "startOffset": 1805,
+                        "endLine": 123,
                         "endColumn": 12,
-                        "endOffset": 6516
+                        "endOffset": 2029
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 412,
+                    "startLine": 413,
                     "startColumn": 4,
-                    "startOffset": 25528,
-                    "endLine": 415,
+                    "startOffset": 25571,
+                    "endLine": 416,
                     "endColumn": 12,
-                    "endOffset": 25688
+                    "endOffset": 25713
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 354,
+                        "startLine": 255,
                         "startColumn": 4,
-                        "startOffset": 9709,
-                        "endLine": 357,
+                        "startOffset": 6593,
+                        "endLine": 258,
                         "endColumn": 12,
-                        "endOffset": 9872
+                        "endOffset": 6738
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 416,
+                    "startLine": 417,
                     "startColumn": 4,
-                    "startOffset": 25693,
-                    "endLine": 419,
+                    "startOffset": 25718,
+                    "endLine": 420,
                     "endColumn": 12,
-                    "endOffset": 25836
+                    "endOffset": 25878
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 257,
+                        "startLine": 357,
                         "startColumn": 4,
-                        "startOffset": 6524,
-                        "endLine": 260,
+                        "startOffset": 9931,
+                        "endLine": 360,
                         "endColumn": 12,
-                        "endOffset": 6670
+                        "endOffset": 10094
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 420,
+                    "startLine": 421,
                     "startColumn": 4,
-                    "startOffset": 25841,
-                    "endLine": 425,
+                    "startOffset": 25883,
+                    "endLine": 424,
                     "endColumn": 12,
-                    "endOffset": 26133
+                    "endOffset": 26026
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 260,
+                        "startColumn": 4,
+                        "startOffset": 6746,
+                        "endLine": 263,
+                        "endColumn": 12,
+                        "endOffset": 6892
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 425,
+                    "startColumn": 4,
+                    "startOffset": 26031,
+                    "endLine": 430,
+                    "endColumn": 12,
+                    "endOffset": 26323
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 151,
                         "startColumn": 4,
-                        "startOffset": 2942,
+                        "startOffset": 3021,
                         "endLine": 156,
                         "endColumn": 12,
-                        "endOffset": 3239
+                        "endOffset": 3318
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 426,
+                    "startLine": 431,
                     "startColumn": 4,
-                    "startOffset": 26138,
-                    "endLine": 429,
+                    "startOffset": 26328,
+                    "endLine": 434,
                     "endColumn": 12,
-                    "endOffset": 26300
+                    "endOffset": 26490
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 170,
                         "startColumn": 4,
-                        "startOffset": 3719,
+                        "startOffset": 3798,
                         "endLine": 173,
                         "endColumn": 12,
-                        "endOffset": 3884
+                        "endOffset": 3963
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 430,
+                    "startLine": 435,
                     "startColumn": 4,
-                    "startOffset": 26305,
-                    "endLine": 433,
+                    "startOffset": 26495,
+                    "endLine": 438,
                     "endColumn": 12,
-                    "endOffset": 26464
+                    "endOffset": 26654
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 165,
                         "startColumn": 4,
-                        "startOffset": 3549,
+                        "startOffset": 3628,
                         "endLine": 168,
                         "endColumn": 12,
-                        "endOffset": 3711
+                        "endOffset": 3790
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 434,
+                    "startLine": 439,
                     "startColumn": 4,
-                    "startOffset": 26469,
-                    "endLine": 437,
+                    "startOffset": 26659,
+                    "endLine": 442,
                     "endColumn": 12,
-                    "endOffset": 26607
+                    "endOffset": 26797
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 339,
+                        "startLine": 342,
                         "startColumn": 4,
-                        "startOffset": 9206,
-                        "endLine": 342,
+                        "startOffset": 9428,
+                        "endLine": 345,
                         "endColumn": 12,
-                        "endOffset": 9347
+                        "endOffset": 9569
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 438,
+                    "startLine": 443,
                     "startColumn": 4,
-                    "startOffset": 26612,
-                    "endLine": 441,
+                    "startOffset": 26802,
+                    "endLine": 446,
                     "endColumn": 12,
-                    "endOffset": 26754
+                    "endOffset": 26944
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 409,
+                        "startLine": 412,
                         "startColumn": 4,
-                        "startOffset": 11751,
-                        "endLine": 412,
+                        "startOffset": 11973,
+                        "endLine": 415,
                         "endColumn": 12,
-                        "endOffset": 11896
+                        "endOffset": 12118
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 442,
+                    "startLine": 447,
                     "startColumn": 4,
-                    "startOffset": 26759,
-                    "endLine": 444,
+                    "startOffset": 26949,
+                    "endLine": 449,
                     "endColumn": 12,
-                    "endOffset": 26847
+                    "endOffset": 27037
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 248,
+                        "startLine": 251,
                         "startColumn": 4,
-                        "startOffset": 6273,
-                        "endLine": 250,
+                        "startOffset": 6495,
+                        "endLine": 253,
                         "endColumn": 12,
-                        "endOffset": 6363
+                        "endOffset": 6585
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 445,
+                    "startLine": 450,
                     "startColumn": 4,
-                    "startOffset": 26852,
-                    "endLine": 448,
+                    "startOffset": 27042,
+                    "endLine": 453,
                     "endColumn": 12,
-                    "endOffset": 27010
+                    "endOffset": 27200
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 195,
+                        "startLine": 198,
                         "startColumn": 4,
-                        "startOffset": 4551,
-                        "endLine": 198,
+                        "startOffset": 4773,
+                        "endLine": 201,
                         "endColumn": 12,
-                        "endOffset": 4712
+                        "endOffset": 4934
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 449,
+                    "startLine": 454,
                     "startColumn": 4,
-                    "startOffset": 27015,
-                    "endLine": 452,
+                    "startOffset": 27205,
+                    "endLine": 457,
                     "endColumn": 12,
-                    "endOffset": 27160
+                    "endOffset": 27350
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 208,
+                        "startLine": 211,
                         "startColumn": 4,
-                        "startOffset": 5047,
-                        "endLine": 211,
+                        "startOffset": 5269,
+                        "endLine": 214,
                         "endColumn": 12,
-                        "endOffset": 5195
+                        "endOffset": 5417
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 453,
+                    "startLine": 458,
                     "startColumn": 4,
-                    "startOffset": 27165,
-                    "endLine": 459,
+                    "startOffset": 27355,
+                    "endLine": 464,
                     "endColumn": 12,
-                    "endOffset": 27425
+                    "endOffset": 27615
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 283,
+                        "startLine": 286,
                         "startColumn": 4,
-                        "startOffset": 7371,
-                        "endLine": 289,
+                        "startOffset": 7593,
+                        "endLine": 292,
                         "endColumn": 12,
-                        "endOffset": 7637
+                        "endOffset": 7859
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 460,
+                    "startLine": 465,
                     "startColumn": 4,
-                    "startOffset": 27430,
-                    "endLine": 463,
+                    "startOffset": 27620,
+                    "endLine": 468,
                     "endColumn": 12,
-                    "endOffset": 27569
+                    "endOffset": 27759
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 243,
+                        "startLine": 246,
                         "startColumn": 4,
-                        "startOffset": 6123,
-                        "endLine": 246,
+                        "startOffset": 6345,
+                        "endLine": 249,
                         "endColumn": 12,
-                        "endOffset": 6265
+                        "endOffset": 6487
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 464,
+                    "startLine": 469,
                     "startColumn": 4,
-                    "startOffset": 27574,
-                    "endLine": 467,
+                    "startOffset": 27764,
+                    "endLine": 472,
                     "endColumn": 12,
-                    "endOffset": 27715
+                    "endOffset": 27905
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 228,
+                        "startLine": 231,
                         "startColumn": 4,
-                        "startOffset": 5664,
-                        "endLine": 231,
+                        "startOffset": 5886,
+                        "endLine": 234,
                         "endColumn": 12,
-                        "endOffset": 5808
+                        "endOffset": 6030
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 468,
+                    "startLine": 473,
                     "startColumn": 4,
-                    "startOffset": 27720,
-                    "endLine": 473,
+                    "startOffset": 27910,
+                    "endLine": 478,
                     "endColumn": 12,
-                    "endOffset": 28009
+                    "endOffset": 28199
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 158,
                         "startColumn": 4,
-                        "startOffset": 3247,
+                        "startOffset": 3326,
                         "endLine": 163,
                         "endColumn": 12,
-                        "endOffset": 3541
+                        "endOffset": 3620
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 474,
+                    "startLine": 479,
                     "startColumn": 4,
-                    "startOffset": 28014,
-                    "endLine": 477,
+                    "startOffset": 28204,
+                    "endLine": 482,
                     "endColumn": 12,
-                    "endOffset": 28152
+                    "endOffset": 28342
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 359,
+                        "startLine": 362,
                         "startColumn": 4,
-                        "startOffset": 9895,
-                        "endLine": 362,
+                        "startOffset": 10117,
+                        "endLine": 365,
                         "endColumn": 12,
-                        "endOffset": 10036
+                        "endOffset": 10258
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 478,
+                    "startLine": 483,
                     "startColumn": 4,
-                    "startOffset": 28157,
-                    "endLine": 481,
+                    "startOffset": 28347,
+                    "endLine": 486,
                     "endColumn": 12,
-                    "endOffset": 28297
+                    "endOffset": 28487
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 391,
+                        "startLine": 394,
                         "startColumn": 4,
-                        "startOffset": 11060,
-                        "endLine": 394,
+                        "startOffset": 11282,
+                        "endLine": 397,
                         "endColumn": 12,
-                        "endOffset": 11203
+                        "endOffset": 11425
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 482,
+                    "startLine": 487,
                     "startColumn": 4,
-                    "startOffset": 28302,
-                    "endLine": 485,
+                    "startOffset": 28492,
+                    "endLine": 490,
                     "endColumn": 12,
-                    "endOffset": 28442
+                    "endOffset": 28632
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 319,
+                        "startLine": 322,
                         "startColumn": 4,
-                        "startOffset": 8534,
-                        "endLine": 322,
+                        "startOffset": 8756,
+                        "endLine": 325,
                         "endColumn": 12,
-                        "endOffset": 8677
+                        "endOffset": 8899
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 486,
+                    "startLine": 491,
                     "startColumn": 4,
-                    "startOffset": 28447,
-                    "endLine": 489,
+                    "startOffset": 28637,
+                    "endLine": 494,
                     "endColumn": 12,
-                    "endOffset": 28589
+                    "endOffset": 28779
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 309,
+                        "startLine": 312,
                         "startColumn": 4,
-                        "startOffset": 8197,
-                        "endLine": 312,
+                        "startOffset": 8419,
+                        "endLine": 315,
                         "endColumn": 12,
-                        "endOffset": 8342
+                        "endOffset": 8564
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 490,
+                    "startLine": 495,
                     "startColumn": 4,
-                    "startOffset": 28594,
-                    "endLine": 493,
+                    "startOffset": 28784,
+                    "endLine": 498,
                     "endColumn": 12,
-                    "endOffset": 28752
+                    "endOffset": 28942
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 175,
                         "startColumn": 4,
-                        "startOffset": 3892,
+                        "startOffset": 3971,
                         "endLine": 178,
                         "endColumn": 12,
-                        "endOffset": 4053
+                        "endOffset": 4132
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 494,
+                    "startLine": 499,
                     "startColumn": 4,
-                    "startOffset": 28757,
-                    "endLine": 499,
+                    "startOffset": 28947,
+                    "endLine": 504,
                     "endColumn": 12,
-                    "endOffset": 29045
+                    "endOffset": 29235
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 112,
                         "startColumn": 4,
-                        "startOffset": 1425,
+                        "startOffset": 1504,
                         "endLine": 117,
                         "endColumn": 12,
-                        "endOffset": 1718
+                        "endOffset": 1797
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 500,
+                    "startLine": 505,
                     "startColumn": 4,
-                    "startOffset": 29050,
-                    "endLine": 503,
+                    "startOffset": 29240,
+                    "endLine": 508,
                     "endColumn": 12,
-                    "endOffset": 29194
+                    "endOffset": 29384
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 375,
+                        "startLine": 378,
                         "startColumn": 4,
-                        "startOffset": 10491,
-                        "endLine": 378,
+                        "startOffset": 10713,
+                        "endLine": 381,
                         "endColumn": 12,
-                        "endOffset": 10638
+                        "endOffset": 10860
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 504,
+                    "startLine": 509,
                     "startColumn": 4,
-                    "startOffset": 29199,
-                    "endLine": 509,
+                    "startOffset": 29389,
+                    "endLine": 514,
                     "endColumn": 12,
-                    "endOffset": 29489
+                    "endOffset": 29679
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -5984,12 +6024,12 @@
             },
             {
                 "to": {
-                    "startLine": 510,
+                    "startLine": 515,
                     "startColumn": 4,
-                    "startOffset": 29494,
-                    "endLine": 519,
+                    "startOffset": 29684,
+                    "endLine": 524,
                     "endColumn": 12,
-                    "endOffset": 29989
+                    "endOffset": 30179
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6005,12 +6045,12 @@
             },
             {
                 "to": {
-                    "startLine": 520,
+                    "startLine": 525,
                     "startColumn": 4,
-                    "startOffset": 29994,
-                    "endLine": 528,
+                    "startOffset": 30184,
+                    "endLine": 533,
                     "endColumn": 12,
-                    "endOffset": 30450
+                    "endOffset": 30640
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6026,12 +6066,12 @@
             },
             {
                 "to": {
-                    "startLine": 529,
+                    "startLine": 534,
                     "startColumn": 4,
-                    "startOffset": 30455,
-                    "endLine": 532,
+                    "startOffset": 30645,
+                    "endLine": 537,
                     "endColumn": 12,
-                    "endOffset": 30689
+                    "endOffset": 30879
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6047,12 +6087,12 @@
             },
             {
                 "to": {
-                    "startLine": 533,
+                    "startLine": 538,
                     "startColumn": 4,
-                    "startOffset": 30694,
-                    "endLine": 536,
+                    "startOffset": 30884,
+                    "endLine": 541,
                     "endColumn": 12,
-                    "endOffset": 30955
+                    "endOffset": 31145
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6068,12 +6108,12 @@
             },
             {
                 "to": {
-                    "startLine": 537,
+                    "startLine": 542,
                     "startColumn": 4,
-                    "startOffset": 30960,
-                    "endLine": 541,
+                    "startOffset": 31150,
+                    "endLine": 546,
                     "endColumn": 12,
-                    "endOffset": 31204
+                    "endOffset": 31394
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6089,12 +6129,12 @@
             },
             {
                 "to": {
-                    "startLine": 542,
+                    "startLine": 547,
                     "startColumn": 4,
-                    "startOffset": 31209,
-                    "endLine": 550,
+                    "startOffset": 31399,
+                    "endLine": 555,
                     "endColumn": 12,
-                    "endOffset": 31710
+                    "endOffset": 31900
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6110,12 +6150,12 @@
             },
             {
                 "to": {
-                    "startLine": 551,
+                    "startLine": 556,
                     "startColumn": 4,
-                    "startOffset": 31715,
-                    "endLine": 557,
+                    "startOffset": 31905,
+                    "endLine": 562,
                     "endColumn": 12,
-                    "endOffset": 32077
+                    "endOffset": 32267
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6131,12 +6171,12 @@
             },
             {
                 "to": {
-                    "startLine": 558,
+                    "startLine": 563,
                     "startColumn": 4,
-                    "startOffset": 32082,
-                    "endLine": 567,
+                    "startOffset": 32272,
+                    "endLine": 572,
                     "endColumn": 12,
-                    "endOffset": 32679
+                    "endOffset": 32869
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6152,12 +6192,12 @@
             },
             {
                 "to": {
-                    "startLine": 568,
+                    "startLine": 573,
                     "startColumn": 4,
-                    "startOffset": 32684,
-                    "endLine": 570,
+                    "startOffset": 32874,
+                    "endLine": 575,
                     "endColumn": 12,
-                    "endOffset": 32888
+                    "endOffset": 33078
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6173,12 +6213,12 @@
             },
             {
                 "to": {
-                    "startLine": 571,
+                    "startLine": 576,
                     "startColumn": 4,
-                    "startOffset": 32893,
-                    "endLine": 574,
+                    "startOffset": 33083,
+                    "endLine": 579,
                     "endColumn": 12,
-                    "endOffset": 33163
+                    "endOffset": 33353
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\umeng_socialize_style.xml",
@@ -6194,253 +6234,232 @@
             },
             {
                 "to": {
-                    "startLine": 575,
+                    "startLine": 580,
                     "startColumn": 4,
-                    "startOffset": 33168,
-                    "endLine": 578,
+                    "startOffset": 33358,
+                    "endLine": 583,
                     "endColumn": 12,
-                    "endOffset": 33326
+                    "endOffset": 33516
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 146,
                         "startColumn": 4,
-                        "startOffset": 2773,
+                        "startOffset": 2852,
                         "endLine": 149,
                         "endColumn": 12,
-                        "endOffset": 2934
+                        "endOffset": 3013
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 579,
+                    "startLine": 584,
                     "startColumn": 4,
-                    "startOffset": 33331,
-                    "endLine": 586,
+                    "startOffset": 33521,
+                    "endLine": 591,
                     "endColumn": 12,
-                    "endOffset": 33725
+                    "endOffset": 33915
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 103,
                         "startColumn": 4,
-                        "startOffset": 1016,
+                        "startOffset": 1095,
                         "endLine": 110,
                         "endColumn": 12,
-                        "endOffset": 1417
+                        "endOffset": 1496
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 587,
+                    "startLine": 592,
                     "startColumn": 4,
-                    "startOffset": 33730,
-                    "endLine": 593,
+                    "startOffset": 33920,
+                    "endLine": 598,
                     "endColumn": 12,
-                    "endOffset": 34043
+                    "endOffset": 34233
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 424,
+                        "startLine": 427,
                         "startColumn": 4,
-                        "startOffset": 12240,
-                        "endLine": 430,
+                        "startOffset": 12462,
+                        "endLine": 433,
                         "endColumn": 12,
-                        "endOffset": 12559
+                        "endOffset": 12781
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 594,
+                    "startLine": 599,
                     "startColumn": 4,
-                    "startOffset": 34048,
-                    "endLine": 597,
+                    "startOffset": 34238,
+                    "endLine": 602,
                     "endColumn": 12,
-                    "endOffset": 34189
+                    "endOffset": 34379
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 267,
+                        "startLine": 270,
                         "startColumn": 4,
-                        "startOffset": 6831,
-                        "endLine": 270,
+                        "startOffset": 7053,
+                        "endLine": 273,
                         "endColumn": 12,
-                        "endOffset": 6975
+                        "endOffset": 7197
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 598,
+                    "startLine": 603,
                     "startColumn": 4,
-                    "startOffset": 34194,
-                    "endLine": 601,
+                    "startOffset": 34384,
+                    "endLine": 606,
                     "endColumn": 12,
-                    "endOffset": 34335
+                    "endOffset": 34525
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 314,
+                        "startLine": 317,
                         "startColumn": 4,
-                        "startOffset": 8367,
-                        "endLine": 317,
+                        "startOffset": 8589,
+                        "endLine": 320,
                         "endColumn": 12,
-                        "endOffset": 8511
+                        "endOffset": 8733
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 602,
+                    "startLine": 607,
                     "startColumn": 4,
-                    "startOffset": 34340,
-                    "endLine": 605,
+                    "startOffset": 34530,
+                    "endLine": 610,
                     "endColumn": 12,
-                    "endOffset": 34481
+                    "endOffset": 34671
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 334,
+                        "startLine": 337,
                         "startColumn": 4,
-                        "startOffset": 9039,
-                        "endLine": 337,
+                        "startOffset": 9261,
+                        "endLine": 340,
                         "endColumn": 12,
-                        "endOffset": 9183
+                        "endOffset": 9405
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 606,
+                    "startLine": 611,
                     "startColumn": 4,
-                    "startOffset": 34486,
-                    "endLine": 609,
+                    "startOffset": 34676,
+                    "endLine": 614,
                     "endColumn": 12,
-                    "endOffset": 34630
+                    "endOffset": 34820
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 299,
+                        "startLine": 302,
                         "startColumn": 4,
-                        "startOffset": 7850,
-                        "endLine": 302,
+                        "startOffset": 8072,
+                        "endLine": 305,
                         "endColumn": 12,
-                        "endOffset": 7997
+                        "endOffset": 8219
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 610,
+                    "startLine": 615,
                     "startColumn": 4,
-                    "startOffset": 34635,
-                    "endLine": 613,
+                    "startOffset": 34825,
+                    "endLine": 618,
                     "endColumn": 12,
-                    "endOffset": 34779
+                    "endOffset": 34969
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 213,
+                        "startLine": 216,
                         "startColumn": 4,
-                        "startOffset": 5203,
-                        "endLine": 216,
+                        "startOffset": 5425,
+                        "endLine": 219,
                         "endColumn": 12,
-                        "endOffset": 5350
+                        "endOffset": 5572
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 614,
+                    "startLine": 619,
                     "startColumn": 4,
-                    "startOffset": 34784,
-                    "endLine": 617,
+                    "startOffset": 34974,
+                    "endLine": 622,
                     "endColumn": 12,
-                    "endOffset": 34923
+                    "endOffset": 35113
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 141,
                         "startColumn": 4,
-                        "startOffset": 2623,
+                        "startOffset": 2702,
                         "endLine": 144,
                         "endColumn": 12,
-                        "endOffset": 2765
+                        "endOffset": 2844
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 618,
+                    "startLine": 623,
                     "startColumn": 4,
-                    "startOffset": 34928,
-                    "endLine": 621,
+                    "startOffset": 35118,
+                    "endLine": 626,
                     "endColumn": 12,
-                    "endOffset": 35068
+                    "endOffset": 35258
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 180,
                         "startColumn": 4,
-                        "startOffset": 4061,
+                        "startOffset": 4140,
                         "endLine": 183,
                         "endColumn": 12,
-                        "endOffset": 4204
+                        "endOffset": 4283
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 622,
+                    "startLine": 627,
                     "startColumn": 4,
-                    "startOffset": 35073,
-                    "endLine": 624,
-                    "endColumn": 12,
-                    "endOffset": 35157
-                },
-                "from": {
-                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 295,
-                        "startColumn": 4,
-                        "startOffset": 7739,
-                        "endLine": 297,
-                        "endColumn": 12,
-                        "endOffset": 7825
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 625,
-                    "startColumn": 4,
-                    "startOffset": 35162,
+                    "startOffset": 35263,
                     "endLine": 629,
                     "endColumn": 12,
-                    "endOffset": 35386
+                    "endOffset": 35347
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 125,
+                        "startLine": 298,
                         "startColumn": 4,
-                        "startOffset": 1958,
-                        "endLine": 129,
+                        "startOffset": 7961,
+                        "endLine": 300,
                         "endColumn": 12,
-                        "endOffset": 2186
+                        "endOffset": 8047
                     }
                 }
             },
@@ -6448,104 +6467,104 @@
                 "to": {
                     "startLine": 630,
                     "startColumn": 4,
-                    "startOffset": 35391,
-                    "endLine": 633,
+                    "startOffset": 35352,
+                    "endLine": 634,
                     "endColumn": 12,
-                    "endOffset": 35528
+                    "endOffset": 35576
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 404,
+                        "startLine": 125,
                         "startColumn": 4,
-                        "startOffset": 11582,
-                        "endLine": 407,
+                        "startOffset": 2037,
+                        "endLine": 129,
                         "endColumn": 12,
-                        "endOffset": 11722
+                        "endOffset": 2265
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 634,
+                    "startLine": 635,
                     "startColumn": 4,
-                    "startOffset": 35533,
-                    "endLine": 637,
+                    "startOffset": 35581,
+                    "endLine": 638,
                     "endColumn": 12,
-                    "endOffset": 35673
+                    "endOffset": 35718
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 304,
+                        "startLine": 407,
                         "startColumn": 4,
-                        "startOffset": 8028,
-                        "endLine": 307,
+                        "startOffset": 11804,
+                        "endLine": 410,
                         "endColumn": 12,
-                        "endOffset": 8171
+                        "endOffset": 11944
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 638,
+                    "startLine": 639,
                     "startColumn": 4,
-                    "startOffset": 35678,
-                    "endLine": 641,
+                    "startOffset": 35723,
+                    "endLine": 642,
                     "endColumn": 12,
-                    "endOffset": 35839
+                    "endOffset": 35863
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 185,
+                        "startLine": 307,
                         "startColumn": 4,
-                        "startOffset": 4212,
-                        "endLine": 188,
+                        "startOffset": 8250,
+                        "endLine": 310,
                         "endColumn": 12,
-                        "endOffset": 4376
+                        "endOffset": 8393
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 642,
+                    "startLine": 643,
                     "startColumn": 4,
-                    "startOffset": 35844,
-                    "endLine": 647,
+                    "startOffset": 35868,
+                    "endLine": 646,
                     "endColumn": 12,
-                    "endOffset": 36158
+                    "endOffset": 36029
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 188,
+                        "startColumn": 4,
+                        "startOffset": 4434,
+                        "endLine": 191,
+                        "endColumn": 12,
+                        "endOffset": 4598
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 647,
+                    "startColumn": 4,
+                    "startOffset": 36034,
+                    "endLine": 652,
+                    "endColumn": 12,
+                    "endOffset": 36348
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 131,
                         "startColumn": 4,
-                        "startOffset": 2194,
+                        "startOffset": 2273,
                         "endLine": 136,
                         "endColumn": 12,
-                        "endOffset": 2513
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 648,
-                    "startColumn": 4,
-                    "startOffset": 36163,
-                    "endLine": 652,
-                    "endColumn": 12,
-                    "endOffset": 36377
-                },
-                "from": {
-                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 380,
-                        "startColumn": 4,
-                        "startOffset": 10646,
-                        "endLine": 384,
-                        "endColumn": 12,
-                        "endOffset": 10864
+                        "endOffset": 2592
                     }
                 }
             },
@@ -6553,104 +6572,125 @@
                 "to": {
                     "startLine": 653,
                     "startColumn": 4,
-                    "startOffset": 36382,
-                    "endLine": 656,
+                    "startOffset": 36353,
+                    "endLine": 657,
                     "endColumn": 12,
-                    "endOffset": 36524
+                    "endOffset": 36567
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 223,
+                        "startLine": 383,
                         "startColumn": 4,
-                        "startOffset": 5511,
-                        "endLine": 226,
+                        "startOffset": 10868,
+                        "endLine": 387,
                         "endColumn": 12,
-                        "endOffset": 5656
+                        "endOffset": 11086
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 657,
+                    "startLine": 658,
                     "startColumn": 4,
-                    "startOffset": 36529,
-                    "endLine": 660,
+                    "startOffset": 36572,
+                    "endLine": 661,
                     "endColumn": 12,
-                    "endOffset": 36672
+                    "endOffset": 36714
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 233,
+                        "startLine": 226,
                         "startColumn": 4,
-                        "startOffset": 5816,
-                        "endLine": 236,
+                        "startOffset": 5733,
+                        "endLine": 229,
                         "endColumn": 12,
-                        "endOffset": 5962
+                        "endOffset": 5878
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 661,
+                    "startLine": 662,
                     "startColumn": 4,
-                    "startOffset": 36677,
-                    "endLine": 663,
+                    "startOffset": 36719,
+                    "endLine": 665,
                     "endColumn": 12,
-                    "endOffset": 36761
+                    "endOffset": 36862
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 291,
+                        "startLine": 236,
                         "startColumn": 4,
-                        "startOffset": 7645,
-                        "endLine": 293,
+                        "startOffset": 6038,
+                        "endLine": 239,
                         "endColumn": 12,
-                        "endOffset": 7731
+                        "endOffset": 6184
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 664,
+                    "startLine": 666,
                     "startColumn": 4,
-                    "startOffset": 36766,
-                    "endLine": 667,
+                    "startOffset": 36867,
+                    "endLine": 668,
                     "endColumn": 12,
-                    "endOffset": 36908
+                    "endOffset": 36951
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 238,
+                        "startLine": 294,
                         "startColumn": 4,
-                        "startOffset": 5970,
-                        "endLine": 241,
+                        "startOffset": 7867,
+                        "endLine": 296,
                         "endColumn": 12,
-                        "endOffset": 6115
+                        "endOffset": 7953
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 668,
+                    "startLine": 669,
                     "startColumn": 4,
-                    "startOffset": 36913,
-                    "endLine": 671,
+                    "startOffset": 36956,
+                    "endLine": 672,
                     "endColumn": 12,
-                    "endOffset": 37051
+                    "endOffset": 37098
                 },
                 "from": {
                     "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
                     "position": {
-                        "startLine": 349,
+                        "startLine": 241,
                         "startColumn": 4,
-                        "startOffset": 9545,
-                        "endLine": 352,
+                        "startOffset": 6192,
+                        "endLine": 244,
                         "endColumn": 12,
-                        "endOffset": 9686
+                        "endOffset": 6337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 673,
+                    "startColumn": 4,
+                    "startOffset": 37103,
+                    "endLine": 676,
+                    "endColumn": 12,
+                    "endOffset": 37241
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 352,
+                        "startColumn": 4,
+                        "startOffset": 9767,
+                        "endLine": 355,
+                        "endColumn": 12,
+                        "endOffset": 9908
                     }
                 }
             }

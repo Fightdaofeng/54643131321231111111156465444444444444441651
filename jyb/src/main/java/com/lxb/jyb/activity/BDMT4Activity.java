@@ -49,7 +49,7 @@ public class BDMT4Activity extends Activity implements OnClickListener {
     private ArrayList<String> listString = new ArrayList<>();
     private ArrayList<String> listString2 = new ArrayList<>();
     private ListView ptlist, fwqlist;
-    private String jsonstr = "{\"account\":\"900179249\",\"password\":\"m5fednp\",\"broker\":\"GMI\",\"server\":\"GMI-Demo01\"}";
+    private String jsonstr = "{\"account\":\"900179430\",\"password\":\"0bxsdsw\",\"broker\":\"GMI\",\"server\":\"GMI-Demo01\"}";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,12 +79,10 @@ public class BDMT4Activity extends Activity implements OnClickListener {
         commit_btn = (Button) findViewById(R.id.commit_btn);
         ptlist = (ListView) findViewById(R.id.pt_list);
         fwqlist = (ListView) findViewById(R.id.fwq_lsit);
-        for (int i = 0; i < 10; i++) {
-            listString.add("平台" + i);
-            listString2.add("服务器" + i);
-        }
-        setListAdapter(listString, ptlist);
-        setListAdapter(listString2, fwqlist);
+        listString.add("GMI");
+        listString2.add("GMI-Demo01");
+        setListAdapter(listString, ptlist, 1);
+        setListAdapter(listString2, fwqlist, 2);
 
 
         edit_jypt.setOnClickListener(new OnClickListener() {
@@ -137,13 +135,18 @@ public class BDMT4Activity extends Activity implements OnClickListener {
         setOnclick();
     }
 
-    private void setListAdapter(final ArrayList<String> list, ListView listview) {
+    private void setListAdapter(final ArrayList<String> list, ListView listview, final int index) {
         adapter = new BDMT4LieBiaoListAdapter(list, BDMT4Activity.this);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(BDMT4Activity.this, "当前点击了" + list.get(position), Toast.LENGTH_LONG).show();
+//                Toast.makeText(BDMT4Activity.this, "当前点击了" + list.get(position), Toast.LENGTH_LONG).show();
+                if (index == 1) {
+                    edit_jypt.setText(listString.get(position));
+                } else if (index == 2) {
+                    edit_fwqdz.setText(listString2.get(position));
+                }
             }
         });
     }
@@ -164,15 +167,15 @@ public class BDMT4Activity extends Activity implements OnClickListener {
                 break;
 
             case R.id.commit_btn:
-                if (!checkText()) {
+                if (checkText()) {
                     userinfo = new BDMT4userinfo();
                     userinfo.setAccount(edit_username.getText().toString());
                     userinfo.setPassword(edit_userpwd.getText().toString());
                     userinfo.setBroker(edit_jypt.getText().toString());
                     userinfo.setServer(edit_fwqdz.getText().toString());
                     try {
-//                        object = new JSONObject(userinfo.toJSON().toString());
-                        object = new JSONObject(jsonstr);
+                        object = new JSONObject(userinfo.toJSON().toString());
+//                        object = new JSONObject(jsonstr);
                     } catch (JSONException e) {
 
                         e.printStackTrace();

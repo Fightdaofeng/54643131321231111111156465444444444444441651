@@ -1,19 +1,12 @@
 package com.lxb.jyb.activity.adapter;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Locale;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
-import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
@@ -22,7 +15,6 @@ import android.widget.TextView;
 
 import com.lxb.jyb.R;
 import com.lxb.jyb.bean.CalendarEntity;
-import com.lxb.jyb.tool.Accredit;
 import com.lxb.jyb.tool.MyClickListener;
 import com.lxb.jyb.util.Constants;
 import com.umeng.socialize.controller.UMServiceFactory;
@@ -40,6 +32,11 @@ import com.umeng.socialize.sso.SinaSsoHandler;
 import com.umeng.socialize.sso.TencentWBSsoHandler;
 import com.umeng.socialize.weixin.media.CircleShareContent;
 import com.umeng.socialize.weixin.media.WeiXinShareContent;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 public class NewListAdapter extends BaseAdapter {
 
@@ -176,6 +173,8 @@ public class NewListAdapter extends BaseAdapter {
 
             if (mItemList.get(position).getValue().length() < 1) {
                 holder.gongbu.setText("— —");
+                holder.settime.setVisibility(View.VISIBLE);
+                holder.time.setVisibility(View.GONE);
             } else {
                 holder.gongbu.setText(calendar.getValue());
                 holder.settime.setVisibility(View.GONE);
@@ -184,7 +183,6 @@ public class NewListAdapter extends BaseAdapter {
         } else {
             String string = sp.getString(mItemList.get(position).getBasicIndexId()
                     + "today", "1");
-            System.out.print("提醒时间:"+string);
             holder.gongbu.setText("— —");
 
             holder.settime.setVisibility(View.VISIBLE);

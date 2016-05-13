@@ -17,7 +17,7 @@ ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 uses-sdk
 ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [jyb:library:unspecified] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\jyb\library\unspecified\AndroidManifest.xml:7:5-9:40
+MERGED from [jyb:library:unspecified] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\jyb\library\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [jyb:mPChartLib:unspecified] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\jyb\mPChartLib\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:18:5-42

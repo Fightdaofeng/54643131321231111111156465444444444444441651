@@ -1,14 +1,7 @@
 package com.lxb.jyb.activity;
 
-import java.util.ArrayList;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -37,6 +30,11 @@ import com.lxb.jyb.bean.JYPZBean;
 import com.lxb.jyb.util.HttpConstant;
 import com.lxb.jyb.util.SetStatiColor;
 import com.lxb.jyb.util.SymbolUtil;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 public class SelJYPZActivity extends Activity implements OnClickListener {
 	private TextView top_title;
@@ -112,6 +110,7 @@ public class SelJYPZActivity extends Activity implements OnClickListener {
 			JYPZBean jypzBean = list2.get(position);
 			Intent intent = new Intent();
 			intent.putExtra("symbol", jypzBean.getCode());
+			intent.putExtra("name",jypzBean.getName());
 			SelJYPZActivity.this.setResult(202, intent);
 			SelJYPZActivity.this.finish();
 		}

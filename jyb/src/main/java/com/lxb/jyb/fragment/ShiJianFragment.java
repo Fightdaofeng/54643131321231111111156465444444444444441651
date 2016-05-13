@@ -246,10 +246,10 @@ getActivity().findViewById(R.id.zbshaixuan).setVisibility(View.GONE);
 			RadioButton rb = (RadioButton) mInflater.inflate(
 					R.layout.nav_radiogroup_item, null);
 			rb.setId(i);
-			Spannable spannable = new SpannableString(titles[i]);
-			spannable.setSpan(new AbsoluteSizeSpan(48), 0, 2,
-					Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-			rb.setText(spannable);
+//			Spannable spannable = new SpannableString(titles[i]);
+//			spannable.setSpan(new AbsoluteSizeSpan(48), 0, 2,
+//					Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+			rb.setText(titles[i]);
 			rb.setLayoutParams(new LayoutParams(indicatorWidth,
 					LayoutParams.MATCH_PARENT));
 			rg_nav_content.addView(rb);

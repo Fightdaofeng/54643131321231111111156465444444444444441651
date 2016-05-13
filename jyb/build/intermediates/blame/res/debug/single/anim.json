@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\exploded-aar\\jyb\\library\\unspecified\\res\\anim\\slide_in_from_top.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\anim\\anim_down.xml",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\anim\\anim_down.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\anim\\splash.xml",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\anim\\splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\anim\\anim_down.xml",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\anim\\anim_down.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\anim\\chatto_remove_anim.xml",

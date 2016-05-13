@@ -1,19 +1,9 @@
 package com.lxb.jyb.fragment;
 
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.SuppressLint;
 import android.app.ActionBar.LayoutParams;
-import android.app.AlertDialog.Builder;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.Context;
@@ -33,28 +23,26 @@ import android.view.View.MeasureSpec;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
 import com.android.volley.VolleyError;
-import com.android.volley.Request.Method;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.lxb.jyb.R;
 import com.lxb.jyb.activity.Activity_GuaDan;
 import com.lxb.jyb.activity.BDMT4Activity;
@@ -72,6 +60,16 @@ import com.lxb.jyb.tool.MyClickListener;
 import com.lxb.jyb.tool.TestUtil;
 import com.lxb.jyb.util.HttpConstant;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 我的账户
  *
@@ -83,10 +81,11 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
     private XCSlideMenu xcSlideMenu;
     private ImageView btnSwitch;
     private TextView menu1;
-    private LinearLayout pro, leftmune3, leftmune4;
-    private TextView create_tv, msg_tv, xycc_tv, lszj_tv, kaishi_ri,
+    private LinearLayout leftmune3, leftmune4, create_tv;
+    private RelativeLayout pro;
+    private TextView msg_tv, xycc_tv, lszj_tv, kaishi_ri,
             jiesu_riqi;
-
+    private ListView lszjlistview;
     private PopupWindow popu1, popu2, popu3;
     private LinearLayout xycc_lay, history_lay;
     private boolean isLeft = false;
@@ -97,10 +96,12 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
     private Calendar calendar;
     private DatePickerDialog dialog;
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
-    private XYchicangAdapter xyadapter;
+    private XYchicangAdapter xyadapter, lszjadapter;
     private MyListView listview;
     private RequestQueue queue;
     private int currentcount = 1;
+    private boolean yunxing = true;
+    private Refersh refersh;
     /**
      * 现有持仓
      */
@@ -119,10 +120,14 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
 
         queue = Volley.newRequestQueue(getActivity());
         initFindView();
-
+        createBView(1);
+        refersh = new Refersh();
         handler.sendEmptyMessage(5);
         initDefault();
-        new RequesCC().execute();
+        refersh.start();
+
+        handler.sendEmptyMessage(100);
+
 
         return view;
     }
@@ -139,7 +144,6 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
             switch (msg.what) {
                 case 1:
                     initList(currentcount);
-                    new Refersh().start();
                     break;
 
                 case 2:
@@ -149,9 +153,12 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
                     new RequestUserInfo().execute();
                     break;
                 case 6:
-                    createBView();
+                    createBView(2);
+                    handler.sendEmptyMessageDelayed(7, 3000);
                     break;
-
+                case 7:
+                    new RequestUserInfo().execute();
+                    break;
                 case 10:
                     new Thread(new Runnable() {
 
@@ -169,6 +176,9 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
                             });
                         }
                     }).start();
+                    break;
+                case 100:
+                    new RequestLszj().execute();
                     break;
             }
         }
@@ -196,13 +206,16 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
         @Override
         public void run() {
             super.run();
-            try {
-                handler.sendEmptyMessage(10);
-                sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+
+            while (yunxing) {
+                try {
+                    handler.sendEmptyMessage(10);
+                    sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                new RequesCC().execute();
             }
-            new RequesCC().execute();
         }
     }
 
@@ -223,51 +236,100 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
         }
     };
 
-    private void createBView() {
+    private void createBView(int in) {
         // System.out.println("宽度"+pro.getWidth());
+        if (null!=userInfo&&in==2) {
+            pro.setVisibility(View.VISIBLE);
+            view.findViewById(R.id.de_lay).setVisibility(View.GONE);
+            username_tv.setText(userInfo.getName());
+            lirun_tv.setText(userInfo.getProfit());
+            if ("-".equals(userInfo.getProfit().substring(0, 1))) {
+                lirun_tv.setTextColor(getActivity().getResources().getColor(R.color.green));
+            } else {
+                lirun_tv.setTextColor(getActivity().getResources().getColor(R.color.hq_red));
+            }
 
-        username_tv.setText(userInfo.getName());
-        lirun_tv.setText(userInfo.getProfit());
-        if ("-".equals(userInfo.getProfit().substring(0, 1))) {
-            lirun_tv.setTextColor(getActivity().getResources().getColor(R.color.green));
+            yu_tv.setText(userInfo.getBalance());
+            yybzj_tv.setText(userInfo.getMargin());
+
+            jingzhi_tv.setText(userInfo.getEquiety());
+
+            String str;
+            double jz = Double.parseDouble(userInfo.getEquiety());
+            double yy = Double.parseDouble(userInfo.getMargin());
+            int leftwei, rightwei;
+            int col;
+            int b;
+            if (yy == 0 || yy == 0.0) {
+                str = "保证金比例";
+                leftwei = 1;
+                rightwei = 0;
+                col = 1;
+            } else {
+                int bili = (int) ((jz / yy) * 100);
+                str = "保证金：" + bili + "%";
+                if (bili > 100) {
+                    leftwei = bili / 100;
+                    rightwei = 10 - leftwei;
+                } else {
+                    leftwei = 1;
+                    rightwei = 9;
+                }
+                if (bili > 500) {
+                    col = 1;
+                } else if (bili > 200) {
+                    col = 2;
+                } else {
+                    col = 3;
+                }
+            }
+
+
+            LinearLayout lLayout = new LinearLayout(this.getActivity());
+            LinearLayout.LayoutParams lLayoutlayoutParams = new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.MATCH_PARENT);
+            // lLayout.setBackgroundColor(R.color.huise);
+            lLayout.setLayoutParams(lLayoutlayoutParams);
+            lLayout.setBackgroundColor(getActivity().getResources().getColor(R.color.jd2));
+            TextView textView = new TextView(getActivity());
+            textView.setGravity(Gravity.CENTER);
+            LinearLayout.LayoutParams txtParams = new LinearLayout.LayoutParams(0,
+                    ViewGroup.LayoutParams.MATCH_PARENT, leftwei);
+            textView.setLayoutParams(txtParams);
+            int color = 0;
+            switch (col) {
+                case 1:
+                    textView.setBackgroundColor(Color.parseColor("#72D3FD"));
+                    break;
+                case 2:
+                    textView.setBackgroundColor(Color.parseColor("#E38E4A"));
+                    break;
+                case 3:
+                    textView.setBackgroundColor(Color.parseColor("#E34A4E"));
+                    break;
+            }
+            View view = new View(getActivity());
+            LinearLayout.LayoutParams viewParams = new LinearLayout.LayoutParams(0,
+                    ViewGroup.LayoutParams.MATCH_PARENT, rightwei);
+            view.setLayoutParams(viewParams);
+
+            lLayout.addView(textView);
+            lLayout.addView(view);
+            TextView textView1 = new TextView(getActivity());
+            textView1.setText(str);
+            textView1.setTextSize(18);
+            textView1.setTextColor(Color.parseColor("#ffffff"));
+            textView1.setGravity(Gravity.CENTER);
+            LinearLayout.LayoutParams viewParams2 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.MATCH_PARENT);
+            textView1.setLayoutParams(viewParams2);
+            pro.addView(lLayout);
+            pro.addView(textView1);
         } else {
-            lirun_tv.setTextColor(getActivity().getResources().getColor(R.color.hq_red));
+            pro.setVisibility(View.GONE);
+            view.findViewById(R.id.de_lay).setVisibility(View.VISIBLE);
         }
-
-        yu_tv.setText(userInfo.getBalance());
-        yybzj_tv.setText(userInfo.getMargin());
-        double balance = Double.parseDouble(userInfo.getBalance());
-        double profit = Double.parseDouble(userInfo.getProfit());
-        double jz = balance + profit;
-        jingzhi_tv.setText(jz + "");
-        LinearLayout lLayout = new LinearLayout(this.getActivity());
-        LinearLayout.LayoutParams lLayoutlayoutParams = new LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT);
-        // lLayout.setBackgroundColor(R.color.huise);
-        lLayout.setLayoutParams(lLayoutlayoutParams);
-        lLayout.setBackgroundColor(getActivity().getResources().getColor(R.color.jd2));
-        TextView textView = new TextView(getActivity());
-        textView.setText("保证金70%");
-        textView.setTextSize(18);
-        textView.setTextColor(Color.parseColor("#ffffff"));
-        textView.setGravity(Gravity.CENTER);
-
-        LinearLayout.LayoutParams txtParams = new LinearLayout.LayoutParams(0,
-                ViewGroup.LayoutParams.MATCH_PARENT, 7);
-
-        textView.setLayoutParams(txtParams);
-        textView.setBackgroundColor(Color.parseColor("#72D3FD"));
-
-        View view = new View(getActivity());
-        LinearLayout.LayoutParams viewParams = new LinearLayout.LayoutParams(0,
-                ViewGroup.LayoutParams.MATCH_PARENT, 3);
-        view.setLayoutParams(viewParams);
-
-        lLayout.addView(textView);
-        lLayout.addView(view);
-
-        pro.addView(lLayout);
 
     }
 
@@ -276,8 +338,8 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
         xcSlideMenu = (XCSlideMenu) view.findViewById(R.id.slideMenu);
         // menu1 = (TextView) view.findViewById(R.id.menu1);
         btnSwitch = (ImageView) view.findViewById(R.id.user_left);
-        pro = (LinearLayout) view.findViewById(R.id.spring_lay);
-        create_tv = (TextView) view.findViewById(R.id.create_tv);
+        pro = (RelativeLayout) view.findViewById(R.id.spring_lay);
+        create_tv = (LinearLayout) view.findViewById(R.id.create_tv);
         msg_tv = (TextView) view.findViewById(R.id.msg_tv);
         top_user = (LinearLayout) view.findViewById(R.id.top_user);
         view.findViewById(R.id.add_user).setOnClickListener(this);
@@ -336,8 +398,8 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
                             // TODO Auto-generated method stub
                             pc = TestUtil.getPC(orderSelect.getTicket());
                             getHttpData();
-                            if ("Market is closed".equals(info)) {
-                                Toast.makeText(Fragment_ZH.this.getActivity(), "该交易品种暂未开市！", Toast.LENGTH_LONG).show();
+                            if (!"".equals(info)) {
+                                Toast.makeText(Fragment_ZH.this.getActivity(), info, Toast.LENGTH_LONG).show();
                             } else {
                                 nowOrder.remove(position);
                                 xyadapter.setList(nowOrder);
@@ -593,6 +655,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
         final ImageView v2 = (ImageView) pp.findViewById(R.id.lszj_gou);
 
         if (index == 0) {
+            listview.setVisibility(View.VISIBLE);
             v1.setVisibility(View.VISIBLE);
             v2.setVisibility(View.GONE);
             lay1.setOnClickListener(new OnClickListener() {
@@ -623,6 +686,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
                 }
             });
         } else {
+            listview.setVisibility(View.GONE);
             v2.setVisibility(View.VISIBLE);
             v1.setVisibility(View.GONE);
             lay1.setOnClickListener(new OnClickListener() {
@@ -733,6 +797,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
                     String optString = response.optString("statusCode");
                     if (optString.equals("0")) {
                         nowOrder.clear();
+                        Log.i("现有持仓数据:", response.toString());
                         JSONArray array = response.optJSONArray("data");
                         for (int i = 0; i < array.length(); i++) {
                             JSONObject opt = array.optJSONObject(i);
@@ -792,12 +857,60 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
         }
     }
 
+    private void getPrice() {
+        JsonObjectRequest request = new JsonObjectRequest(Method.GET, HttpConstant.GETPRICE, null, new Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject jsonObject) {
+
+            }
+        }, new ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+
+            }
+        });
+    }
+
+    class RequestLszj extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+            JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Method.GET, HttpConstant.HISTORY_ORDER, null, new Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject jsonObject) {
+                    Log.i("历史战绩:", jsonObject.toString());
+                }
+            }, new ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError volleyError) {
+                    Log.i("历史战绩错误:", volleyError.toString());
+                }
+            }) {
+
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    HashMap<String, String> headers = new HashMap<>();
+                    headers.put("Accept", "application/json");
+                    headers.put("Content-Type",
+                            "application/json; charset=UTF-8");
+                    return headers;
+                }
+            };
+            queue.add(JsonObjectRequest);
+            return null;
+        }
+
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        yunxing = false;
+    }
 
     @Override
     public void onResume() {
         // TODO Auto-generated method stub
         handler.sendEmptyMessage(5);
-        new RequesCC().execute();
+        yunxing = true;
         super.onResume();
     }
 }

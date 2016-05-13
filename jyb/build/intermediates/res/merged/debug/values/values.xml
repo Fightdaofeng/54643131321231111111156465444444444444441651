@@ -268,6 +268,7 @@
     <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败…</string>
     <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
     <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
+    <string name="url_server">服务器地址</string>
     <string name="userpf">账户评分</string>
     <string name="wodezhanghu">我的账户</string>
     <string name="zixun">资讯</string>
@@ -379,6 +380,10 @@
         <item name="android:textSize">@dimen/text_size_14</item>
         <item name="android:textColor">#757575</item>
     </style>
+    <style name="fennxi_imgstyle">
+    <item name="android:layout_width">30dp</item>
+    <item name="android:layout_height">45dp</item>
+</style>
     <style name="gr_txth">
         <item name="android:textColor">#646464</item>
         <item name="android:textSize">@dimen/text_size_14</item>

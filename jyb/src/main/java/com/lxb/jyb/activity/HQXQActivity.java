@@ -1,5 +1,7 @@
 package com.lxb.jyb.activity;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.ActionBar.LayoutParams;
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +10,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.media.Image;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -55,7 +58,7 @@ public class HQXQActivity extends FragmentActivity implements OnClickListener {
     private DuoKongBiFragment dkbfragment;
     private JGYJFragment jgyjfragment;
     private Fragment_cuntou fragment_cuntou;
-    private TextView tv1, tv2, tv3, tv4, top_msg, create_tv;
+    private TextView tv1, tv2, tv3, tv4, top_msg, create_tv,top_title;
     private View v1, v2, v3, v4;
     private FragmentManager fragmentmanager;
     private FragmentTransaction fragmenttransaction;
@@ -159,6 +162,7 @@ public class HQXQActivity extends FragmentActivity implements OnClickListener {
     /**
      * 为第一个页面的控件赋值
      */
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void initViewText() {
 
         double close2 = data.getClose();
@@ -181,13 +185,13 @@ public class HQXQActivity extends FragmentActivity implements OnClickListener {
             newprice.setTextColor(getResources().getColor(R.color.green));
             zhangdie.setTextColor(getResources().getColor(R.color.green));
             zhangdiefu.setTextColor(getResources().getColor(R.color.green));
-            static_icon.setBackgroundDrawable(getResources().getDrawable(R.drawable.shangsanjia));
+            static_icon.setBackground(getResources().getDrawable(R.drawable.shangsanjia));
         } else {
             percent = "+" + percent;
             newprice.setTextColor(getResources().getColor(R.color.hq_red));
             zhangdie.setTextColor(getResources().getColor(R.color.hq_red));
             zhangdiefu.setTextColor(getResources().getColor(R.color.hq_red));
-            static_icon.setBackgroundDrawable(getResources().getDrawable(R.drawable.shangsanjiao));
+            static_icon.setBackground(getResources().getDrawable(R.drawable.shangsanjiao));
         }
         zhangdiefu.setText(percent + "%");
         // 最新价 newPrice
@@ -248,6 +252,8 @@ public class HQXQActivity extends FragmentActivity implements OnClickListener {
         top_msg.setOnClickListener(this);
         findViewById(R.id.top_return).setOnClickListener(this);
 
+        top_title=(TextView)findViewById(R.id.top_title);
+        top_title.setText(name);
 
         newprice = (TextView) findViewById(R.id.newprice);
         zhangdie = (TextView) findViewById(R.id.zhangdie);
@@ -419,6 +425,7 @@ public class HQXQActivity extends FragmentActivity implements OnClickListener {
         defEditor.commit();
     }
 
+    @SuppressLint("NewApi")
     private void initPopupWindow() {
         // TODO Auto-generated method stub
         LayoutInflater inflater = (LayoutInflater) this
