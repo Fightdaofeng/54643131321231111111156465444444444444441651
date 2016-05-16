@@ -1,6 +1,7 @@
 package com.lxb.jyb.fragment;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.ActionBar.LayoutParams;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -11,6 +12,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -35,6 +37,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -141,6 +144,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
 
     Handler handler = new Handler() {
         public void handleMessage(android.os.Message msg) {
+            queue.cancelAll(Fragment_ZH.this.getActivity());
             switch (msg.what) {
                 case 1:
                     initList(currentcount);
@@ -153,11 +157,12 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
                     new RequestUserInfo().execute();
                     break;
                 case 6:
+                    queue.cancelAll(Fragment_ZH.this.getActivity());
                     createBView(2);
-                    handler.sendEmptyMessageDelayed(7, 3000);
+                    handler.sendEmptyMessageDelayed(5, 3000);
                     break;
                 case 7:
-                    new RequestUserInfo().execute();
+                    queue.start();
                     break;
                 case 10:
                     new Thread(new Runnable() {
@@ -238,7 +243,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
 
     private void createBView(int in) {
         // System.out.println("宽度"+pro.getWidth());
-        if (null!=userInfo&&in==2) {
+        if (null != userInfo && in == 2) {
             pro.setVisibility(View.VISIBLE);
             view.findViewById(R.id.de_lay).setVisibility(View.GONE);
             username_tv.setText(userInfo.getName());
@@ -730,6 +735,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
     private void initPopupWindow() {
         // TODO Auto-generated method stub
         LayoutInflater inflater = (LayoutInflater) this.getActivity()
@@ -821,6 +827,10 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
 
                 }
             });
+            request.setRetryPolicy(new DefaultRetryPolicy(3000,//
+                    // 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+                    DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             queue.add(request);
             return null;
         }
@@ -852,6 +862,10 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
 
                 }
             });
+            JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000,//
+                    // 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+                    DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             queue.add(JsonObjectRequest);
             return null;
         }
@@ -872,8 +886,10 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
     }
 
     class RequestLszj extends AsyncTask<Void, Void, Void> {
+
         @Override
         protected Void doInBackground(Void... params) {
+
             JsonObjectRequest JsonObjectRequest = new JsonObjectRequest(Method.GET, HttpConstant.HISTORY_ORDER, null, new Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject jsonObject) {
@@ -894,6 +910,10 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
                     return headers;
                 }
             };
+            JsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(3000,//
+                    // 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+                    DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+                    DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             queue.add(JsonObjectRequest);
             return null;
         }
