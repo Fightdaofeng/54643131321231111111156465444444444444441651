@@ -1,8 +1,6 @@
 package com.lxb.jyb.util;
 
 public class Constants {
-	public static final int REQUESTCODE = 100;
-	public static final int RESULTCODE = 200;
 	public static final String DESCRIPTOR = "com.umeng.share";
 
 	private static final String TIPS = "请移步官方网站 ";

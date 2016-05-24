@@ -48,7 +48,15 @@ public class HttpConstant {
     /**
      * 注册接口
      */
-    public static final String REG = "http://139.196.50.57:8090/hongTaoCase/regios?";
+//    public static final String REG = "http://139.196.50.57:8090/hongTaoCase/regios?";
+    public static final String REGISTERHOST = "http://172.16.3.50:80/business-user/resources/userinfo/register";
+
+    /**登录接口*/
+    public static final String LOGINHOST="http://172.16.3.50:80/business-user/resources/userinfo/login";
+    /**
+     * 获取验证码接口
+     */
+    public static final String GETLOGINCODE = "http://172.16.3.50/business-user/resources/userinfo/getCode?phone=";
     /**
      * 行情接口 http://pull.api.fxgold.com/api/r?products=PMAU,PMHKAUYH
      */
@@ -58,6 +66,12 @@ public class HttpConstant {
      * 行情详情页面webview接口
      */
     public static final String HQ_WEBHOST = "http://hq.fxgold.com/realtimeChart?symbol=";
+    /**
+     * 行情K线图HTML
+     */
+    public static final String HQ_KLINEWEB = "http://hq.fxgold.com/chart?symbol=";
+
+    public static final String ENDSTR = "&interval=";
     /**
      * 行情市场接口
      */
@@ -85,7 +99,7 @@ public class HttpConstant {
     // 1444737670025&to=1444737670025";
     public static final String END_KLINE = "http://pull.api.fxgold.com/api/r?products=";
 
-    public static final String HEAD = "http://172.16.3.50:8080/business-trade/";
+    public static final String HEAD = "http://172.16.3.50:8090/business-trade/";
 
     /**
      * 创建订单(开仓)

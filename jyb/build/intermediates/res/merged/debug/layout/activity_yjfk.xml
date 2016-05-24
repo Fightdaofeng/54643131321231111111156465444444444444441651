@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/v_layout" >
+    style="@style/v_layout">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <include layout="@layout/top_lay" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        android:orientation="vertical" >
+        android:layout_height="wrap_content"
+        android:background="@color/fwhite"
+        android:orientation="vertical">
 
         <View
             style="@style/x_line"
@@ -21,6 +21,7 @@
             android:background="@color/nolan" />
 
         <EditText
+            android:id="@+id/edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@null"
@@ -28,28 +29,39 @@
             android:hint="欢迎提给我们您遇到的系统问题或功能建议~~~谢谢!"
             android:minLines="8"
             android:padding="@dimen/pad_10"
-            android:textColor="#50646464"
+            android:textColor="#646464"
+            android:textColorHint="#50646464"
             android:textSize="@dimen/text_size_14" />
 
         <View style="@style/x_line" />
 
+
         <LinearLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="@dimen/pad_20" >
+            android:gravity="center_vertical"
+            android:padding="@dimen/pad_20">
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:background="@drawable/chuanzaopian" />
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/tianjiax" />
+            <GridView
+                android:scrollbars="none"
+                android:id="@+id/img_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:verticalSpacing="@dimen/pad_20"
+                android:horizontalSpacing="@dimen/pad_20"
+                android:numColumns="3" />
+
+            <!--   <ImageView
+                   android:id="@+id/tianjia_img"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:layout_marginLeft="20dp"
+                   android:background="@drawable/tianjiax" />
+-->
         </LinearLayout>
+
 
         <View
             style="@style/x_line"

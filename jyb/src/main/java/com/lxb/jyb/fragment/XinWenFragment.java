@@ -1,22 +1,5 @@
 package com.lxb.jyb.fragment;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -33,7 +16,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -47,14 +29,28 @@ import com.lxb.jyb.MyApplication;
 import com.lxb.jyb.R;
 import com.lxb.jyb.activity.XWSerchActivity;
 import com.lxb.jyb.activity.XinWenWebActivity;
-import com.lxb.jyb.activity.adapter.DingyueTextAdapter;
 import com.lxb.jyb.activity.adapter.Fragment_All_Adapter;
 import com.lxb.jyb.activity.view.Advertisement;
-import com.lxb.jyb.bean.CalSXItem;
 import com.lxb.jyb.bean.NewsBean;
-import com.lxb.jyb.tool.MyClickListener;
 import com.lxb.jyb.tool.NetworkCenter;
 import com.lxb.jyb.util.HttpConstant;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class XinWenFragment extends Fragment implements OnClickListener {
     private View view;
@@ -229,10 +225,10 @@ public class XinWenFragment extends Fragment implements OnClickListener {
         flash_ad = (LinearLayout) headview.findViewById(R.id.home_ad);
 
         ArrayList<String> array = new ArrayList<String>();
-        array.add("http://img.taodiantong.cn/v55183/infoimg/2013-07/130720115322ky.jpg");
-        array.add("http://pic30.nipic.com/20130626/8174275_085522448172_2.jpg");
-        array.add("http://pic18.nipic.com/20111215/577405_080531548148_2.jpg");
-        array.add("http://pic15.nipic.com/20110722/2912365_092519919000_2.jpg");
+        array.add("http://www.fxgold.com/repo/image/20160516/1463384618102180603.png");
+        array.add("http://www.fxgold.com/repo/image/20160516/1463358973900520032.png");
+        array.add("http://www.fxgold.com/repo/image/20160516/1463362169581164211.png");
+        array.add("http://www.fxgold.com/repo/image/20160516/1463380121158860968.png");
         View initView = new Advertisement(getActivity(), true,
                 LayoutInflater.from(getActivity()), 3000)
                 .initView(array);

@@ -45,9 +45,26 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="com.lxb.jyb.activity2.ImageList"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity2.AlbumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.lxb.jyb.activity.SetTimeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.KLineActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+
+            android:screenOrientation="landscape" >
         </activity>
         <activity
             android:name="com.lxb.jyb.activity.CustomDialogActivity"
@@ -93,6 +110,12 @@
         </activity>
         <activity
             android:name="com.lxb.jyb.activity.Activity_WDSC"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.XieYiActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" >
         </activity>

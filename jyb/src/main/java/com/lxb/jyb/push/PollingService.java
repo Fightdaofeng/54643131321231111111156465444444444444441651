@@ -147,14 +147,14 @@ public class PollingService extends Service {
 				for (int i = 0; i < arrayList.size(); i++) {
 					String string = sp2.getString(arrayList.get(i), "kong");
 					if (!"".equals(string)) {
-						System.out.println(string);
+//						System.out.println(string);
 						try {
 							Tip paseTip = TipPase.paseTip(string);
 
 							if (currentTime.equals(paseTip.getTime().substring(
 									0, paseTip.getTime().length() - 3))) {
 								showNotification(paseTip);
-								System.out.println("New message!");
+//								System.out.println("New message!");
 								// 清除文件中保存的数据
 								editor2.putString(arrayList.get(i), "");
 								editor2.commit();
@@ -176,14 +176,14 @@ public class PollingService extends Service {
 					}
 				}
 			}
-			System.out.println("Polling...");
+//			System.out.println("Polling...");
 		}
 	}
 
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		System.out.println("Service:onDestroy");
+//		System.out.println("Service:onDestroy");
 	}
 
 }

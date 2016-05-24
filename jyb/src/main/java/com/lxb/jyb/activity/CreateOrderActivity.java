@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -616,6 +617,10 @@ public class CreateOrderActivity extends FragmentActivity implements
             e.printStackTrace();
         }
         // 超时时间10s,最大重连次数2次
+        request.setRetryPolicy(new DefaultRetryPolicy(3000,//
+                // 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         queue.add(request);
     }
 
@@ -635,6 +640,10 @@ public class CreateOrderActivity extends FragmentActivity implements
                 Log.e("请求错误：", volleyError.toString());
             }
         });
+        request.setRetryPolicy(new DefaultRetryPolicy(3000,//
+                // 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         queue.add(request);
     }
 }

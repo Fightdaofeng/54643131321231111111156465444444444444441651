@@ -7,8 +7,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,13 +15,13 @@ import android.os.Message;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.MeasureSpec;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -39,7 +37,6 @@ import com.android.volley.toolbox.Volley;
 import com.lxb.jyb.R;
 import com.lxb.jyb.bean.HQData;
 import com.lxb.jyb.fragment.DuoKongBiFragment;
-import com.lxb.jyb.fragment.Fragment_ZH;
 import com.lxb.jyb.fragment.Fragment_cuntou;
 import com.lxb.jyb.fragment.JGYJFragment;
 import com.lxb.jyb.fragment.TuBiaoFragment;
@@ -445,7 +442,7 @@ public class HQXQActivity extends FragmentActivity implements OnClickListener {
         // (location[0]+create_tv.getWidth()/2)-popupWidth/2,
         // location[1]+popupHeight);
         popu1.showAsDropDown(pp, (location[0] + create_tv.getWidth() / 2)
-                - popupWidth / 2, location[1] + 60, Gravity.NO_GRAVITY);
+                - popupWidth / 2, location[1] + create_tv.getHeight(), Gravity.NO_GRAVITY);
         pp.setOnTouchListener(new OnTouchListener() {
 
             @Override

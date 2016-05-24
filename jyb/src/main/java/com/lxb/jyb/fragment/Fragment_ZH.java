@@ -302,7 +302,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
             LinearLayout.LayoutParams txtParams = new LinearLayout.LayoutParams(0,
                     ViewGroup.LayoutParams.MATCH_PARENT, leftwei);
             textView.setLayoutParams(txtParams);
-            int color = 0;
+
             switch (col) {
                 case 1:
                     textView.setBackgroundColor(Color.parseColor("#72D3FD"));
@@ -753,7 +753,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
         create_tv.getLocationOnScreen(location);
 
         popu1.showAsDropDown(pp, (location[0] + create_tv.getWidth() / 2)
-                - popupWidth / 2, location[1] + 60, Gravity.NO_GRAVITY);
+                - popupWidth / 2, location[1]+ create_tv.getHeight(), Gravity.NO_GRAVITY);
         pp.setOnTouchListener(new OnTouchListener() {
 
             @Override
@@ -924,6 +924,7 @@ public class Fragment_ZH extends Fragment implements OnClickListener {
     public void onStop() {
         super.onStop();
         yunxing = false;
+        queue.cancelAll(this.getActivity());
     }
 
     @Override

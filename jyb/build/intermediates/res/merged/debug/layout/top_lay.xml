@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_size_15"
+            android:textSize="@dimen/text_size_12"
             android:visibility="invisible" />
 
         <TextView

@@ -2,10 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/ppbj"
     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/sex_man"
+        android:textSize="@dimen/text_size_18"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
@@ -14,6 +16,7 @@
     <View style="@style/x_line" />
 
     <TextView
+        android:textSize="@dimen/text_size_18"
         android:id="@+id/sex_woman"
         android:layout_width="match_parent"
         android:layout_height="50dp"

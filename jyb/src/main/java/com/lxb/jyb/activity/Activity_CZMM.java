@@ -1,20 +1,20 @@
 package com.lxb.jyb.activity;
 
-import com.lxb.jyb.R;
-import com.lxb.jyb.tool.Soft;
-import com.lxb.jyb.util.Constants;
-import com.lxb.jyb.util.SetStatiColor;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.lxb.jyb.R;
+import com.lxb.jyb.tool.IntentCode;
+import com.lxb.jyb.tool.Soft;
+import com.lxb.jyb.util.SetStatiColor;
 
 public class Activity_CZMM extends Activity implements OnClickListener {
 	private TextView top_title;
@@ -59,7 +59,7 @@ public class Activity_CZMM extends Activity implements OnClickListener {
 			break;
 
 		case R.id.commit_btn:
-			this.setResult(Constants.RESULTCODE);
+			this.setResult(IntentCode.RESULTCODE);
 			this.finish();
 			break;
 		case R.id.yj_k:

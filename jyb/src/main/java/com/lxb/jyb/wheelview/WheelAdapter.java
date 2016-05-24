@@ -26,6 +26,7 @@ public interface WheelAdapter {
 	 * Gets items count
 	 * @return the count of wheel items
 	 */
+
 	public int getItemsCount();
 	
 	/**

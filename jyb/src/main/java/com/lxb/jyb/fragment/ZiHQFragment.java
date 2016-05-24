@@ -1,15 +1,5 @@
 package com.lxb.jyb.fragment;
 
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
@@ -39,6 +29,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
@@ -58,6 +49,16 @@ import com.lxb.jyb.util.HttpConstant;
 import com.lxb.jyb.util.pase.HQDataParse;
 import com.lxb.jyb.util.pase.HQListDataParse;
 import com.nineoldandroids.view.ViewHelper;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ZiHQFragment extends BaseLazyFragment {
     protected WeakReference<View> weakView;
@@ -385,10 +386,10 @@ public class ZiHQFragment extends BaseLazyFragment {
                     handler.sendEmptyMessage(5);
                 }
             });
-            // arrayRequest.setRetryPolicy(new DefaultRetryPolicy(3000,//
-            // // 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
-            // DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
-            // DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+             arrayRequest.setRetryPolicy(new DefaultRetryPolicy(3000,//
+             // 默认超时时间，应设置一个稍微大点儿的，例如本处的500000
+             DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+             DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
             quene.add(arrayRequest);
             return null;
         }

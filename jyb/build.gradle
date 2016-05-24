@@ -9,9 +9,7 @@ android {
         minSdkVersion 11
         targetSdkVersion 21
     }
-    dexOptions {
-        javaMaxHeapSize "2g"
-    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -27,6 +25,7 @@ dependencies {
     compile 'com.android.support:support-v4:21.0.3'
     compile files('libs/alibaba.jar')
     compile files('libs/andbase.jar')
+
     compile files('libs/javabase64-1.3.1.jar')
     compile files('libs/jpush-sdk-release1.8.1.jar')
     compile files('libs/jxl.jar')
@@ -40,7 +39,7 @@ dependencies {
     compile files('libs/SocialSDK_facebook_2.jar')
     compile files('libs/SocialSDK_instagram.jar')
     compile files('libs/SocialSDK_laiwang_1.jar')
-    compile files('libs/SocialSDK_laiwang_2.jar')
+//    compile files('libs/SocialSDshaK_laiwang_2.jar')
     compile files('libs/SocialSDK_like.jar')
     compile files('libs/SocialSDK_linkedin.jar')
     compile files('libs/SocialSDK_pinterest.jar')
@@ -68,5 +67,5 @@ dependencies {
     compile files('libs/universal-image-loader-1.9.5.jar')
     compile files('libs/Volley.jar')
     compile files('libs/xUtils-2.6.14.jar')
-    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+
 }

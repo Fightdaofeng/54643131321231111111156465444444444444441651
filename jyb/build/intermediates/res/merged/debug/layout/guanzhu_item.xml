@@ -8,8 +8,9 @@
         android:layout_width="65dp"
         android:layout_height="30dp"
         android:gravity="center"
-        android:background="@drawable/btn1"
+        android:background="@drawable/ppbtn_selected"
         android:text="美元"
+        android:textColor="@drawable/pptt_selected"
         android:textSize="@dimen/text_size_16" />
 
 </LinearLayout>

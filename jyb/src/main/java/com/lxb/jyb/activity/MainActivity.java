@@ -1,7 +1,5 @@
 package com.lxb.jyb.activity;
 
-import java.util.List;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -36,6 +34,9 @@ import com.lxb.jyb.fragment.ZhiBoFragment;
 import com.lxb.jyb.push.PollingService;
 import com.lxb.jyb.push.PollingUtils;
 import com.lxb.jyb.util.SetStatiColor;
+import com.umeng.analytics.MobclickAgent;
+
+import java.util.List;
 
 public class MainActivity extends FragmentActivity implements OnClickListener {
     private SharedPreferences sp;
@@ -83,7 +84,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
         application.addAct(this);
         initView();
         fragmentmanager = getSupportFragmentManager();
-        setTabSelection(2);
+        setTabSelection(0);
         content = this;
         initJPush();
         // new Exit();
@@ -108,6 +109,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
     protected void onResume() {
         // TODO Auto-generated method stub
         super.onResume();
+        MobclickAgent.onResume(this);
         // JPushInterface.onResume(this);
         isForeground = true;
 
@@ -117,6 +119,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
     protected void onPause() {
         // TODO Auto-generated method stub
         super.onPause();
+        MobclickAgent.onPause(this);
         // JPushInterface.onPause(this);
         isForeground = false;
 
