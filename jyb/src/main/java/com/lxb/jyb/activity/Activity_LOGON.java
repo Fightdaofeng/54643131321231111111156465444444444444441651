@@ -100,10 +100,11 @@ public class Activity_LOGON extends Activity implements OnClickListener {
                     String password = pas_dit.getText().toString();
                     switch (loginstatus.getString("statusCode")) {
 
-                        case "ok":
+                        case "0":
                             editor.putString("phone", phone);
+                            editor.putString("userid", loginstatus.getString("userId"));
                             editor.putString("password", password);
-                            editor.putBoolean("islogin",true);
+                            editor.putBoolean("islogin", true);
                             editor.commit();
                             Intent intent = new Intent();
                             intent.putExtra("phone", phone);
@@ -111,8 +112,11 @@ public class Activity_LOGON extends Activity implements OnClickListener {
                             Activity_LOGON.this.setResult(IntentCode.RESULTCODE, intent);
                             Activity_LOGON.this.finish();
                             break;
-                        case "error":
-                            Toast.makeText(Activity_LOGON.this, "登录失败!", Toast.LENGTH_LONG).show();
+                        case "1":
+                            Toast.makeText(Activity_LOGON.this, "密码错误!", Toast.LENGTH_LONG).show();
+                            break;
+                        case "2":
+                            Toast.makeText(Activity_LOGON.this, "用户不存在!", Toast.LENGTH_LONG).show();
                             break;
                     }
                     break;
@@ -160,8 +164,12 @@ public class Activity_LOGON extends Activity implements OnClickListener {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
+                    if (!logon_phone.getText().toString().isEmpty()) {
+                        phone_del.setVisibility(View.VISIBLE);
 
+                    }
                 } else {
+                    phone_del.setVisibility(View.GONE);
                     String phone = logon_phone.getText().toString();
                     if (ValidatorUtil.isMobile(phone)) {
                         tishi_tv.setText("");
@@ -175,8 +183,11 @@ public class Activity_LOGON extends Activity implements OnClickListener {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-
+                    if(!pas_dit.getText().toString().isEmpty()){
+                        pas_del.setVisibility(View.VISIBLE);
+                    }
                 } else {
+                    pas_del.setVisibility(View.GONE);
                     String password = pas_dit.getText().toString();
                     if (ValidatorUtil.isPassword(password)) {
                         tishi_tv.setText("");
@@ -233,7 +244,7 @@ public class Activity_LOGON extends Activity implements OnClickListener {
                 break;
 
             case R.id.to_login:
-                startActivity(new Intent(this, Activity_LOGIN.class));
+                startActivityForResult(new Intent(this, Activity_LOGIN.class), IntentCode.REQUESTCODE);
                 break;
             case R.id.logon_btn:
                 if (ValidatorUtil.isMobile(logon_phone.getText().toString()) && ValidatorUtil.isPassword(pas_dit.getText().toString())) {
@@ -299,15 +310,7 @@ public class Activity_LOGON extends Activity implements OnClickListener {
             String url = HttpConstant.LOGINHOST + "?loginname=" + phone + "&password=" + password;
             HttpClient httpClient = new DefaultHttpClient();
             HttpGet httpPost = new HttpGet(url);
-
             try {
-                // 为httpPost设置HttpEntity对象
-//                List<NameValuePair> parameters = new ArrayList<NameValuePair>();
-//                parameters.add(new BasicNameValuePair("loginname", phone));
-//                parameters.add(new BasicNameValuePair("password", password));
-//                HttpEntity entity = new UrlEncodedFormEntity(parameters);
-//                httpPost.setEntity(entity);
-                // httpClient执行httpPost表单提交
                 HttpResponse response = httpClient.execute(httpPost);
                 // 得到服务器响应实体对象
                 HttpEntity responseEntity = response.getEntity();
@@ -334,11 +337,12 @@ public class Activity_LOGON extends Activity implements OnClickListener {
 
     }
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==IntentCode.REQUESTCODE){
-            if(resultCode==IntentCode.RESULTCODE){
+        if (requestCode == IntentCode.REQUESTCODE) {
+            if (resultCode == IntentCode.RESULTCODE) {
                 this.setResult(IntentCode.RESULTCODE);
                 this.finish();
             }

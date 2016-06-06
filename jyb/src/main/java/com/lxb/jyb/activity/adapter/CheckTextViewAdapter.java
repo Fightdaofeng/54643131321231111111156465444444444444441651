@@ -71,7 +71,7 @@ public class CheckTextViewAdapter extends BaseAdapter {
 		textview.setGravity(Gravity.CENTER);
 		// checkBox.setMaxLines(2);
 		textview.setTextSize(12);
-		textview.setTextColor(R.color.black);
+		textview.setTextColor(context.getResources().getColor(R.color.black));
 		// checkBox.setScaleX(0.8f);
 		// checkBox.setScaleY(0.8f);
 		// checkBox.setButtonDrawable(R.drawable.check_selected);

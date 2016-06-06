@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:verticalSpacing="@dimen/pad_20"
-                android:horizontalSpacing="@dimen/pad_20"
+                android:horizontalSpacing="30dp"
                 android:numColumns="3" />
 
             <!--   <ImageView

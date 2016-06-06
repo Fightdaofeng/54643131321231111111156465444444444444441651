@@ -81,12 +81,10 @@
                     android:visibility="invisible">
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-
+                        style="@style/del_imgstyle"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/xxxxx" />
+                    />
                 </LinearLayout>
             </LinearLayout>
 
@@ -124,12 +122,11 @@
                     android:visibility="invisible">
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
+                        style="@style/del_imgstyle"
 
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/xxxxx" />
+               />
                 </LinearLayout>
 
                 <LinearLayout

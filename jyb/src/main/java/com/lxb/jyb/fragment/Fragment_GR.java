@@ -27,7 +27,7 @@ import com.lxb.jyb.tool.IntentCode;
  */
 public class Fragment_GR extends Fragment implements OnClickListener {
     private View view;
-    private ImageView bjzl_tn;
+    private ImageView bjzl_tn, msg;
     private TextView to_logon;
     private SharedPreferences sp;
     private SharedPreferences.Editor editor;
@@ -57,14 +57,16 @@ public class Fragment_GR extends Fragment implements OnClickListener {
         view.findViewById(R.id.yjfk_lay).setOnClickListener(this);
         view.findViewById(R.id.wdsc_lay).setOnClickListener(this);
         bjzl_tn = (ImageView) view.findViewById(R.id.bjzl_btn);
+        msg = (ImageView) view.findViewById(R.id.msg_tv);
+        msg.setOnClickListener(this);
         bjzl_tn.setOnClickListener(this);
         to_logon = (TextView) view.findViewById(R.id.to_logon);
         to_logon.setOnClickListener(this);
-        if(islogin){
+        if (islogin) {
             to_logon.setVisibility(View.GONE);
             view.findViewById(R.id.bjzl_btn).setVisibility(View.VISIBLE);
             view.findViewById(R.id.head_lay).setVisibility(View.VISIBLE);
-        }else{
+        } else {
 
         }
     }
@@ -100,6 +102,18 @@ public class Fragment_GR extends Fragment implements OnClickListener {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        boolean is = sp.getBoolean("islogin", false);
+        if (!is) {
+            to_logon.setVisibility(View.VISIBLE);
+            view.findViewById(R.id.head_lay).setVisibility(View.GONE);
+            bjzl_tn.setVisibility(View.GONE);
+            msg.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         // TODO Auto-generated method stub
         super.onActivityResult(requestCode, resultCode, data);
@@ -108,6 +122,7 @@ public class Fragment_GR extends Fragment implements OnClickListener {
                 to_logon.setVisibility(View.GONE);
                 view.findViewById(R.id.head_lay).setVisibility(View.VISIBLE);
                 bjzl_tn.setVisibility(View.VISIBLE);
+                msg.setVisibility(View.VISIBLE);
             }
             if (resultCode == IntentCode.GRRESULTCODE) {
 

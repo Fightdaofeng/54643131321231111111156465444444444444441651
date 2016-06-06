@@ -85,6 +85,9 @@ public class ShiJianFragment extends Fragment implements OnClickListener {
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
+		getActivity().findViewById(R.id.rishaixuan).setVisibility(View.GONE);
+		getActivity().findViewById(R.id.shishaixuan).setVisibility(View.VISIBLE);
+		getActivity().findViewById(R.id.zbshaixuan).setVisibility(View.GONE);
 		view.findViewById(R.id.rili_pp).setVisibility(View.GONE);
 		view.findViewById(R.id.shijian_pp).setVisibility(View.VISIBLE);
 		if (isFist == 1) {

@@ -60,7 +60,7 @@ public class CreateOrderActivity extends FragmentActivity implements
     private StringBuffer result;
     private JsonObjectRequest request;
     private String account = "900171576", broker = "GMI", symbol, lots,
-            ordertype, sl, tp, comment = "Android Test", price = "1340",
+            ordertype, sl="0", tp="0", comment = "Android Test", price = "1340",
             expiretime;
     private EditText edit_lots, edit_zy, edit_zs;
     private HQData hqdata;
@@ -137,12 +137,12 @@ public class CreateOrderActivity extends FragmentActivity implements
                     break;
                 case 101:
                     String zy, zs;
-                    if (tp.equals("0")) {
+                    if (null==tp||"0".equals(tp)) {
                         zs = "未设置！";
                     } else {
                         zs = tp;
                     }
-                    if (sl.equals("0")) {
+                    if (null==sl||"0".equals(sl)) {
                         zy = "未设置！";
                     } else {
                         zy = sl;
@@ -632,7 +632,7 @@ public class CreateOrderActivity extends FragmentActivity implements
                 priceBean = new PriceBean(object);
 
                 Log.i("现价信息：", priceBean.toString());
-                handler.sendEmptyMessage(101);
+                handler.sendEmptyMessage(40);
             }
         }, new Response.ErrorListener() {
             @Override

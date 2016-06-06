@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/v_layout" >
+    style="@style/v_layout">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <include layout="@layout/top_lay" />
     </LinearLayout>
@@ -14,16 +14,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/yjjx"
+            android:background="@drawable/inputedit"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="3dp" >
+            android:padding="3dp">
 
             <ImageView
                 android:layout_width="13dp"
@@ -39,40 +39,60 @@
                 android:layout_weight="1"
                 android:background="@null"
                 android:hint="请输入6-16位数字、字母或字符"
-                android:padding="3dp"
-                android:maxLength="16"
-                android:textColorHint="#40000000"
                 android:inputType="textPassword"
+                android:maxEms="16"
+                android:maxLength="16"
+                android:minEms="6"
+                android:padding="3dp"
+                android:textColorHint="#40000000"
                 android:textSize="@dimen/text_size_13" />
 
-           <LinearLayout
+            <LinearLayout
+                android:id="@+id/phone_del"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <ImageView
+                    style="@style/del_imgstyle"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/yj_k"
                 android:layout_width="wrap_content"
                 android:layout_height="fill_parent"
-                android:gravity="center" >
+                android:gravity="center">
 
                 <ImageView
-                    android:layout_margin="10dp"
                     android:id="@+id/yj_img"
                     android:layout_width="20dp"
                     android:layout_height="10dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/yanjing_selected" />
             </LinearLayout>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/phone_tishi"
+            style="@style/tishidemo"
+            android:textSize="@dimen/text_size_14" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
-            android:orientation="horizontal" >
-        </LinearLayout>
+            android:orientation="horizontal"></LinearLayout>
 
         <TextView
             android:id="@+id/commit_btn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btn1"
             android:gravity="center"
             android:text="提交"

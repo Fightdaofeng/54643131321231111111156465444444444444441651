@@ -2,31 +2,26 @@ package com.lxb.jyb.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.EditText;
-import android.widget.GridView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.android.volley.toolbox.Volley;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
@@ -35,12 +30,8 @@ import com.lxb.jyb.MyApplication;
 import com.lxb.jyb.R;
 import com.lxb.jyb.activity.XWSerchActivity;
 import com.lxb.jyb.activity.XinWenWebActivity;
-import com.lxb.jyb.activity.adapter.DingyueTextAdapter;
 import com.lxb.jyb.activity.adapter.Fragment_All_Adapter;
-import com.lxb.jyb.activity.view.Advertisement;
-import com.lxb.jyb.bean.CalSXItem;
 import com.lxb.jyb.bean.NewsBean;
-import com.lxb.jyb.tool.MyClickListener;
 import com.lxb.jyb.tool.NetworkCenter;
 import com.lxb.jyb.util.HttpConstant;
 
@@ -52,9 +43,6 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -75,12 +63,11 @@ public class XinWenDYFragment extends Fragment implements OnClickListener {
     private Fragment_All_Adapter all_Adapter;
     private RelativeLayout relative_yw_show;
     private ProgressBar yw_pro_bar;
-    private TextView show_yw_text;
+    private TextView show_yw_text, edit;
     private boolean jxLoadMore = true;
     private boolean isFirst = true;
     private boolean isRefresh = false;
     public int currentsize = 0;
-    private EditText eit;
 
     private boolean isf;
     private SharedPreferences sp1;
@@ -180,20 +167,9 @@ public class XinWenDYFragment extends Fragment implements OnClickListener {
 
     private void initFind() {
         // TODO Auto-generated method stub
-        eit = (EditText) view.findViewById(R.id.null_edit);
-        eit.setOnFocusChangeListener(new OnFocusChangeListener() {
-
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                // TODO Auto-generated method stub
-                if (hasFocus) {
-                    startActivityForResult(
-                            new Intent(XinWenDYFragment.this.getActivity(),
-                                    XWSerchActivity.class), 101);
-                }
-            }
-        });
-
+        edit = (TextView) view.findViewById(R.id.null_edit);
+        edit.setOnClickListener(this);
+        view.findViewById(R.id.rtv).setOnClickListener(this);
         arrayList = new ArrayList<NewsBean>();
         application = (MyApplication) getActivity().getApplication();
         Volley.newRequestQueue(getActivity());
@@ -279,8 +255,8 @@ public class XinWenDYFragment extends Fragment implements OnClickListener {
                         .getStatusCode()) {
                     HttpEntity entity = response.getEntity();
                     String data = EntityUtils.toString(entity, "utf-8");
-                    JSONArray array = new JSONObject(data).getJSONArray("data");
-                    for (int i = 0; i < array.length(); i++) {
+                    JSONArray array =JSONObject.parseObject(data).getJSONArray("data");
+                    for (int i = 0; i < array.size(); i++) {
                         JSONObject object = (JSONObject) array.get(i);
                         NewsBean bean = new NewsBean(object);
                         newsBeans.add(bean);
@@ -293,9 +269,6 @@ public class XinWenDYFragment extends Fragment implements OnClickListener {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
@@ -351,8 +324,8 @@ public class XinWenDYFragment extends Fragment implements OnClickListener {
                         .getStatusCode()) {
                     HttpEntity entity = response.getEntity();
                     String data = EntityUtils.toString(entity, "utf-8");
-                    JSONArray array = new JSONObject(data).getJSONArray("data");
-                    for (int i = 0; i < array.length(); i++) {
+                    JSONArray array = JSONObject.parseObject(data).getJSONArray("data");
+                    for (int i = 0; i < array.size(); i++) {
                         JSONObject object = (JSONObject) array.get(i);
                         NewsBean bean = new NewsBean(object);
                         arrayList.add(arrayList.size(), bean);
@@ -371,11 +344,7 @@ public class XinWenDYFragment extends Fragment implements OnClickListener {
             } catch (IOException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
-            } catch (JSONException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
             }
-
             return newsBeans;
         }
 
@@ -413,6 +382,11 @@ public class XinWenDYFragment extends Fragment implements OnClickListener {
         // TODO Auto-generated method stub
         switch (v.getId()) {
             case R.id.null_edit:
+                startActivityForResult(new Intent(
+                                XinWenDYFragment.this.getActivity(), XWSerchActivity.class),
+                        103);
+                break;
+            case R.id.rtv:
                 startActivityForResult(new Intent(
                                 XinWenDYFragment.this.getActivity(), XWSerchActivity.class),
                         103);

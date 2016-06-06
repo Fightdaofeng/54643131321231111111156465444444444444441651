@@ -239,6 +239,7 @@
     <dimen name="indicator_corner_radius">12dp</dimen>
     <dimen name="indicator_internal_padding">4dp</dimen>
     <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="lhight">170dp</dimen>
     <dimen name="pad_10">10dp</dimen>
     <dimen name="pad_15">15dp</dimen>
     <dimen name="pad_20">20dp</dimen>
@@ -467,6 +468,11 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+    <style name="del_imgstyle">
+        <item name="android:layout_width">17dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:background">@drawable/xxxxx</item>
+    </style>
     <style name="di_font">
         <item name="android:textColor">#9B9B9B</item>
         <item name="android:textSize">8sp</item>
@@ -487,9 +493,9 @@
         <item name="android:textColor">#757575</item>
     </style>
     <style name="fennxi_imgstyle">
-    <item name="android:layout_width">30dp</item>
-    <item name="android:layout_height">45dp</item>
-</style>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
     <style name="gr_txth">
         <item name="android:textColor">#646464</item>
         <item name="android:textSize">@dimen/text_size_14</item>
@@ -520,6 +526,10 @@
     <style name="huise_xiao">
         <item name="android:textColor">#A9A8A8</item>
         <item name="android:textSize">12sp</item>
+    </style>
+    <style name="itemlayout">
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
     </style>
     <style name="jinzhi">
         <item name="android:textSize">@dimen/text_size_11</item>
@@ -594,6 +604,13 @@
     <style name="time_txt">
         <item name="android:textSize">17sp</item>
         <item name="android:textColor">#0075D0</item>
+    </style>
+    <style name="tishidemo">
+        <item name="android:layout_height">19dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
     </style>
     <style name="today_text">
         <item name="android:textSize">24sp</item>

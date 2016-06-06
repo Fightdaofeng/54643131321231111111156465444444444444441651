@@ -5,7 +5,6 @@
     android:orientation="vertical" >
 
     <LinearLayout
-          android:focusableInTouchMode="true"
         android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -21,20 +20,22 @@
             android:layout_height="20dp"
             android:background="@drawable/serach" />
 
-        <EditText
+        <TextView
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
             android:id="@+id/null_edit"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:hint="请输入关键字"
+            android:text="请输入关键字"
             android:background="@null"
-            android:textColorHint="#42000000"
+            android:textColor="#42000000"
             android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/home_ad"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="@dimen/lhight"
         android:layout_marginTop="5dp"
         android:focusableInTouchMode="true"
         android:orientation="horizontal"

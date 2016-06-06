@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dip"
+    android:layout_height="@dimen/lhight"
     android:background="@color/base_bg_color"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <ImageView 
+    <ImageView
         android:id="@+id/ivAdvertise"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_launcher"/>
-   
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/fwhite"
+        android:layout_alignParentBottom="true"
+        android:background="#50000000"
+        android:gravity="center"
+        android:maxEms="20"
+        android:singleLine="true"
+        android:text="标题" />
 
 </RelativeLayout>

@@ -60,7 +60,7 @@ public class Activity_YJFK extends FragmentActivity implements OnClickListener {
     /* 用来标识请求裁剪图片后的activity */
     private static final int CAMERA_CROP_DATA = 3022;
     private Bitmap bitmap;
-
+    private int num = 3;
     private ArrayList<ImageView> views;
     private ArrayList<Bitmap> bitmaps;
     private ArrayList<String> dataList = new ArrayList<String>();
@@ -94,7 +94,7 @@ public class Activity_YJFK extends FragmentActivity implements OnClickListener {
                     Log.e("handleMessage", "" + "running");
 
                     Log.e("tDataList.size()", "" + tDataList.size());
-                    if (tDataList.size() < 8) {
+                    if (tDataList.size() < 3) {
                         tDataList.add("camera_default");
                     }
                     dataList.clear();
@@ -226,8 +226,11 @@ public class Activity_YJFK extends FragmentActivity implements OnClickListener {
         }
     }
 
-    private void initImage(Bitmap bitmap) {
-
+    private void initImage(String path) {
+        dataList.clear();
+        dataList.add(path);
+        gridImageAdapter.setDataList(dataList);
+        gridImageAdapter.notifyDataSetChanged();
 
     }
 
@@ -279,8 +282,9 @@ public class Activity_YJFK extends FragmentActivity implements OnClickListener {
             Intent intent = new Intent(Activity_YJFK.this, ImageList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
             Bundle bundle = new Bundle();
-            String sti=editText.getText().toString();
-            bundle.putString("value",sti);
+            String sti = editText.getText().toString();
+            bundle.putInt("num", num);
+            bundle.putString("value", sti);
             bundle.putStringArrayList("dataList",
                     getIntentArrayList(dataList));
             intent.putExtras(bundle);
@@ -331,12 +335,12 @@ public class Activity_YJFK extends FragmentActivity implements OnClickListener {
         if (requestCode == 0) {
             if (resultCode == RESULT_OK) {
                 Bundle bundle = mIntent.getExtras();
-                String str=bundle.getString("value");
+                String str = bundle.getString("value");
                 editText.setText(str);
                 editText.postInvalidate();
                 ArrayList<String> tDataList = (ArrayList<String>) bundle.getSerializable("dataList");
                 if (tDataList != null) {
-                    if (tDataList.size() < 8) {
+                    if (tDataList.size() < num) {
                         tDataList.add("camera_default");
                     }
                     dataList.clear();
@@ -367,9 +371,7 @@ public class Activity_YJFK extends FragmentActivity implements OnClickListener {
             case CAMERA_CROP_DATA:
                 String path = mIntent.getStringExtra("PATH");
                 bitmap = BitmapFactory.decodeFile(path);
-//                head_img.setImageBitmap(bitmap);
-                bitmaps.add(bitmap);
-                initImage(bitmap);
+                initImage(path);
 
                 break;
         }

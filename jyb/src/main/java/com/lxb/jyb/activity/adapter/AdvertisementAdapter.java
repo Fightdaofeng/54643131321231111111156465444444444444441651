@@ -11,10 +11,13 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lxb.jyb.R;
+import com.lxb.jyb.bean.NewsBannerBean;
 import com.lxb.jyb.tool.ImageDownLoader;
+import com.lxb.jyb.tool.MyClickListener;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -25,21 +28,26 @@ import java.util.List;
 public class AdvertisementAdapter extends PagerAdapter {
     private Context context;
     private List<View> views;
-    ArrayList<String> advertiseArray;
+    ArrayList<NewsBannerBean> advertiseArray;
     private ImageDownLoader loader;
     private Bitmap bitmap;
     private String imgurl;
+    private ArrayList<Bitmap> bitmaps;
+    private MyClickListener clickListener;
+
     public AdvertisementAdapter() {
         super();
         // TODO Auto-generated constructor stub
     }
 
     public AdvertisementAdapter(Context context, List<View> views,
-                                ArrayList<String> advertiseArray) {
+                                ArrayList<NewsBannerBean> advertiseArray, ArrayList<Bitmap> bitmaps, MyClickListener clickListener) {
         this.context = context;
         this.views = views;
         loader = new ImageDownLoader(context);
         this.advertiseArray = advertiseArray;
+        this.bitmaps = bitmaps;
+        this.clickListener = clickListener;
     }
 
     @Override
@@ -62,27 +70,16 @@ public class AdvertisementAdapter extends PagerAdapter {
     public Object instantiateItem(View container, int position) {
         ((ViewPager) container).addView(views.get(position), 0);
         View view = views.get(position);
-        String head_img = advertiseArray.get(position);
-        imgurl=head_img;
+        String head_img = advertiseArray.get(position).getImage();
+        imgurl = head_img;
         ImageView ivAdvertise = (ImageView) view.findViewById(R.id.ivAdvertise);
-        setImageView(ivAdvertise, head_img);
+        TextView titleview = (TextView) view.findViewById(R.id.title_tv);
+        titleview.setText(advertiseArray.get(position).getNewsTitle());
+//        setImageView(ivAdvertise, head_img);
+        ivAdvertise.setImageBitmap(bitmaps.get(position));
 
         ivAdvertise.setTag(position);
-        ivAdvertise.setOnTouchListener(new OnTouchListener() {
-
-            public boolean onTouch(View v, MotionEvent event) {
-                // TODO Auto-generated method stub
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN:
-                        Toast.makeText(context, "按下了" + v.getTag(), Toast.LENGTH_LONG).show();
-                        break;
-
-                    default:
-                        break;
-                }
-                return false;
-            }
-        });
+        ivAdvertise.setOnClickListener(clickListener);
         return view;
     }
 

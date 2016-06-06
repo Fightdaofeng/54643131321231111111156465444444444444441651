@@ -4,17 +4,33 @@ android {
     compileSdkVersion 21
     buildToolsVersion "21"
 
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
     defaultConfig {
         applicationId "com.lxb.jyb"
         minSdkVersion 11
         targetSdkVersion 21
     }
-
+dexOptions{
+    javaMaxHeapSize "2g";
+}
     buildTypes {
+
         release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            //Zipalign优化
+            zipAlignEnabled false
+
+            // 移除无用的resource文件
+            shrinkResources true
+            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+
         }
+
     }
 
 }

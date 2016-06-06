@@ -2,18 +2,20 @@ package com.lxb.jyb.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -21,6 +23,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.android.volley.toolbox.Volley;
 import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
@@ -31,7 +35,10 @@ import com.lxb.jyb.activity.XWSerchActivity;
 import com.lxb.jyb.activity.XinWenWebActivity;
 import com.lxb.jyb.activity.adapter.Fragment_All_Adapter;
 import com.lxb.jyb.activity.view.Advertisement;
+import com.lxb.jyb.bean.NewsBannerBean;
 import com.lxb.jyb.bean.NewsBean;
+import com.lxb.jyb.tool.ImageDownLoader;
+import com.lxb.jyb.tool.MyClickListener;
 import com.lxb.jyb.tool.NetworkCenter;
 import com.lxb.jyb.util.HttpConstant;
 
@@ -43,11 +50,10 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -67,21 +73,23 @@ public class XinWenFragment extends Fragment implements OnClickListener {
     private Fragment_All_Adapter all_Adapter;
     private RelativeLayout relative_yw_show;
     private ProgressBar yw_pro_bar;
-    private TextView show_yw_text;
+    private TextView show_yw_text, edit;
     private boolean jxLoadMore = true;
     private boolean isFirst = true;
     private boolean isRefresh = false;
     public boolean isLoadingMore = false;
     public int currentsize = 0;
-    private EditText eit;
-
+    private ArrayList<NewsBannerBean> bannerBeen;
+    private ArrayList<Bitmap> bitmaps;
+    private ImageDownLoader downLoader;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         view = inflater.inflate(R.layout.xinwen_frg, null, false);
-
+        downLoader = new ImageDownLoader(this.getActivity());
+//        new RequestBanner().execute();
         getIntentData();
         return view;
     }
@@ -122,25 +130,19 @@ public class XinWenFragment extends Fragment implements OnClickListener {
                                 .show();
                     }
                     break;
-                default:
+                case 206:
+                    new GETbitmap().execute();
+//                    handler.sendEmptyMessage(207);
+                    break;
+                case 207:
+                    initHead();
+                    listView.addHeaderView(headview);
                     break;
             }
 
         }
-
-        ;
     };
 
-    public void removeDuplicate(ArrayList<NewsBean> list) {
-        for (int i = 0; i < list.size() - 1; i++) {
-            for (int j = list.size() - 1; j > i; j--) {
-                if (list.get(j).equals(list.get(i))) {
-                    list.remove(j);
-                }
-            }
-        }
-        arrayList = list;
-    }
 
     private boolean isOne = false;
     private boolean isTwo = false;
@@ -162,6 +164,7 @@ public class XinWenFragment extends Fragment implements OnClickListener {
         }
         if ("推荐".equals(newsName)) {
             isTwo = true;
+//            new RequestBanner().execute();
         }
         page = 1;
         // Toast.makeText(getActivity(), "当前进入了" + "" + newsName, 1).show();
@@ -174,7 +177,7 @@ public class XinWenFragment extends Fragment implements OnClickListener {
 
     private void initFind() {
         // TODO Auto-generated method stub
-        initHead();
+
 
         arrayList = new ArrayList<NewsBean>();
         application = (MyApplication) getActivity().getApplication();
@@ -187,7 +190,8 @@ public class XinWenFragment extends Fragment implements OnClickListener {
         show_yw_text = (TextView) view.findViewById(R.id.show_yw_text);
         listView = pullToRefreshListView.getRefreshableView();
         if (isTwo) {
-            listView.addHeaderView(headview);
+            new RequestBanner().execute();
+
         }
 
         if (isOne) {
@@ -205,33 +209,32 @@ public class XinWenFragment extends Fragment implements OnClickListener {
         }
     }
 
+    MyClickListener clickListener = new MyClickListener() {
+        @Override
+        public void myOnClick(int position, View v) {
+            Log.i("当前点击了：", arrayList.size() + "图");
+            NewsBannerBean bean = bannerBeen.get(position);
+            Intent intent = new Intent(XinWenFragment.this.getActivity(),
+                    XinWenWebActivity.class);
+            intent.putExtra("newsid", bean.getNewsId() + "");
+            intent.putParcelableArrayListExtra("list", arrayList);
+            startActivity(intent);
+        }
+    };
+
     private void initHead() {
+
         headview = LayoutInflater.from(getActivity()).inflate(
                 R.layout.news_head, null);
-        eit = (EditText) headview.findViewById(R.id.null_edit);
-        eit.setOnFocusChangeListener(new OnFocusChangeListener() {
-
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                // TODO Auto-generated method stub
-                if (hasFocus) {
-                    startActivityForResult(
-                            new Intent(XinWenFragment.this.getActivity(),
-                                    XWSerchActivity.class), 101);
-                }
-            }
-        });
+        edit = (TextView) headview.findViewById(R.id.null_edit);
+        edit.setOnClickListener(this);
 
         flash_ad = (LinearLayout) headview.findViewById(R.id.home_ad);
 
-        ArrayList<String> array = new ArrayList<String>();
-        array.add("http://www.fxgold.com/repo/image/20160516/1463384618102180603.png");
-        array.add("http://www.fxgold.com/repo/image/20160516/1463358973900520032.png");
-        array.add("http://www.fxgold.com/repo/image/20160516/1463362169581164211.png");
-        array.add("http://www.fxgold.com/repo/image/20160516/1463380121158860968.png");
+
         View initView = new Advertisement(getActivity(), true,
-                LayoutInflater.from(getActivity()), 3000)
-                .initView(array);
+                LayoutInflater.from(getActivity()), 2000)
+                .initView(bannerBeen, bitmaps, clickListener);
         flash_ad.addView(initView);
     }
 
@@ -246,7 +249,7 @@ public class XinWenFragment extends Fragment implements OnClickListener {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 // TODO Auto-generated method stub
-                NewsBean newsBean = arrayList.get(position - 1);
+                NewsBean newsBean = arrayList.get(position - 2);
                 Intent intent = new Intent(XinWenFragment.this.getActivity(),
                         XinWenWebActivity.class);
                 intent.putExtra("newsid", newsBean.getNewsId());
@@ -299,8 +302,8 @@ public class XinWenFragment extends Fragment implements OnClickListener {
                         .getStatusCode()) {
                     HttpEntity entity = response.getEntity();
                     String data = EntityUtils.toString(entity, "utf-8");
-                    JSONArray array = new JSONObject(data).getJSONArray("data");
-                    for (int i = 0; i < array.length(); i++) {
+                    JSONArray array = JSONObject.parseObject(data).getJSONArray("data");
+                    for (int i = 0; i < array.size(); i++) {
                         JSONObject object = (JSONObject) array.get(i);
                         NewsBean bean = new NewsBean(object);
                         newsBeans.add(bean);
@@ -313,9 +316,6 @@ public class XinWenFragment extends Fragment implements OnClickListener {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
@@ -371,8 +371,8 @@ public class XinWenFragment extends Fragment implements OnClickListener {
                         .getStatusCode()) {
                     HttpEntity entity = response.getEntity();
                     String data = EntityUtils.toString(entity, "utf-8");
-                    JSONArray array = new JSONObject(data).getJSONArray("data");
-                    for (int i = 0; i < array.length(); i++) {
+                    JSONArray array = JSONObject.parseObject(data).getJSONArray("data");
+                    for (int i = 0; i < array.size(); i++) {
                         JSONObject object = (JSONObject) array.get(i);
                         NewsBean bean = new NewsBean(object);
                         arrayList.add(arrayList.size(), bean);
@@ -389,9 +389,6 @@ public class XinWenFragment extends Fragment implements OnClickListener {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (JSONException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
@@ -420,13 +417,12 @@ public class XinWenFragment extends Fragment implements OnClickListener {
     public void onResume() {
         // TODO Auto-generated method stub
         super.onResume();
-        if (arrayList != null && arrayList.size() > 0) {
-            application.getMmp().put("2", "2");
-
-        } else {
-        }
+//        if (arrayList != null && arrayList.size() > 0) {
+//            application.getMmp().put("2", "2");
+//
+//        } else {
+//        }
     }
-
 
 
     @Override
@@ -444,4 +440,59 @@ public class XinWenFragment extends Fragment implements OnClickListener {
         }
     }
 
+    class RequestBanner extends AsyncTask<Void, Void, Void> {
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            ;
+            bannerBeen = new ArrayList<>();
+            HttpClient client = new DefaultHttpClient();
+            HttpGet get = null;
+            get = new HttpGet(HttpConstant.NEWBANNER_HOST);
+            HttpResponse response;
+            try {
+                response = client.execute(get);
+                if (HttpStatus.SC_OK == response.getStatusLine()
+                        .getStatusCode()) {
+                    HttpEntity entity = response.getEntity();
+                    String data = EntityUtils.toString(entity, "utf-8");
+                    JSONArray array = JSONObject.parseObject(data).getJSONArray("data");
+                    for (int i = 0; i < array.size(); i++) {
+                        JSONObject object = array.getJSONObject(i);
+                        NewsBannerBean bean = new NewsBannerBean(object);
+                        bannerBeen.add(bean);
+                    }
+
+                    handler.sendEmptyMessage(206);
+                }
+            } catch (ClientProtocolException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            return null;
+        }
+    }
+
+    class GETbitmap extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... params) {
+            bitmaps = new ArrayList<>();
+            try {
+                for (int i = 0; i < bannerBeen.size(); i++) {
+                    Log.i("图片地址:", bannerBeen.get(i).getImage());
+                    Bitmap bitmap = downLoader.downloadImage(HttpConstant.NSH + bannerBeen.get(i).getImage());
+                    bitmaps.add(bitmap);
+                }
+                handler.sendEmptyMessage(207);
+            } catch (Exception e) {
+                e.printStackTrace();
+                Log.e("错误信息：", e.toString());
+            }
+            return null;
+        }
+
+    }
 }

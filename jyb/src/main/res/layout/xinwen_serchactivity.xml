@@ -1,71 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/v_layout" >
+    style="@style/v_layout">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp" >
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/pad_15">
 
-        <com.lxb.jyb.activity.view.SearchView
-            android:id="@+id/main_search_layout"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/sousuokuan"
-            android:drawableLeft="@drawable/fandajin"
-            android:hint="输入关键字"
-            android:textColorHint="#42000000"
-            android:textSize="15sp" >
-        </com.lxb.jyb.activity.view.SearchView>
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp">
 
-        <ListView
-            android:id="@+id/main_lv_search_results"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:visibility="gone" >
-        </ListView>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/serach" />
+
+            <EditText
+                android:id="@+id/edit_xw"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入关键字"
+                android:textColor="@color/black"
+                android:textColorHint="#44000000"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:id="@+id/ed_del"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/del_imgstyle"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/quxiao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="10dp"
             android:text="取消"
             android:textColor="@color/tmblack"
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/queding"
+            android:id="@+id/serch_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="确定"
+            android:layout_marginLeft="10dp"
+            android:text="搜索"
             android:textColor="@color/tmblack"
             android:textSize="15sp"
             android:visibility="gone" />
+
     </LinearLayout>
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/layout_1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/white"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:background="@drawable/ic_launcher"
-                android:visibility="gone" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -73,20 +92,22 @@
                 android:layout_margin="20dp"
                 android:text="大家都在搜"
                 android:textColor="@color/black"
-                android:textSize="17sp" />
+                android:textSize="17sp"
+                android:visibility="gone" />
 
             <GridView
                 android:id="@+id/xw_grid"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="0dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_weight="1"
                 android:columnWidth="65dp"
                 android:horizontalSpacing="10dp"
                 android:numColumns="4"
                 android:scrollbars="none"
-                android:verticalSpacing="10dp" >
-            </GridView>
+                android:verticalSpacing="10dp"
+                android:visibility="gone"></GridView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -96,18 +117,24 @@
                 android:textColor="@color/black"
                 android:textSize="17sp" />
 
-            <ListView
-                android:id="@+id/xw_history_list"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:scrollbars="none" >
-            </ListView>
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/xw_history_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scrollbars="none"></ListView>
+            </LinearLayout>
 
             <Button
+                android:id="@+id/clear_history"
                 android:layout_width="match_parent"
-                android:layout_height="35dp"
+                android:layout_height="40dp"
                 android:layout_margin="20dp"
                 android:background="@drawable/btn1"
                 android:gravity="center"
@@ -115,6 +142,64 @@
                 android:textColor="@color/white"
                 android:textSize="16sp" />
         </LinearLayout>
-    </ScrollView>
 
+        <LinearLayout
+            android:id="@+id/jieguo_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/result_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_3"
+            android:orientation="horizontal"
+            android:background="@color/fwhite"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="没有搜索到与"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="#aeaeae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tishi"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="#aeaeae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="相关的新闻"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="#aeaeae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/main_rl_listview_to_top_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="5dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip"
+                android:src="@drawable/return_top" />
+        </RelativeLayout>
+    </RelativeLayout>
 </LinearLayout>

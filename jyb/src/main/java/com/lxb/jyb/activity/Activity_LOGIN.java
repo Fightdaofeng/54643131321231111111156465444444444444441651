@@ -73,11 +73,11 @@ public class Activity_LOGIN extends Activity implements OnClickListener {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==IntentCode.REQUESTCODE){
-                if(resultCode==IntentCode.RESULTCODE){
-                    Activity_LOGIN.this.setResult(IntentCode.RESULTCODE);
-                    this.finish();
-                }
+        if (requestCode == IntentCode.REQUESTCODE) {
+            if (resultCode == IntentCode.RESULTCODE) {
+                Activity_LOGIN.this.setResult(IntentCode.RESULTCODE);
+                this.finish();
+            }
         }
 
     }
@@ -178,8 +178,11 @@ public class Activity_LOGIN extends Activity implements OnClickListener {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-
+                    if(!login_phone.getText().toString().isEmpty()) {
+                        phone_del.setVisibility(View.VISIBLE);
+                    }
                 } else {
+                    phone_del.setVisibility(View.GONE);
                     String phone = login_phone.getText().toString();
                     if (ValidatorUtil.isMobile(phone)) {
                         phone_tishi.setText("");
@@ -193,8 +196,11 @@ public class Activity_LOGIN extends Activity implements OnClickListener {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (hasFocus) {
-
+                    if (!pas_dit.getText().toString().isEmpty()) {
+                        pwd_del.setVisibility(View.VISIBLE);
+                    }
                 } else {
+                    pwd_del.setVisibility(View.GONE);
                     String password = pas_dit.getText().toString();
                     if (ValidatorUtil.isPassword(password)) {
                         pas_tishi.setText("");
@@ -243,7 +249,7 @@ public class Activity_LOGIN extends Activity implements OnClickListener {
                     get_logincode.setSelected(true);
                     new TimeCount(60000, 1000).start();
                 } else {
-                    Toast.makeText(Activity_LOGIN.this, "请输入正确的手机号码！", Toast.LENGTH_LONG).show();
+                    phone_tishi.setText("手机号不正确");
                 }
 
                 break;
@@ -268,7 +274,8 @@ public class Activity_LOGIN extends Activity implements OnClickListener {
 
         @Override
         protected Void doInBackground(Void... params) {
-            String url=HttpConstant.REGISTERHOST+"?username="+phone+"&password="+password+"&code="+code;
+            String url = HttpConstant.REGISTERHOST + "?username=" + phone + "&password=" + password + "&code=" + code;
+            Log.i("注册接口：", url);
             HttpClient httpClient = new DefaultHttpClient();
 
             HttpGet httpPost = new HttpGet(url);

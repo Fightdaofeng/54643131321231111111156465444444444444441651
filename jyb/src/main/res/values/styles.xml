@@ -123,6 +123,12 @@
         <item name="android:background">@color/line_color</item>
     </style>
 
+    <style name="del_imgstyle">
+        <item name="android:layout_width">17dp</item>
+        <item name="android:layout_height">17dp</item>
+        <item name="android:background">@drawable/xxxxx</item>
+    </style>
+
     <style name="x_line">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/x_linghigh</item>
@@ -182,10 +188,12 @@
         <item name="android:textSize">10sp</item>
         <item name="android:textColor">#FFF</item>
     </style>
-<style name="fennxi_imgstyle">
-    <item name="android:layout_width">30dp</item>
-    <item name="android:layout_height">45dp</item>
-</style>
+
+    <style name="fennxi_imgstyle">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
     <style name="yiji_font">
         <item name="android:textSize">@dimen/text_size_16</item>
         <item name="android:textColor">@color/black</item>
@@ -217,6 +225,14 @@
     <style name="with_minfont">
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="tishidemo">
+        <item name="android:layout_height">19dp</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
     </style>
 
     <style name="black_font">
@@ -374,6 +390,11 @@
         <item name="android:layout_marginRight">@dimen/horizontal_margin</item>
         <item name="android:layout_width">@dimen/txt_leftimg_width</item>
         <item name="android:layout_height">@dimen/txt_leftimg_high</item>
+    </style>
+
+    <style name="itemlayout">
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingLeft">20dp</item>
     </style>
 
     <style name="top_msg">

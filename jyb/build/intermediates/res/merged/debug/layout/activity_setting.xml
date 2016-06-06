@@ -48,6 +48,7 @@
                 android:layout_weight="1" />
 
             <TextView
+                android:id="@+id/phone_tv"
                 style="@style/erji_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -267,6 +268,7 @@
         <View style="@style/x_line" />
 
         <LinearLayout
+            android:id="@+id/exit_user"
             style="@style/set_lay_pad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

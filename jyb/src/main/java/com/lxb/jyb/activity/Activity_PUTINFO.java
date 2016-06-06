@@ -69,7 +69,7 @@ public class Activity_PUTINFO extends BaseActivity implements OnClickListener,
     private PopupWindow citywindow, agewindow, window;
     private GuanzhuTextAdapter txtAdapter;
     private SetTimeWheelView wheelView;
-    private HashSet<String> stringHashSet=new HashSet<>();
+    private HashSet<String> stringHashSet = new HashSet<>();
     private String[] arrays = {"美元", "欧元", "英镑", "澳元", "日元", "瑞郎", "加元",
             "人民币", "黄金", "白银", "商品", "股指"};
     private String[] agearr = {"1年以下", "1-3年", "3-5年", "5-10年", "10年以上"};
@@ -224,12 +224,12 @@ public class Activity_PUTINFO extends BaseActivity implements OnClickListener,
                 this.finish();
                 break;
             case R.id.qx_guanzhu:
-                this.finish();
+                    agewindow.dismiss();
                 break;
             case R.id.commit_guanzhu:
-                if(null==stringHashSet){
+                if (null == stringHashSet) {
 
-                }else {
+                } else {
                     gzlist.addAll(stringHashSet);
                     guanzhu_txt.setText(gzlist.toString());
                     agewindow.dismiss();
@@ -586,6 +586,9 @@ public class Activity_PUTINFO extends BaseActivity implements OnClickListener,
 
     private void showSelectedResult() {
         city_txt.setText(mCurrentProviceName + "-" + mCurrentCityName);
+
+            citywindow.dismiss();
+
         // Toast.makeText(
         // Activity_PUTINFO.this,
         // "当前选择的城市为:" + mCurrentProviceName + "," + mCurrentCityName

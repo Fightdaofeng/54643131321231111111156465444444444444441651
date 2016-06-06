@@ -2,6 +2,7 @@ package com.lxb.jyb.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -32,9 +33,11 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 
 import com.lxb.jyb.R;
+import com.lxb.jyb.activity.CalShaiXuanActivity;
 import com.lxb.jyb.activity.view.CalendarView;
 import com.lxb.jyb.activity.view.MyHorizontalScrollView;
 import com.lxb.jyb.tool.GetDate;
+import com.lxb.jyb.tool.IntentCode;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -53,7 +56,7 @@ public class CalendarHomeFragment extends Fragment implements OnClickListener,
 	public static String ARGUMENTS_LIST = "list";
 	private MyHorizontalScrollView hr;
 	private int indicatorWidth;
-	private ImageView iv_nav_indicator;
+	private ImageView iv_nav_indicator,shaixuan;
 	private LinearLayout rl_nav;
 	private LayoutInflater mInflater;
 	private TabFragmentPagerAdapter mAdapter2;
@@ -113,6 +116,9 @@ public class CalendarHomeFragment extends Fragment implements OnClickListener,
 		super.onResume();
 		// MobclickAgent.onPageStart("MainScreen"); //
 		// 统计页面，"MainScreen"为页面名称，可自定义
+		getActivity().findViewById(R.id.rishaixuan).setVisibility(View.VISIBLE);
+		getActivity().findViewById(R.id.shishaixuan).setVisibility(View.GONE);
+		getActivity().findViewById(R.id.zbshaixuan).setVisibility(View.GONE);
 		view.findViewById(R.id.rili_pp).setVisibility(View.VISIBLE);
 		view.findViewById(R.id.shijian_pp).setVisibility(View.GONE);
 		if (isFist == 1) {
@@ -215,6 +221,7 @@ public class CalendarHomeFragment extends Fragment implements OnClickListener,
 				});
 	}
 
+	@SuppressWarnings("WrongConstant")
 	private void initHr() {
 		// TODO Auto-generated method stub
 		DisplayMetrics dm = new DisplayMetrics();
@@ -267,6 +274,8 @@ public class CalendarHomeFragment extends Fragment implements OnClickListener,
 		top_lay = (LinearLayout) getActivity().findViewById(R.id.top_lin);
 		rg_nav_content = (RadioGroup) view.findViewById(R.id.rg_nav_content);
 		iv_nav_indicator = (ImageView) view.findViewById(R.id.iv_nav_indicator);
+		shaixuan= (ImageView) getActivity().findViewById(R.id.rishaixuan);
+		shaixuan.setOnClickListener(this);
 		rili_pp = (TextView) view.findViewById(R.id.rili_pp);
 		if (moth < 10) {
 			rili_pp.setText("0" + moth + "月\n" + year + "年");
@@ -360,6 +369,11 @@ public class CalendarHomeFragment extends Fragment implements OnClickListener,
 		case R.id.rili_pp:
 			initPopupWindow();
 			break;
+			case R.id.rishaixuan:
+				Intent intent=new Intent(CalendarHomeFragment.this.getActivity(), CalShaiXuanActivity.class);
+
+				startActivityForResult(intent, IntentCode.REQUESTCODE);
+				break;
 		}
 	}
 
@@ -531,4 +545,13 @@ public class CalendarHomeFragment extends Fragment implements OnClickListener,
 		}
 	};
 
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		if(requestCode==IntentCode.REQUESTCODE){
+			if(resultCode==IntentCode.RESULTCODE){
+
+			}
+		}
+	}
 }

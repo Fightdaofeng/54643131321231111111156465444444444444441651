@@ -15,6 +15,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,6 +44,7 @@ public class HQSerchActivity extends Activity implements View.OnClickListener {
     private HQserachlistItemAdapter adapter;
     private TextView quxiao;
     private EditText serchedit;
+    private LinearLayout del;
 
     @Override
 
@@ -108,11 +110,11 @@ public class HQSerchActivity extends Activity implements View.OnClickListener {
     };
 
     private void initFindView() {
-
+        del = (LinearLayout) findViewById(R.id.del);
         quxiao = (TextView) findViewById(R.id.serch_qx);
         quxiao.setOnClickListener(this);
         serchedit = (EditText) findViewById(R.id.serch_edt);
-
+        del.setOnClickListener(this);
 
         serchedit.addTextChangedListener(new TextWatcher() {
             @Override
@@ -122,7 +124,8 @@ public class HQSerchActivity extends Activity implements View.OnClickListener {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (count > 0) {
+                if (s.length() > 0) {
+                    del.setVisibility(View.VISIBLE);
                     handler.sendEmptyMessage(2);
                 } else {
                     handler.sendEmptyMessage(1);
@@ -168,7 +171,7 @@ public class HQSerchActivity extends Activity implements View.OnClickListener {
         @Override
         public void myOnClick(int position, View v) {
             Set<String> stringSet = preferences.getStringSet("hqdef", null);
-
+            ArrayList<HQentity> datalist = adapter.getList();
             ArrayList<String> names = new ArrayList<String>();
             ;
             if (null == stringSet) {
@@ -178,18 +181,18 @@ public class HQSerchActivity extends Activity implements View.OnClickListener {
                 names.addAll(stringSet);
             }
             if (v.isSelected()) {
-                hQentities.get(position).setCheck(false);
+                datalist.get(position).setCheck(false);
 
                 v.setSelected(false);
-                adapter.setList(hQentities);
+                adapter.setList(datalist);
 
             } else {
                 v.setSelected(true);
-                hQentities.get(position).setCheck(true);
-                adapter.setList(hQentities);
+                datalist.get(position).setCheck(true);
+                adapter.setList(datalist);
             }
             boolean isF = true;
-            String name = hQentities.get(position).getName();
+            String name = datalist.get(position).getName();
             for (int i = 0; i < names.size(); i++) {
                 if (name.equals(names.get(i))) {
                     names.remove(i);
@@ -234,6 +237,11 @@ public class HQSerchActivity extends Activity implements View.OnClickListener {
                     serchedit.setText("");
                 }
                 break;
+            case R.id.del:
+                serchedit.setText("");
+                del.setVisibility(View.GONE);
+                break;
+
         }
     }
 }

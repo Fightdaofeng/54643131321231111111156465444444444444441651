@@ -1,652 +1,652 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:2:1-407:12
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:3:1-408:12
 	xmlns:android
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:3:11-69
 	package
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:3:5-26
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:4:5-26
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:5:5-30
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:6:5-30
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 	android:versionCode
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:4:5-28
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:5:5-28
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:7:5-9:41
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:8:5-10:41
 MERGED from [jyb:library:unspecified] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\jyb\library\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [jyb:mPChartLib:unspecified] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\jyb\mPChartLib\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
 	android:targetSdkVersion
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:9:9-38
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:10:9-38
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:9:9-35
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:11:5-343:19
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:12:5-344:19
 MERGED from [jyb:library:unspecified] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\jyb\library\unspecified\AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
 	android:label
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:16:9-41
 	android:allowBackup
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:14:9-45
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:15:9-45
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:16:9-40
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:17:9-40
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:12:9-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:13:9-49
 activity#com.lxb.jyb.activity.WelcomeActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:17:9-30:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:18:9-31:20
 	android:windowSoftInputMode
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:24:13-52
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:25:13-52
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:22:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:23:13-49
 	android:label
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:20:13-45
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:21:13-45
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:19:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:20:13-74
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:23:13-71
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:24:13-71
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:18:13-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:19:13-64
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:29:27-74
 activity#com.lxb.jyb.activity.ViewPagerDemoActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:31:9-36:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:32:9-37:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:34:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:35:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:33:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:34:13-74
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:35:13-71
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:36:13-71
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:32:13-70
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:33:13-70
 activity#com.lxb.jyb.activity.Activity_CZMM
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:37:9-41:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:38:9-42:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:40:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:41:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:39:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:40:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:38:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:39:13-62
 activity#com.lxb.jyb.activity.Activity_TSTZ
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:42:9-46:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:43:9-47:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:45:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:46:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:44:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:45:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:43:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:44:13-62
 activity#com.lxb.jyb.activity2.ImageList
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:47:9-51:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:48:9-52:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:50:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:51:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:49:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:50:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:48:13-59
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:49:13-59
 activity#com.lxb.jyb.activity2.AlbumActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:52:9-56:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:53:9-57:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:55:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:56:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:54:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:55:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:53:13-63
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:54:13-63
 activity#com.lxb.jyb.activity.SetTimeActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:57:9-61:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:58:9-62:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:60:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:61:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:59:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:60:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:58:13-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:59:13-64
 activity#com.lxb.jyb.activity.KLineActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:62:9-68:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:63:9-69:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:67:13-50
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:68:13-50
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:65:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:66:13-74
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:64:13-71
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:65:13-71
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:63:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:64:13-62
 activity#com.lxb.jyb.activity.CustomDialogActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:69:9-78:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:70:9-79:20
 	android:label
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:71:13-40
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:72:13-40
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:72:13-52
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:73:13-52
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:70:13-69
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:71:13-69
 intent-filter#android.intent.action.MAIN+android.intent.category.SAMPLE_CODE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:73:13-77:29
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:74:13-78:29
 category#android.intent.category.SAMPLE_CODE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:76:17-80
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:77:17-80
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:76:27-77
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:77:27-77
 service#com.lxb.jyb.push.PollingService
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:80:9-84:19
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:81:9-85:19
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:80:18-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:81:18-64
 intent-filter#com.ryantang.service.PollingService
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:81:13-83:29
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:82:13-84:29
 action#com.ryantang.service.PollingService
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:82:17-78
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:83:17-78
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:82:25-75
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:83:25-75
 activity#com.lxb.jyb.activity.Activity_ZHMM
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:86:9-90:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:87:9-91:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:89:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:90:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:88:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:89:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:87:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:88:13-62
 activity#com.lxb.jyb.activity.Activity_LOGIN
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:91:9-95:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:92:9-96:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:94:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:95:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:93:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:94:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:92:13-63
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:93:13-63
 activity#com.lxb.jyb.activity.Activity_LOGON
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:96:9-100:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:97:9-101:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:99:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:100:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:98:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:99:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:97:13-63
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:98:13-63
 activity#com.lxb.jyb.activity.Activity_PUTINFO
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:101:9-105:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:102:9-106:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:104:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:105:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:103:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:104:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:102:13-65
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:103:13-65
 activity#com.lxb.jyb.activity.Activity_YJFK
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:106:9-110:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:107:9-111:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:109:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:110:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:108:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:109:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:107:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:108:13-62
 activity#com.lxb.jyb.activity.Activity_WDSC
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:111:9-116:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:112:9-117:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:115:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:116:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:113:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:114:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:112:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:113:13-62
 	android:launchMode
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:114:13-44
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:115:13-44
 activity#com.lxb.jyb.activity.XieYiActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:117:9-121:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:118:9-122:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:120:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:121:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:119:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:120:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:118:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:119:13-62
 activity#com.lxb.jyb.activity.Activity_XGMM
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:122:9-126:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:123:9-127:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:125:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:126:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:124:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:125:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:123:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:124:13-62
 activity#com.lxb.jyb.activity.Activity_Setting
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:127:9-131:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:128:9-132:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:130:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:131:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:129:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:130:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:128:13-65
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:129:13-65
 activity#com.lxb.jyb.activity.Activity_GYWM
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:132:9-136:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:133:9-137:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:135:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:136:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:134:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:135:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:133:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:134:13-62
 activity#com.lxb.jyb.activity.MainActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:137:9-141:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:138:9-142:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:140:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:141:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:139:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:140:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:138:13-61
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:139:13-61
 activity#com.lxb.jyb.activity.OrderActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:142:9-146:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:143:9-147:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:145:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:146:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:144:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:145:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:143:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:144:13-62
 activity#com.lxb.jyb.activity.CreateOrderActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:147:9-151:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:148:9-152:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:150:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:151:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:149:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:150:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:148:13-68
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:149:13-68
 activity#com.lxb.jyb.activity.Activity_UserInfo
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:152:9-156:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:153:9-157:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:155:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:156:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:154:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:155:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:153:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:154:13-66
 activity#com.lxb.jyb.activity.OrderInfoActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:157:9-161:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:158:9-162:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:160:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:161:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:159:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:160:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:158:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:159:13-66
 activity#com.lxb.jyb.activity.MessageActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:162:9-166:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:163:9-167:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:165:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:166:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:164:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:165:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:163:13-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:164:13-64
 activity#com.lxb.jyb.activity.UserManageActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:167:9-171:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:168:9-172:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:170:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:171:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:169:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:170:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:168:13-67
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:169:13-67
 activity#com.lxb.jyb.activity.UserInfoActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:172:9-176:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:173:9-177:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:175:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:176:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:174:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:175:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:173:13-65
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:174:13-65
 activity#com.lxb.jyb.activity.UserAnalyzeActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:177:9-181:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:178:9-182:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:180:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:181:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:179:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:180:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:178:13-68
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:179:13-68
 activity#com.lxb.jyb.activity.JYBTOPActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:182:9-186:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:183:9-187:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:185:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:186:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:184:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:185:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:183:13-63
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:184:13-63
 activity#com.lxb.jyb.activity.CalShaiXuanActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:187:9-191:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:188:9-192:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:190:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:191:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:189:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:190:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:188:13-68
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:189:13-68
 activity#com.lxb.jyb.activity.XiangQingActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:192:9-196:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:193:9-197:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:195:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:196:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:194:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:195:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:193:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:194:13-66
 activity#com.lxb.jyb.activity.DJSActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:197:9-201:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:198:9-202:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:200:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:201:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:199:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:200:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:198:13-60
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:199:13-60
 activity#com.lxb.jyb.activity.HQSerchActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:202:9-206:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:203:9-207:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:205:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:206:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:204:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:205:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:203:13-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:204:13-64
 activity#com.lxb.jyb.activity.Directdirec_ParticularstActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:207:9-211:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:208:9-212:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:210:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:211:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:209:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:210:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:208:13-81
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:209:13-81
 activity#com.lxb.jyb.activity.HQXQActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:212:9-216:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:213:9-217:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:215:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:216:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:214:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:215:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:213:13-61
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:214:13-61
 activity#com.lxb.jyb.activity.XinWenFLAcitivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:217:9-221:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:218:9-222:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:220:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:221:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:219:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:220:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:218:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:219:13-66
 activity#com.lxb.jyb.activity.XinWenWebActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:222:9-226:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:223:9-227:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:225:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:226:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:224:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:225:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:223:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:224:13-66
 activity#com.lxb.jyb.activity.XWSerchActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:227:9-231:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:228:9-232:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:230:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:231:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:229:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:230:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:228:13-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:229:13-64
 activity#com.lxb.jyb.activity.ZhiBoShaiXuanActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:232:9-236:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:233:9-237:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:235:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:236:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:234:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:235:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:233:13-70
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:234:13-70
 activity#com.lxb.jyb.activity.BDMT4Activity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:237:9-241:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:238:9-242:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:240:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:241:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:239:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:240:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:238:13-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:239:13-62
 activity#com.lxb.jyb.activity.CropImageActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:242:9-246:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:243:9-247:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:245:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:246:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:244:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:245:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:243:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:244:13-66
 activity#com.lxb.jyb.activity.CameraActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:247:9-251:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:248:9-252:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:250:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:251:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:249:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:250:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:248:13-63
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:249:13-63
 activity#com.lxb.jyb.activity.SelJYPZActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:252:9-256:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:253:9-257:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:255:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:256:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:254:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:255:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:253:13-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:254:13-64
 activity#com.lxb.jyb.activity.Activity_GuaDan
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:257:9-261:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:258:9-262:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:260:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:261:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:259:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:260:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:258:13-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:259:13-64
 activity#com.lxb.jyb.activity.Activity_CreateGD
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:262:9-266:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:263:9-267:20
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:265:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:266:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:264:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:265:13-74
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:263:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:264:13-66
 meta-data#UMENG_APPKEY
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:274:9-277:21
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:275:9-278:21
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:275:13-40
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:276:13-40
 	android:value
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:276:13-53
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:277:13-53
 activity#com.umeng.socialize.view.ShareActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:280:9-287:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:281:9-288:20
 	android:windowSoftInputMode
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:286:13-68
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:287:13-68
 	android:noHistory
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:284:13-37
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:285:13-37
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:282:13-57
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:283:13-57
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:285:13-50
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:286:13-50
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:281:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:282:13-66
 	android:launchMode
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:283:13-44
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:284:13-44
 activity#com.tencent.tauth.AuthActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:290:9-303:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:291:9-304:20
 	android:noHistory
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:293:13-37
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:294:13-37
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:291:13-58
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:292:13-58
 	android:launchMode
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:292:13-44
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:293:13-44
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:294:13-302:29
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:295:13-303:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:295:17-69
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:296:17-69
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:295:25-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:296:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:297:17-76
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:298:17-76
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:297:27-73
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:298:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:298:17-78
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:299:17-78
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:298:27-75
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:299:27-75
 data
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:300:17-60
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:301:17-60
 	android:scheme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:300:23-57
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:301:23-57
 activity#com.tencent.connect.common.AssistActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:304:9-307:75
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:305:9-308:75
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:306:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:307:13-49
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:307:13-72
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:308:13-72
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:305:13-69
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:306:13-69
 activity#com.lxb.jyb.wiapi.WXEntryActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:310:9-315:75
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:311:9-316:75
 	android:screenOrientation
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:314:13-49
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:315:13-49
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:312:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:313:13-74
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:315:13-72
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:316:13-72
 	android:exported
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:313:13-36
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:314:13-36
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:311:13-61
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:312:13-61
 activity#cn.sharesdk.tencent.qq.ResultReceiver
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:317:9-329:20
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:318:9-330:20
 	android:noHistory
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:320:13-37
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:321:13-37
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:318:13-65
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:319:13-65
 	android:launchMode
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:319:13-44
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:320:13-44
 activity#com.lxb.jyb.apshare.ShareEntryActivity
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:331:9-335:75
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:332:9-336:75
 	android:configChanges
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:333:13-74
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:334:13-74
 	android:theme
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:335:13-72
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:336:13-72
 	android:exported
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:334:13-36
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:335:13-36
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:332:13-55
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:333:13-55
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:338:9-340:69
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:339:9-341:69
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:339:13-58
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:340:13-58
 	android:value
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:340:13-66
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:341:13-66
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:345:5-79
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:346:5-79
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:345:22-76
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:346:22-76
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:346:5-67
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:347:5-67
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:346:22-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:347:22-64
 uses-permission#android.permission.VIBRATE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:347:5-66
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:348:5-66
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:347:22-63
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:348:22-63
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:348:5-70
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:349:5-70
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:348:22-67
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:349:22-67
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:349:5-67
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:350:5-67
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:349:22-64
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:350:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:357:5-76
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:358:5-76
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:357:22-73
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:358:22-73
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:359:5-75
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:360:5-75
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:359:22-72
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:360:22-72
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:361:5-81
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:362:5-81
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:361:22-78
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:362:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:362:5-80
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:363:5-80
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:362:22-77
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:363:22-77
 uses-permission#android.permission.GET_TASKS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:366:5-68
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:367:5-68
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:366:22-65
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:367:22-65
 uses-permission#android.permission.READ_LOGS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:369:5-68
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:370:5-68
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:369:22-65
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:370:22-65
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:370:5-79
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:371:5-79
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:370:22-76
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:371:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:371:5-81
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:372:5-81
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:371:22-78
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:372:22-78
 uses-permission#android.permission.SET_DEBUG_APP
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:375:5-72
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:376:5-72
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:375:22-69
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:376:22-69
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:376:5-78
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:377:5-78
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:376:22-75
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:377:22-75
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:377:5-71
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:378:5-71
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:377:22-68
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:378:22-68
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:378:5-74
-	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:378:22-71
-uses-permission#android.permission.MANAGE_ACCOUNTS
 ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:379:5-74
 	android:name
 		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:379:22-71
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:380:5-74
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:380:22-71
 uses-permission#android.permission.ACTION_INPUT_METHOD_CHANGED
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:380:5-86
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:381:5-86
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:380:22-83
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:381:22-83
 uses-permission#com.jhcj.whjyb.permission.JPUSH_MESSAGE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:383:5-79
-	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:383:22-76
-uses-permission#android.permission.RECEIVE_USER_PRESENT
 ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:384:5-79
 	android:name
 		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:384:22-76
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:385:5-79
+	android:name
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:385:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:385:5-68
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:386:5-68
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:385:22-65
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:386:22-65
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:389:5-73
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:390:5-73
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:389:22-70
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:390:22-70
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:391:5-84
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:392:5-84
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:391:22-81
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:392:22-81
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:398:5-76
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:399:5-76
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:398:22-73
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:399:22-73
 uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:400:5-89
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:401:5-89
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:400:22-86
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:401:22-86
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:401:5-79
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:402:5-79
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:401:22-76
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:402:22-76
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:402:5-65
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:403:5-65
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:402:22-62
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:403:22-62
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:404:5-60
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:405:5-60
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:404:19-57
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:405:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:405:5-70
+ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:406:5-70
 	android:name
-		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:405:19-67
+		ADDED from C:\Users\Administrator\Desktop\Android_AVENE20151123\jyb\jyb\src\main\AndroidManifest.xml:406:19-67

@@ -20,11 +20,17 @@ public class HttpConstant {
      * 财经大事
      */
     public final static String THINGS_HOST = HOST + "FinanceEventApi?date=";
+    public final static String ZBHPPT = "http://139.196.50.57:8080/";
     /**
      * 直播
      */
-    public final static String NEWS_HOST = " http://139.196.50.57:8080/api/LiveTestApi?page=";
-
+//    public final static String NEWS_HOST = " http://139.196.50.57:8080/api/LiveTestApi?page=";
+    public final static String NEWS_HOST = ZBHPPT + "api/LiveTestApi?page=";
+    public final static String ZBEND = "&importance=true&tags=";
+    /**
+     * 直播分类
+     */
+    public final static String ZBFLHOST = ZBHPPT + "api/LiveFiltersServlet";
     /**
      * 新闻接口
      */
@@ -34,29 +40,58 @@ public class HttpConstant {
      */
     public final static String NEWS_PAGE = "&page=";
     /**
+     * 新闻Banner接口
+     */
+    public final static String NEWBANNER_HOST = "http://139.196.50.57:8080/api/IndexBannerServlet";
+    /**
      * 新闻详情页面webview地址
      */
     public final static String NEWS_WEBHOST = "http://api.fxgold.com/app_news_001.html?source=app&newsid=";
     /**
+     * 新闻搜索
+     */
+    public final static String NEWSSERACH = "http://139.196.50.57:8080/api/NewsSearchServlet?q=";
+    /**
      * 新闻分类
      */
     public final static String NEWS_CATEGORY = "http://139.196.50.57:8080/api/NewsCategoryApi";
+    public final static String NSH = "http://www.fxgold.com/";
     /**
      * 图片地址
      */
     public final static String BITMAP_HOST = "http://139.196.45.233:8080/jrfxs/FENXISHI_IMG/";
+
+    /**
+     * 登录注册修改找回HTTP
+     */
+    public static final String USERHEAD = "http://116.236.254.14:9890/";
     /**
      * 注册接口
      */
 //    public static final String REG = "http://139.196.50.57:8090/hongTaoCase/regios?";
-    public static final String REGISTERHOST = "http://172.16.3.50:80/business-user/resources/userinfo/register";
+    public static final String REGISTERHOST = USERHEAD + "business-user/resources/userinfo/register";
 
-    /**登录接口*/
-    public static final String LOGINHOST="http://172.16.3.50:80/business-user/resources/userinfo/login";
+    /**
+     * 登录接口
+     */
+    public static final String LOGINHOST = USERHEAD + "business-user/resources/userinfo/login";
     /**
      * 获取验证码接口
      */
-    public static final String GETLOGINCODE = "http://172.16.3.50/business-user/resources/userinfo/getCode?phone=";
+    public static final String GETLOGINCODE = USERHEAD + "business-user/resources/userinfo/getCode?phone=";
+
+    /**
+     * 忘记密码接口
+     */
+    public static final String GETPASSWORD = USERHEAD + "business-user/resources/userinfo/getPassword?";
+    /**
+     * 找回密码接口
+     */
+    public static final String ALTERPASSWORD = USERHEAD + "business-user/resources/userinfo/UpdatePassword?";
+    /**
+     * 修改密码接口
+     */
+    public static final String UPDATEPASSWORD = USERHEAD + "business-user/resources/userinfo/UpdatePwd?";
     /**
      * 行情接口 http://pull.api.fxgold.com/api/r?products=PMAU,PMHKAUYH
      */
@@ -80,14 +115,7 @@ public class HttpConstant {
     public static final String URE = "http://139.196.50.57:8090/hongTaoCase/checkphone?";
 
     public static final String REGISTER_VERIFICATION = "http://139.196.50.57:8090/hongTaoCase/checkcode?";
-    /**
-     * 登陆
-     */
-    public static final String DISEMBARK = "http://139.196.50.57:8090/hongTaoCase/loginios?";
-    /**
-     * 修改密码
-     */
-    public static final String PASSWORK = "http://139.196.50.57:8090/hongTaoCase/modpw?";
+
 
     /**
      * K线数据请求接口

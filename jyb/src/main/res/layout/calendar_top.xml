@@ -3,20 +3,20 @@
     android:layout_height="wrap_content"
     android:background="@color/top_hui"
     android:gravity="center_vertical"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/top_lin"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/top_bar_height"
         android:gravity="center_vertical"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center" >
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/rishaixuan"
@@ -54,7 +54,7 @@
             android:background="@drawable/yuanjiaobai"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="2dp" >
+            android:padding="2dp">
 
             <LinearLayout
                 android:id="@+id/lay_rili"
@@ -63,7 +63,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/toplay_selected"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tv_rili"
@@ -81,7 +81,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/toplay_selected"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tv_shijian"
@@ -99,7 +99,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/toplay_selected"
                 android:gravity="center"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tv_zhibo"
@@ -115,11 +115,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="right" >
+            android:gravity="right">
 
             <ImageView
                 android:id="@+id/xiaoxi"
-              style="@style/top_msg"
+                style="@style/top_msg"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/xingfen" />
         </LinearLayout>

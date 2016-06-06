@@ -8,17 +8,22 @@ import java.util.TimerTask;
 import org.json.JSONArray;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Message;
+import android.print.PrintAttributes;
+import android.support.v4.view.MarginLayoutParamsCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.lxb.jyb.R;
 import com.lxb.jyb.activity.adapter.AdvertisementAdapter;
+import com.lxb.jyb.bean.NewsBannerBean;
 import com.lxb.jyb.tool.MyClickListener;
 
 public class Advertisement implements OnPageChangeListener {
@@ -65,7 +70,7 @@ public class Advertisement implements OnPageChangeListener {
 		this.timeDratiation = timeDratiation;
 	}
 
-	public View initView(final ArrayList<String> jsonArray) {
+	public View initView(final ArrayList<NewsBannerBean> jsonArray, ArrayList<Bitmap> bitmaps,MyClickListener clickListener) {
 		View view = inflater.inflate(R.layout.advertisement_board, null);
 
 		pager = (ViewPager) view.findViewById(R.id.vpAdvertise);
@@ -82,12 +87,14 @@ public class Advertisement implements OnPageChangeListener {
 				views.add(inflater.inflate(
 						R.layout.advertisement_item_fitcenter, null));
 			}
-			ll.addView(inflater.inflate(R.layout.advertisement_board_dot, null));
+			View v=inflater.inflate(R.layout.advertisement_board_dot, null);
+//			LinearLayout.LayoutParams params=new LinearLayout.LayoutParams(5,5);
+			ll.addView(v);
 		}
 		initDots(ll, view);
 
 		AdvertisementAdapter adapter = new AdvertisementAdapter(context, views,
-				jsonArray);
+				jsonArray,bitmaps,clickListener);
 		pager.setOffscreenPageLimit(3);
 		pager.setAdapter(adapter);
 

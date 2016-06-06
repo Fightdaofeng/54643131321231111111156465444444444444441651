@@ -38,6 +38,20 @@
                 android:textColor="@color/black"
                 android:textColorHint="#32000000"
                 android:textSize="@dimen/text_size_15" />
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/del"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+
+                <ImageView
+                    style="@style/del_imgstyle"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
         </LinearLayout>
 
         <TextView
@@ -47,13 +61,7 @@
             android:layout_marginLeft="5dp"
             android:text="取消" />
 
-        <TextView
-            android:id="@+id/serch_qd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="确定"
-            android:visibility="gone" />
+
     </LinearLayout>
 
     <LinearLayout

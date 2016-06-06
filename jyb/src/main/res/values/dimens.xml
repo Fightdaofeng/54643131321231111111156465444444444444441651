@@ -33,7 +33,7 @@
     <dimen name="pad_right">15dp</dimen>
     <dimen name="pad_top">5dp</dimen>
     <dimen name="pad_20">20dp</dimen>
-
+    <dimen name="lhight">170dp</dimen>
     <dimen name="pad_15">15dp</dimen>
     <dimen name="pad_10">10dp</dimen>
     <dimen name="reveal">24dp</dimen>

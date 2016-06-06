@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="8" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
 
     <application
         android:name="com.lxb.jyb.MyApplication"
@@ -35,6 +35,78 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
+            android:name="com.lxb.jyb.activity.Activity_CZMM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_TSTZ"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.CustomDialogActivity"
+            android:label="@string/tip"
+            android:theme="@style/FullHeightDialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.lxb.jyb.push.PollingService" >
+            <intent-filter>
+                <action android:name="com.ryantang.service.PollingService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_ZHMM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_LOGIN"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_LOGON"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_PUTINFO"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_YJFK"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_WDSC"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_XGMM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_Setting"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_GYWM"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.lxb.jyb.activity.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" >
@@ -46,6 +118,11 @@
         </activity>
         <activity
             android:name="com.lxb.jyb.activity.CreateOrderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_UserInfo"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" >
         </activity>
@@ -104,6 +181,132 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.HQXQActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.XinWenFLAcitivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.XinWenWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.XWSerchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.ZhiBoShaiXuanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.BDMT4Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.CropImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.SelJYPZActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_GuaDan"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lxb.jyb.activity.Activity_CreateGD"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- *************************    分享相关的注册 START **************************** -->
+        <!--
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56a710b967e58ef5c9000feb" >
+        </meta-data>
+        -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56ebba5267e58e60f0001120" >
+        </meta-data>
+
+        <!-- 分享内容编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1101487761" />
+                <!-- <data android:scheme="tencent100424468" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.lxb.jyb.wiapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ客户端回调 -->
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ResultReceiver"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter android:priority="1000" >
+                <data android:scheme="tencent1101487761" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- 支付宝分享回调 -->
+        <activity
+            android:name=".apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- *************************    分享相关的注册 END **************************** -->
     </application>
     <!-- 允许应用程序联网，以便向我们的服务器端收发数据 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -163,5 +366,9 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
 </manifest>

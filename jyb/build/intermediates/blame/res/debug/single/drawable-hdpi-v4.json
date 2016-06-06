@@ -136,6 +136,10 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\jinbabuwei.png"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\inputedit.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\inputedit.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\indicator_arrow.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\exploded-aar\\jyb\\library\\unspecified\\res\\drawable-hdpi-v4\\indicator_arrow.png"
     },
@@ -268,12 +272,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\shoujiyao.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\exploded-aar\\jyb\\library\\unspecified\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\bg_transparent.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\bg_transparent.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\exploded-aar\\jyb\\library\\unspecified\\res\\drawable-hdpi-v4\\default_ptr_flip.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\xinwenlan.png",
@@ -316,16 +320,16 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\gshui.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\malaixiya.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\malaixiya.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jx.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\jx.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiahao.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\jiahao.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\malaixiya.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\malaixiya.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\dajx.png",
@@ -400,16 +404,8 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\search_clear_pressed.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\chuanzaopian.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\chuanzaopian.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\guand.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\guand.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_fenheerku.jpg",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\a_fenheerku.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\hqhsj.png",
@@ -434,14 +430,6 @@
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\kejian.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\kejian.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_senlingongyuan.jpg",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\a_senlingongyuan.jpg"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_jinci.jpg",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\a_jinci.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tianjia.png",
@@ -478,10 +466,6 @@
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\baisanjiaoupdown.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\baisanjiaoupdown.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_fenhegongyuan.jpg",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\a_fenhegongyuan.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jyqhui.png",
@@ -764,16 +748,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\shanzhixuanyuan.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaoyiquanghui.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\jiaoyiquanghui.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_shanchu_focused.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\icon_shanchu_focused.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a_mengshan.jpg",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\a_mengshan.jpg"
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaoyiquanghui.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\jiaoyiquanghui.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\jiaclick.png",
@@ -836,12 +816,12 @@
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\wel3.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\deguo.png",
-        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\deguo.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_quxiao_unfocused.png",
         "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\icon_quxiao_unfocused.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\deguo.png",
+        "source": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\src\\main\\res\\drawable-hdpi\\deguo.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Desktop\\Android_AVENE20151123\\jyb\\jyb\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\return_top.png",

@@ -133,6 +133,7 @@ public class HQFragment extends Fragment implements OnClickListener {
     /**
      * 初始化VIEW
      */
+    @SuppressWarnings("WrongConstant")
     private void initView() {
         // TODO Auto-generated method stub
         DisplayMetrics dm = new DisplayMetrics();
